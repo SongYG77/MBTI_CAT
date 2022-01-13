@@ -13,9 +13,11 @@
 		18415758279003AE0095F8A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18415756279003AE0095F8A9 /* Main.storyboard */; };
 		1841575A279003AE0095F8A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18415759279003AE0095F8A9 /* Assets.xcassets */; };
 		1841575D279003AE0095F8A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1841575B279003AE0095F8A9 /* LaunchScreen.storyboard */; };
+		E5CD05C10CF99DA94EE5527B /* Pods_MBTI_CAT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 649049F50AE4B343149A5311 /* Pods_MBTI_CAT.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E5DD73E2EE9DE69359BDAAE /* Pods-MBTI_CAT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MBTI_CAT.debug.xcconfig"; path = "Target Support Files/Pods-MBTI_CAT/Pods-MBTI_CAT.debug.xcconfig"; sourceTree = "<group>"; };
 		1841574D279003AE0095F8A9 /* MBTI_CAT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MBTI_CAT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18415750279003AE0095F8A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18415752279003AE0095F8A9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		18415759279003AE0095F8A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1841575C279003AE0095F8A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1841575E279003AE0095F8A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		649049F50AE4B343149A5311 /* Pods_MBTI_CAT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MBTI_CAT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3AF9D5BF0952755AC3D0DC9 /* Pods-MBTI_CAT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MBTI_CAT.release.xcconfig"; path = "Target Support Files/Pods-MBTI_CAT/Pods-MBTI_CAT.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5CD05C10CF99DA94EE5527B /* Pods_MBTI_CAT.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03634BBC749F563FD69A9B2D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0E5DD73E2EE9DE69359BDAAE /* Pods-MBTI_CAT.debug.xcconfig */,
+				B3AF9D5BF0952755AC3D0DC9 /* Pods-MBTI_CAT.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		18415744279003AE0095F8A9 = {
 			isa = PBXGroup;
 			children = (
 				1841574F279003AE0095F8A9 /* MBTI_CAT */,
 				1841574E279003AE0095F8A9 /* Products */,
+				03634BBC749F563FD69A9B2D /* Pods */,
+				2E50A7885C8228D6DFC989A8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +84,14 @@
 			path = MBTI_CAT;
 			sourceTree = "<group>";
 		};
+		2E50A7885C8228D6DFC989A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				649049F50AE4B343149A5311 /* Pods_MBTI_CAT.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +99,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18415761279003AE0095F8A9 /* Build configuration list for PBXNativeTarget "MBTI_CAT" */;
 			buildPhases = (
+				F3EE42D3608E4CFB2BDA2730 /* [CP] Check Pods Manifest.lock */,
 				18415749279003AE0095F8A9 /* Sources */,
 				1841574A279003AE0095F8A9 /* Frameworks */,
 				1841574B279003AE0095F8A9 /* Resources */,
@@ -131,6 +157,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F3EE42D3608E4CFB2BDA2730 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MBTI_CAT-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		18415749279003AE0095F8A9 /* Sources */ = {
@@ -283,12 +334,14 @@
 		};
 		18415762279003AE0095F8A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E5DD73E2EE9DE69359BDAAE /* Pods-MBTI_CAT.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M7KCA787CC;
 				INFOPLIST_FILE = MBTI_CAT/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,18 +349,20 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.SongYG77.MBTI-APP.MBTI-CAT";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		18415763279003AE0095F8A9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3AF9D5BF0952755AC3D0DC9 /* Pods-MBTI_CAT.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M7KCA787CC;
 				INFOPLIST_FILE = MBTI_CAT/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +370,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.SongYG77.MBTI-APP.MBTI-CAT";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

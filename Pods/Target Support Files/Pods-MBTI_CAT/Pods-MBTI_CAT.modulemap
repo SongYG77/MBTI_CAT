@@ -1,0 +1,6 @@
+framework module Pods_MBTI_CAT {
+  umbrella header "Pods-MBTI_CAT-umbrella.h"
+
+  export *
+  module * { export * }
+}
