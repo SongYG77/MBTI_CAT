@@ -9,11 +9,33 @@
 
 import UIKit
 
+
+@available(iOS 13.0, *)
 class MainViewController: UIViewController {
+    
+    @IBOutlet weak var UserMBTI_Image: UIImageView!
+    
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    var UserMBTI : String? = nil
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+        if UserDefaults.standard.value(forKey: "UserMBTI") != nil {
+            UserMBTI = (UserDefaults.standard.value(forKey: "UserMBTI") as! String)
+            UserMBTI_Image.image = UIImage(named: UserMBTI! + "_Image.png")
+        }
+        else {
+            UserMBTI_Image.image = nil
+        }
+        
+        
+        
     }
 
 

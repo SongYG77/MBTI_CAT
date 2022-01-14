@@ -9,15 +9,28 @@ import UIKit
 
 class SimpleTestViewController: UIViewController {
 
-    
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
     }
     
 
+    @IBAction func onBtnTest(_ sender: UIButton) {
+        
+        UserDefaults.standard.set("ISFJ", forKey: "UserMBTI")
+        print(UserDefaults.standard.value(forKey: "UserMBTI") as! String)
+        
+    }
+    
+    @IBAction func onBtnTestReset(_ sender: UIButton) {
+        
+        UserDefaults.standard.removeObject(forKey: "UserMBTI")
+        print(UserDefaults.standard.value(forKey: "UserMBTI") as? String)
+    }
+    
     
     
 
