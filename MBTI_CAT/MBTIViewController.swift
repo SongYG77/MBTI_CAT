@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MyPageViewController: UIViewController {
+class MBTIViewController: UIViewController {
 
     
     
