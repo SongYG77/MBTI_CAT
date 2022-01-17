@@ -54,5 +54,11 @@ class SimpleTestViewController: UIViewController {
     }
     
     
-
+    @IBAction func onBtnStart(_ sender: UIButton) {
+        
+        let NextVC = self.storyboard?.instantiateViewController(withIdentifier: "FirstTestVC") as! FirstTestViewController
+        
+        self.navigationController?.pushViewController(NextVC, animated: true)
+    }
+    
 }
