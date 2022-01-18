@@ -7,4 +7,5 @@ target 'MBTI_CAT' do
 
   # Pods for MBTI_CAT
 
+  pod 'DLRadioButton', '~> 1.4'
 end
