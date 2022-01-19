@@ -34,7 +34,7 @@ class MainViewController: UIViewController {
     
     
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
-    var UserMBTI : String? = nil
+    var UserInfo : String? = nil
     
     
     
@@ -64,9 +64,9 @@ class MainViewController: UIViewController {
         
         
         
-        if UserDefaults.standard.value(forKey: "UserMBTI") != nil {
-            UserMBTI = (UserDefaults.standard.value(forKey: "UserMBTI") as! String)
-            UserMBTI_Image.image = UIImage(named: UserMBTI! + "_Image.png")
+        if UserDefaults.standard.value(forKey: "UserRes") != nil {
+            UserInfo = (UserDefaults.standard.value(forKey: "UserRes") as! String)
+            UserMBTI_Image.image = UIImage(named: UserInfo! + "_Image.png")
         }
         else {
             UserMBTI_Image.image = nil
@@ -79,20 +79,20 @@ class MainViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         
-        if UserDefaults.standard.value(forKey: "UserMBTI") != nil {
+        if UserDefaults.standard.value(forKey: "UserRes") != nil {
             
             
-            UserMBTI = (UserDefaults.standard.value(forKey: "UserMBTI") as! String)
-            UserMBTI_Image.image = UIImage(named: UserMBTI! + "_Image.png")
+            UserInfo = (UserDefaults.standard.value(forKey: "UserRes") as! String)
+            UserMBTI_Image.image = UIImage(named: UserInfo! + "_Image.png")
             UserMBTI_Image.isHidden = false
             ResetBtn.isHidden = false
             
-            E_I_ProgressView.progress = Float(UserDefaults.standard.value(forKey: "EI_Data") as? String ?? "0")! / 9.0
-            N_S_ProgressView.progress = Float(UserDefaults.standard.value(forKey: "NS_Data") as? String ?? "0")! / 9.0
-            F_T_ProgressView.progress = Float(UserDefaults.standard.value(forKey: "FT_Data") as? String ?? "0")! / 9.0
-            P_J_ProgressView.progress = Float(UserDefaults.standard.value(forKey: "PJ_Data") as? String ?? "0")! / 9.0
+            E_I_ProgressView.progress = Float(UserDefaults.standard.value(forKey: "EI_Data") as? String ?? "0")!
+            N_S_ProgressView.progress = Float(UserDefaults.standard.value(forKey: "NS_Data") as? String ?? "0")!
+            F_T_ProgressView.progress = Float(UserDefaults.standard.value(forKey: "FT_Data") as? String ?? "0")!
+            P_J_ProgressView.progress = Float(UserDefaults.standard.value(forKey: "PJ_Data") as? String ?? "0")!
             
-            if Float(UserDefaults.standard.value(forKey: "EI_Data") as? String ?? "0")! > 4.5 {
+            if Float(UserDefaults.standard.value(forKey: "EI_Data") as? String ?? "0")! > 0.5 {
                 
                 E_I_ProgressView.progressTintColor? = UIColor(displayP3Red: 201/255, green: 140/255, blue: 255/255, alpha: 1)
                 E_I_ProgressView.trackTintColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
@@ -109,7 +109,7 @@ class MainViewController: UIViewController {
                 
             }
             
-            if Float(UserDefaults.standard.value(forKey: "NS_Data") as? String ?? "0")! > 4.5 {
+            if Float(UserDefaults.standard.value(forKey: "NS_Data") as? String ?? "0")! > 0.5 {
                 
                 N_S_ProgressView.progressTintColor? = UIColor(displayP3Red: 138/255, green: 255/255, blue: 229/255, alpha: 1)
                 N_S_ProgressView.trackTintColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
@@ -126,7 +126,7 @@ class MainViewController: UIViewController {
                 
             }
             
-            if Float(UserDefaults.standard.value(forKey: "FT_Data") as? String ?? "0")! > 4.5 {
+            if Float(UserDefaults.standard.value(forKey: "FT_Data") as? String ?? "0")! > 0.5 {
                 
                 F_T_ProgressView.progressTintColor? = UIColor(displayP3Red: 255/255, green: 193/255, blue: 100/255, alpha: 1)
                 F_T_ProgressView.trackTintColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
@@ -143,7 +143,7 @@ class MainViewController: UIViewController {
                 
             }
             
-            if Float(UserDefaults.standard.value(forKey: "PJ_Data") as? String ?? "0")! > 4.5 {
+            if Float(UserDefaults.standard.value(forKey: "PJ_Data") as? String ?? "0")! > 0.5 {
                 
                 P_J_ProgressView.progressTintColor? = UIColor(displayP3Red: 122/255, green: 255/255, blue: 119/255, alpha: 1)
                 P_J_ProgressView.trackTintColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
@@ -205,7 +205,7 @@ class MainViewController: UIViewController {
         let resetAltyes = UIAlertAction(title: "네", style: .destructive){
             (_) in
             
-            UserDefaults.standard.removeObject(forKey: "UserMBTI")
+            UserDefaults.standard.removeObject(forKey: "UserRes")
             UserDefaults.standard.removeObject(forKey: "EI_Data")
             UserDefaults.standard.removeObject(forKey: "NS_Data")
             UserDefaults.standard.removeObject(forKey: "FT_Data")

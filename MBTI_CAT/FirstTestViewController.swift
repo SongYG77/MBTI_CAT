@@ -20,53 +20,131 @@ class FirstTestViewController: UIViewController {
     @IBOutlet weak var weakBButton: DLRadioButton!
     @IBOutlet weak var BButton: DLRadioButton!
     @IBOutlet weak var ProgressTestLabel: UILabel!
+    @IBOutlet weak var NextButton: UIButton!
     
     
     let testTextA : Array<String> = [
-        "A. 테스트1"
+        "A. E",
+        "A. E",
+        "A. E",
+        "A. E",
+        "A. N",
+        "A. N",
+        "A. N",
+        "A. N",
+        "A. F",
+        "A. F",
+        "A. F",
+        "A. F",
+        "A. P",
+        "A. P",
+        "A. P",
+        "A. P"
     ]
     let testTextB : Array<String> = [
-        "B. 테스트1"
+        "B. I",
+        "B. I",
+        "B. I",
+        "B. I",
+        "B. S",
+        "B. S",
+        "B. S",
+        "B. S",
+        "B. T",
+        "B. T",
+        "B. T",
+        "B. T",
+        "B. J",
+        "B. J",
+        "B. J",
+        "B. J",
     ]
     
     var countresult : Int = 0
-    var flagResult : Array<Int> = [-1,-1]
+    var flagResult : Array<Float> = []
+    
     var selectresultValue : Float = -1
+    
     var progresstestcount = 0
     
+    var all_test_count : Int = 0
     
     override func viewDidLoad() {
         
+        countresult = 0
+        selectresultValue = -1
+        progresstestcount = 0
         
-        Test1A_TV.text = testTextA[progresstestcount]
-        Test1B_TV.text = testTextB[progresstestcount]
-        ProgressTestLabel.text = String(progresstestcount + 1) + "/36"
+        all_test_count = testTextA.count
+        
+       
         
         super.viewDidLoad()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        
+       
+        
+        if progresstestcount + 1 == all_test_count {
+            // print("프로그래스" ,progresstestcount)
+            self.NextButton.setTitle("결과 확인", for: .normal)
+        }
+        AButton.isSelected = false
+        BButton.isSelected = false
+        weakAButton.isSelected = false
+        weakBButton.isSelected = false
+        
+        
+        Test1A_TV.text = testTextA[progresstestcount]
+        Test1B_TV.text = testTextB[progresstestcount]
+        ProgressTestLabel.text = String(progresstestcount + 1) + "/" + String(all_test_count)
+        
+    }
 
     
     
     @IBAction func onBtnNext(_ sender: UIButton) {
         
-        countresult = 9
+        
         
         guard selectresultValue != -1 else {
             print("다 입력되지 않음.")
             return
         }
         
-        for i in flagResult{
-            countresult -= i
+        print(selectresultValue)
+        
+        flagResult.append( selectresultValue )
+        
+        
+        
+        selectresultValue = -1
+        progresstestcount += 1
+        
+        if progresstestcount == all_test_count {
+            
+            let ResultVC = self.storyboard?.instantiateViewController(identifier: "TestResultVC") as! TestResultViewController
+            
+            ResultVC.TestResultARR = flagResult
+            
+            self.navigationController?.pushViewController(ResultVC, animated: true)
+            
+            
+            
         }
-        print(countresult)
+        else {
+            
+            viewWillAppear(true)
+            
+        }
         
     }
     
     @IBAction func onBtnA(_ sender: DLRadioButton) {
         print("A")
         selectresultValue = 1
+        
     }
     
    
