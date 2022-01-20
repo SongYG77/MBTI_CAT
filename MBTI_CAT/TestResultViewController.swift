@@ -18,9 +18,7 @@ class TestResultViewController: UIViewController {
     var SumResultArr : Array<Float> = [0,0,0,0]
     var User_Result : String = ""
     
-    struct Cat_Data {
-        
-    }
+    
     
     
     
