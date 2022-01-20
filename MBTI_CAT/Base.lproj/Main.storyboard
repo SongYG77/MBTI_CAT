@@ -564,7 +564,7 @@
                                     <action selector="onBtnStoreResult:" destination="S1c-Ia-f9r" eventType="touchUpInside" id="eSo-89-dzw"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MBTI" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Amk-Uh-VEM">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="고양이" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Amk-Uh-VEM">
                                 <rect key="frame" x="162" y="198" width="96" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
@@ -576,7 +576,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="MBTIResultLabel" destination="Amk-Uh-VEM" id="QN3-fY-Jh0"/>
+                        <outlet property="ResultLabel" destination="Amk-Uh-VEM" id="XyO-jp-b1k"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b29-PY-bPX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

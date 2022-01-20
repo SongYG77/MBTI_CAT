@@ -11,6 +11,7 @@ class TestResultViewController: UIViewController {
 
     @IBOutlet weak var ResultLabel: UILabel!
     
+    
     var TestResultARR : Array<Float> = []
     var count : Int = 0
     var splitnum : Int = 0
