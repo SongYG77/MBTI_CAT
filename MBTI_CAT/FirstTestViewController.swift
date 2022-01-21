@@ -10,55 +10,34 @@ import DLRadioButton
 
 class FirstTestViewController: UIViewController {
     
-    @IBOutlet weak var Test1A_TV: UILabel!
-    @IBOutlet weak var Test1B_TV: UILabel!
     
     @IBOutlet weak var AButton: DLRadioButton!
     
     @IBOutlet weak var weakAButton: DLRadioButton!
     
+    @IBOutlet weak var MiddleButton: DLRadioButton!
     @IBOutlet weak var weakBButton: DLRadioButton!
     @IBOutlet weak var BButton: DLRadioButton!
     @IBOutlet weak var ProgressTestLabel: UILabel!
     @IBOutlet weak var NextButton: UIButton!
+    @IBOutlet weak var TestText_TV: UITextView!
     
     
-    let testTextA : Array<String> = [
-        "A. E",
-        "A. E",
-        "A. E",
-        "A. E",
-        "A. N",
-        "A. N",
-        "A. N",
-        "A. N",
-        "A. F",
-        "A. F",
-        "A. F",
-        "A. F",
-        "A. P",
-        "A. P",
-        "A. P",
-        "A. P"
+    let testText : Array<String> = [
+        "\n 1번 \n\n 나는 평소에 여기저기 돌아다니는 것을 좋아한다.",
+        "\n 2번 \n\n 여행, 산책, 운동을 즐겨하는 편이다.",
+        "\n 3번 \n\n 나는 처음 보는 사람과 쉽게 친해지는 편이다.",
+        "\n 4번 \n\n 나는 다른 사람에게 정을 많이 준다.",
+        "\n 5번 \n\n 나는 새로운 환경에 쉽게 적응하고 편해진다.",
+        "\n 6번 \n\n 처음 접하는 것에 대해 거부감이 없다.",
+        "\n 7번 \n\n 나는 혼자 놀아도 재미있게 놀 수 있다.",
+        "\n 8번 \n\n 나는 주변에서 머리가 좋다는 말을 종종 듣는다.",
+        "\n 9번 \n\n 나는 규칙적인 식단, 운동 등 자기관리가 철저하다.",
+        "\n 10번 \n\n 나는 주변에서 말이 많다는 말을 자주 듣는다.",
+        "\n 11번 \n\n 나는 다양한 것에 궁금증을 종종 느낀다.",
+        "\n 12번 \n\n 나는 종종 다른사람들에게 장난을 친다.",
     ]
-    let testTextB : Array<String> = [
-        "B. I",
-        "B. I",
-        "B. I",
-        "B. I",
-        "B. S",
-        "B. S",
-        "B. S",
-        "B. S",
-        "B. T",
-        "B. T",
-        "B. T",
-        "B. T",
-        "B. J",
-        "B. J",
-        "B. J",
-        "B. J",
-    ]
+    
     
     var countresult : Int = 0
     var flagResult : Array<Float> = []
@@ -69,13 +48,14 @@ class FirstTestViewController: UIViewController {
     
     var all_test_count : Int = 0
     
+    
     override func viewDidLoad() {
         
         countresult = 0
         selectresultValue = -1
         progresstestcount = 0
         
-        all_test_count = testTextA.count
+        all_test_count = testText.count
         
        
         
@@ -94,10 +74,10 @@ class FirstTestViewController: UIViewController {
         BButton.isSelected = false
         weakAButton.isSelected = false
         weakBButton.isSelected = false
+        MiddleButton.isSelected = false
         
         
-        Test1A_TV.text = testTextA[progresstestcount]
-        Test1B_TV.text = testTextB[progresstestcount]
+        TestText_TV.text = testText[progresstestcount]
         ProgressTestLabel.text = String(progresstestcount + 1) + "/" + String(all_test_count)
         
     }
@@ -143,7 +123,7 @@ class FirstTestViewController: UIViewController {
     
     @IBAction func onBtnA(_ sender: DLRadioButton) {
         print("A")
-        selectresultValue = 1
+        selectresultValue = 4
         
     }
     
@@ -152,13 +132,20 @@ class FirstTestViewController: UIViewController {
     @IBAction func onBtnWeakA(_ sender: DLRadioButton) {
         
         print("weakA")
-        selectresultValue = 0.7
+        selectresultValue = 3
+    }
+    
+    @IBAction func onBtnM(_ sender: DLRadioButton) {
+        
+        print("Middle")
+        selectresultValue = 2
+        
     }
     
     @IBAction func onBtnWeakB(_ sender: DLRadioButton) {
         
         print("weakB")
-        selectresultValue = 0.3
+        selectresultValue = 1
     }
     
     
@@ -170,6 +157,7 @@ class FirstTestViewController: UIViewController {
     }
     
     
+   
     
     
     

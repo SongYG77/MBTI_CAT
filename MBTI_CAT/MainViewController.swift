@@ -79,7 +79,7 @@ class MainViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         
-        if UserDefaults.standard.value(forKey: "UserRes") != nil {
+        if UserDefaults.standard.value(forKey: "CatRanking1") != nil {
             
             
             UserInfo = (UserDefaults.standard.value(forKey: "UserRes") as! String)
@@ -87,78 +87,33 @@ class MainViewController: UIViewController {
             UserMBTI_Image.isHidden = false
             ResetBtn.isHidden = false
             
-            E_I_ProgressView.progress = Float(UserDefaults.standard.value(forKey: "EI_Data") as? String ?? "0")!
-            N_S_ProgressView.progress = Float(UserDefaults.standard.value(forKey: "NS_Data") as? String ?? "0")!
-            F_T_ProgressView.progress = Float(UserDefaults.standard.value(forKey: "FT_Data") as? String ?? "0")!
-            P_J_ProgressView.progress = Float(UserDefaults.standard.value(forKey: "PJ_Data") as? String ?? "0")!
+            E_I_ProgressView.progress = Float(UserDefaults.standard.value(forKey: "Ranking_Percent1") as? String ?? "0")!
+            N_S_ProgressView.progress = Float(UserDefaults.standard.value(forKey: "Ranking_Percent2") as? String ?? "0")!
+            F_T_ProgressView.progress = Float(UserDefaults.standard.value(forKey: "Ranking_Percent3") as? String ?? "0")!
+            P_J_ProgressView.progress = Float(UserDefaults.standard.value(forKey: "Ranking_Percent4") as? String ?? "0")!
             
-            if Float(UserDefaults.standard.value(forKey: "EI_Data") as? String ?? "0")! > 0.5 {
-                
-                E_I_ProgressView.progressTintColor? = UIColor(displayP3Red: 201/255, green: 140/255, blue: 255/255, alpha: 1)
-                E_I_ProgressView.trackTintColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
-                E_Label.textColor? = UIColor(displayP3Red: 201/255, green: 140/255, blue: 255/255, alpha: 1)
-                I_Label.textColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
-                
-            }
-            else {
-                
-                E_I_ProgressView.progressTintColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
-                E_I_ProgressView.trackTintColor? = UIColor(displayP3Red: 201/255, green: 140/255, blue: 255/255, alpha: 1)
-                E_Label.textColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
-                I_Label.textColor? = UIColor(displayP3Red: 201/255, green: 140/255, blue: 255/255, alpha: 1)
-                
-            }
+       
+            E_I_ProgressView.progressTintColor? = UIColor(displayP3Red: 201/255, green: 140/255, blue: 255/255, alpha: 1)
+            E_I_ProgressView.trackTintColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
+            E_Label.textColor? = UIColor(displayP3Red: 201/255, green: 140/255, blue: 255/255, alpha: 1)
+            I_Label.textColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
+ 
+            N_S_ProgressView.progressTintColor? = UIColor(displayP3Red: 138/255, green: 255/255, blue: 229/255, alpha: 1)
+            N_S_ProgressView.trackTintColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
+            N_Label.textColor? = UIColor(displayP3Red: 138/255, green: 255/255, blue: 229/255, alpha: 1)
+            S_Label.textColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
             
-            if Float(UserDefaults.standard.value(forKey: "NS_Data") as? String ?? "0")! > 0.5 {
-                
-                N_S_ProgressView.progressTintColor? = UIColor(displayP3Red: 138/255, green: 255/255, blue: 229/255, alpha: 1)
-                N_S_ProgressView.trackTintColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
-                N_Label.textColor? = UIColor(displayP3Red: 138/255, green: 255/255, blue: 229/255, alpha: 1)
-                S_Label.textColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
-                
-            }
-            else {
-                
-                N_S_ProgressView.progressTintColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
-                N_S_ProgressView.trackTintColor? = UIColor(displayP3Red: 138/255, green: 255/255, blue: 229/255, alpha: 1)
-                N_Label.textColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
-                S_Label.textColor? = UIColor(displayP3Red: 138/255, green: 255/255, blue: 229/255, alpha: 1)
-                
-            }
+            F_T_ProgressView.progressTintColor? = UIColor(displayP3Red: 255/255, green: 193/255, blue: 100/255, alpha: 1)
+            F_T_ProgressView.trackTintColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
+            F_Label.textColor? = UIColor(displayP3Red: 255/255, green: 193/255, blue: 100/255, alpha: 1)
+            T_Label.textColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
+ 
+            P_J_ProgressView.progressTintColor? = UIColor(displayP3Red: 122/255, green: 255/255, blue: 119/255, alpha: 1)
+            P_J_ProgressView.trackTintColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
+            P_Label.textColor? = UIColor(displayP3Red: 122/255, green: 255/255, blue: 119/255, alpha: 1)
+            J_Label.textColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
+ 
             
-            if Float(UserDefaults.standard.value(forKey: "FT_Data") as? String ?? "0")! > 0.5 {
-                
-                F_T_ProgressView.progressTintColor? = UIColor(displayP3Red: 255/255, green: 193/255, blue: 100/255, alpha: 1)
-                F_T_ProgressView.trackTintColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
-                F_Label.textColor? = UIColor(displayP3Red: 255/255, green: 193/255, blue: 100/255, alpha: 1)
-                T_Label.textColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
-                
-            }
-            else {
-                
-                F_T_ProgressView.progressTintColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
-                F_T_ProgressView.trackTintColor? = UIColor(displayP3Red: 255/255, green: 193/255, blue: 100/255, alpha: 1)
-                F_Label.textColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
-                T_Label.textColor? = UIColor(displayP3Red: 255/255, green: 193/255, blue: 100/255, alpha: 1)
-                
-            }
-            
-            if Float(UserDefaults.standard.value(forKey: "PJ_Data") as? String ?? "0")! > 0.5 {
-                
-                P_J_ProgressView.progressTintColor? = UIColor(displayP3Red: 122/255, green: 255/255, blue: 119/255, alpha: 1)
-                P_J_ProgressView.trackTintColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
-                P_Label.textColor? = UIColor(displayP3Red: 122/255, green: 255/255, blue: 119/255, alpha: 1)
-                J_Label.textColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
-                
-            }
-            else {
-                
-                P_J_ProgressView.progressTintColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
-                P_J_ProgressView.trackTintColor? = UIColor(displayP3Red: 122/255, green: 255/255, blue: 119/255, alpha: 1)
-                P_Label.textColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
-                J_Label.textColor? = UIColor(displayP3Red: 122/255, green: 255/255, blue: 119/255, alpha: 1)
-                
-            }
         }
         else {
             
