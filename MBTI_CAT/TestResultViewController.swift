@@ -91,10 +91,10 @@ class TestResultViewController: UIViewController {
         UserDefaults.standard.setValue(MyCatRanking[2], forKey: "CatRanking3")
         UserDefaults.standard.setValue(MyCatRanking[3], forKey: "CatRanking4")
         
-        UserDefaults.standard.setValue(String(percentRanking[0]), forKey: "Ranking_Percent1")
-        UserDefaults.standard.setValue(String(percentRanking[1]), forKey: "Ranking_Percent2")
-        UserDefaults.standard.setValue(String(percentRanking[2]), forKey: "Ranking_Percent3")
-        UserDefaults.standard.setValue(String(percentRanking[3]), forKey: "Ranking_Percent4")
+        UserDefaults.standard.setValue(String(format: "%.2f", percentRanking[0]), forKey: "Ranking_Percent1")
+        UserDefaults.standard.setValue(String(format: "%.2f",percentRanking[1]), forKey: "Ranking_Percent2")
+        UserDefaults.standard.setValue(String(format: "%.2f",percentRanking[2]), forKey: "Ranking_Percent3")
+        UserDefaults.standard.setValue(String(format: "%.2f",percentRanking[3]), forKey: "Ranking_Percent4")
         
         
         

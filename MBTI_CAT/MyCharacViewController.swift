@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MBTIViewController: UIViewController {
+class MyCharacController: UIViewController {
 
     
     

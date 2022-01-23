@@ -15,19 +15,27 @@ class MainViewController: UIViewController {
     
     @IBOutlet weak var UserMBTI_Image: UIImageView!
     
-    @IBOutlet weak var E_I_ProgressView: UIProgressView!
-    @IBOutlet weak var N_S_ProgressView: UIProgressView!
-    @IBOutlet var F_T_ProgressView: UIProgressView!
-    @IBOutlet weak var P_J_ProgressView: UIProgressView!
     
-    @IBOutlet weak var E_Label: UILabel!
-    @IBOutlet weak var I_Label: UILabel!
-    @IBOutlet weak var N_Label: UILabel!
-    @IBOutlet weak var S_Label: UILabel!
-    @IBOutlet weak var T_Label: UILabel!
-    @IBOutlet weak var F_Label: UILabel!
-    @IBOutlet weak var J_Label: UILabel!
-    @IBOutlet weak var P_Label: UILabel!
+    @IBOutlet weak var Rank1PercentProgress: UIProgressView!
+    @IBOutlet weak var Rank1CatLabel: UILabel!
+    
+    @IBOutlet weak var Rank2PercentProgress: UIProgressView!
+    @IBOutlet weak var Rank2CatLabel: UILabel!
+    
+    @IBOutlet weak var Rank3PercentProgress: UIProgressView!
+    @IBOutlet weak var Rank3CatLabel: UILabel!
+    
+    @IBOutlet weak var Rank4PercentProgress: UIProgressView!
+    @IBOutlet weak var Rank4CatLabel: UILabel!
+    
+    @IBOutlet weak var Rank1View: UIView!
+    
+    @IBOutlet weak var Rank2View: UIView!
+    @IBOutlet weak var Rank3View: UIView!
+    @IBOutlet weak var Rank4View: UIView!
+    
+    
+    
     @IBOutlet weak var ResetBtn: UIButton!
     
     
@@ -46,22 +54,34 @@ class MainViewController: UIViewController {
         
         appDelegate.mainVC = self
 
-        E_I_ProgressView.transform = E_I_ProgressView.transform.scaledBy(x: 1, y: 3)
-        E_I_ProgressView.layer.cornerRadius = 10
-        E_I_ProgressView.clipsToBounds = true
+        Rank1PercentProgress.transform = Rank1PercentProgress.transform.scaledBy(x: 1, y: 3)
+        Rank1PercentProgress.layer.cornerRadius = 10
+        Rank1PercentProgress.clipsToBounds = true
         
-        N_S_ProgressView.transform = N_S_ProgressView.transform.scaledBy(x: 1, y: 3)
-        N_S_ProgressView.layer.cornerRadius = 10
-        N_S_ProgressView.clipsToBounds = true
+        Rank2PercentProgress.transform = Rank2PercentProgress.transform.scaledBy(x: 1, y: 3)
+        Rank2PercentProgress.layer.cornerRadius = 10
+        Rank2PercentProgress.clipsToBounds = true
         
-        F_T_ProgressView.transform = F_T_ProgressView.transform.scaledBy(x: 1, y: 3)
-        F_T_ProgressView.layer.cornerRadius = 10
-        F_T_ProgressView.clipsToBounds = true
+        Rank3PercentProgress.transform = Rank3PercentProgress.transform.scaledBy(x: 1, y: 3)
+        Rank3PercentProgress.layer.cornerRadius = 10
+        Rank3PercentProgress.clipsToBounds = true
         
-        P_J_ProgressView.transform = P_J_ProgressView.transform.scaledBy(x: 1, y: 3)
-        P_J_ProgressView.layer.cornerRadius = 10
-        P_J_ProgressView.clipsToBounds = true
+        Rank4PercentProgress.transform = Rank4PercentProgress.transform.scaledBy(x: 1, y: 3)
+        Rank4PercentProgress.layer.cornerRadius = 10
+        Rank4PercentProgress.clipsToBounds = true
         
+        Rank1View.layer.borderWidth = 2
+        Rank1View.layer.borderColor = UIColor(displayP3Red: 249/255, green: 212/255, blue: 153/255, alpha: 1).cgColor
+        Rank1View.layer.cornerRadius = 15
+        Rank2View.layer.borderWidth = 2
+        Rank2View.layer.borderColor = UIColor(displayP3Red: 249/255, green: 212/255, blue: 153/255, alpha: 1).cgColor
+        Rank2View.layer.cornerRadius = 15
+        Rank3View.layer.borderWidth = 2
+        Rank3View.layer.borderColor = UIColor(displayP3Red: 249/255, green: 212/255, blue: 153/255, alpha: 1).cgColor
+        Rank3View.layer.cornerRadius = 15
+        Rank4View.layer.borderWidth = 2
+        Rank4View.layer.borderColor = UIColor(displayP3Red: 249/255, green: 212/255, blue: 153/255, alpha: 1).cgColor
+        Rank4View.layer.cornerRadius = 15
         
         
         if UserDefaults.standard.value(forKey: "UserRes") != nil {
@@ -82,36 +102,36 @@ class MainViewController: UIViewController {
         if UserDefaults.standard.value(forKey: "CatRanking1") != nil {
             
             
-            UserInfo = (UserDefaults.standard.value(forKey: "UserRes") as! String)
+            UserInfo = (UserDefaults.standard.value(forKey: "CatRanking1") as! String)
             UserMBTI_Image.image = UIImage(named: UserInfo! + "_Image.png")
             UserMBTI_Image.isHidden = false
             ResetBtn.isHidden = false
             
-            E_I_ProgressView.progress = Float(UserDefaults.standard.value(forKey: "Ranking_Percent1") as? String ?? "0")!
-            N_S_ProgressView.progress = Float(UserDefaults.standard.value(forKey: "Ranking_Percent2") as? String ?? "0")!
-            F_T_ProgressView.progress = Float(UserDefaults.standard.value(forKey: "Ranking_Percent3") as? String ?? "0")!
-            P_J_ProgressView.progress = Float(UserDefaults.standard.value(forKey: "Ranking_Percent4") as? String ?? "0")!
+            Rank1CatLabel.text = "1. " + (UserDefaults.standard.value(forKey: "CatRanking1") as! String)
+            Rank2CatLabel.text = "2. " + (UserDefaults.standard.value(forKey: "CatRanking2") as! String)
+            Rank3CatLabel.text = "3. " + (UserDefaults.standard.value(forKey: "CatRanking3") as! String)
+            Rank4CatLabel.text = "4. " + (UserDefaults.standard.value(forKey: "CatRanking4") as! String)
+            
+            
+            Rank1PercentProgress.progress = Float(UserDefaults.standard.value(forKey: "Ranking_Percent1") as? String ?? "0")!
+            Rank2PercentProgress.progress = Float(UserDefaults.standard.value(forKey: "Ranking_Percent2") as? String ?? "0")!
+            Rank3PercentProgress.progress = Float(UserDefaults.standard.value(forKey: "Ranking_Percent3") as? String ?? "0")!
+            Rank4PercentProgress.progress = Float(UserDefaults.standard.value(forKey: "Ranking_Percent4") as? String ?? "0")!
+            
             
        
-            E_I_ProgressView.progressTintColor? = UIColor(displayP3Red: 201/255, green: 140/255, blue: 255/255, alpha: 1)
-            E_I_ProgressView.trackTintColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
-            E_Label.textColor? = UIColor(displayP3Red: 201/255, green: 140/255, blue: 255/255, alpha: 1)
-            I_Label.textColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
- 
-            N_S_ProgressView.progressTintColor? = UIColor(displayP3Red: 138/255, green: 255/255, blue: 229/255, alpha: 1)
-            N_S_ProgressView.trackTintColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
-            N_Label.textColor? = UIColor(displayP3Red: 138/255, green: 255/255, blue: 229/255, alpha: 1)
-            S_Label.textColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
+            Rank1PercentProgress.progressTintColor? = UIColor(displayP3Red: 100/255, green: 100/255, blue: 255/255, alpha: 1)
+            Rank1PercentProgress.trackTintColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
             
-            F_T_ProgressView.progressTintColor? = UIColor(displayP3Red: 255/255, green: 193/255, blue: 100/255, alpha: 1)
-            F_T_ProgressView.trackTintColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
-            F_Label.textColor? = UIColor(displayP3Red: 255/255, green: 193/255, blue: 100/255, alpha: 1)
-            T_Label.textColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
- 
-            P_J_ProgressView.progressTintColor? = UIColor(displayP3Red: 122/255, green: 255/255, blue: 119/255, alpha: 1)
-            P_J_ProgressView.trackTintColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
-            P_Label.textColor? = UIColor(displayP3Red: 122/255, green: 255/255, blue: 119/255, alpha: 1)
-            J_Label.textColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
+            Rank2PercentProgress.progressTintColor? = UIColor(displayP3Red: 190/255, green: 190/255, blue: 255/255, alpha: 1)
+            Rank2PercentProgress.trackTintColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
+            
+            Rank3PercentProgress.progressTintColor? = UIColor(displayP3Red: 190/255, green: 190/255, blue: 255/255, alpha: 1)
+            Rank3PercentProgress.trackTintColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
+            
+            Rank4PercentProgress.progressTintColor? = UIColor(displayP3Red: 190/255, green: 190/255, blue: 255/255, alpha: 1)
+            Rank4PercentProgress.trackTintColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
+            
  
             
         }
@@ -121,30 +141,11 @@ class MainViewController: UIViewController {
             UserMBTI_Image.isHidden = true
             ResetBtn.isHidden = true
             
-            E_I_ProgressView.progress = 0.5
-            N_S_ProgressView.progress = 0.5
-            F_T_ProgressView.progress = 0.5
-            P_J_ProgressView.progress = 0.5
+            Rank1PercentProgress.progress = 0.5
             
-            E_I_ProgressView.progressTintColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
-            E_I_ProgressView.trackTintColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
-            E_Label.textColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
-            I_Label.textColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
+            Rank1PercentProgress.progressTintColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
+            Rank1PercentProgress.trackTintColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
             
-            N_S_ProgressView.progressTintColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
-            N_S_ProgressView.trackTintColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
-            N_Label.textColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
-            S_Label.textColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
-            
-            F_T_ProgressView.progressTintColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
-            F_T_ProgressView.trackTintColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
-            F_Label.textColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
-            T_Label.textColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
-            
-            P_J_ProgressView.progressTintColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
-            P_J_ProgressView.trackTintColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
-            P_Label.textColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
-            J_Label.textColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
             
         }
     }

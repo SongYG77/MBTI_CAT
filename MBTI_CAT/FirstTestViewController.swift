@@ -10,6 +10,7 @@ import DLRadioButton
 
 class FirstTestViewController: UIViewController {
     
+    @IBOutlet weak var TestText_View: UIView!
     
     @IBOutlet weak var AButton: DLRadioButton!
     
@@ -58,13 +59,20 @@ class FirstTestViewController: UIViewController {
         all_test_count = testText.count
         
        
+        TestText_View.layer.cornerRadius = 40
+        TestText_View.clipsToBounds = true
+        TestText_View.layer.borderWidth = 2
+        TestText_View.layer.borderColor = UIColor.black.cgColor
         
         super.viewDidLoad()
+        
+        
     }
+    
+    
     
     override func viewWillAppear(_ animated: Bool) {
         
-       
         
         if progresstestcount + 1 == all_test_count {
             // print("프로그래스" ,progresstestcount)
@@ -78,6 +86,8 @@ class FirstTestViewController: UIViewController {
         
         
         TestText_TV.text = testText[progresstestcount]
+        
+        
         ProgressTestLabel.text = String(progresstestcount + 1) + "/" + String(all_test_count)
         
     }
