@@ -31,13 +31,13 @@ class MainViewController: UIViewController {
     @IBOutlet weak var Rank4PercentProgress: UIProgressView!
     @IBOutlet weak var Rank4CatLabel: UILabel!
     
-    @IBOutlet weak var Rank1View: UIView!
     
+    @IBOutlet weak var Rank1View: UIView!
     @IBOutlet weak var Rank2View: UIView!
     @IBOutlet weak var Rank3View: UIView!
     @IBOutlet weak var Rank4View: UIView!
     
-    
+    @IBOutlet weak var InfoView: UIView!
     
     @IBOutlet weak var ResetBtn: UIButton!
     
@@ -47,8 +47,12 @@ class MainViewController: UIViewController {
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     var UserInfo : String? = nil
     
-    
-    
+    var time : Timer?
+    var maxtime : Float = 0.0
+    var Rank1Percent = Float( UserDefaults.standard.value(forKey: "Ranking_Percent1") as? String ?? "0" )!
+    var Rank2Percent = Float( UserDefaults.standard.value(forKey: "Ranking_Percent2") as? String ?? "0" )!
+    var Rank3Percent = Float( UserDefaults.standard.value(forKey: "Ranking_Percent3") as? String ?? "0" )!
+    var Rank4Percent = Float( UserDefaults.standard.value(forKey: "Ranking_Percent4") as? String ?? "0" )!
     
     
 
@@ -96,7 +100,7 @@ class MainViewController: UIViewController {
             UserMBTI_Image.isHidden = true
         }
         
-        
+        PrepareAnimation()
     }
     
     
@@ -116,10 +120,14 @@ class MainViewController: UIViewController {
             Rank4CatLabel.text = "4. " + (UserDefaults.standard.value(forKey: "CatRanking4") as! String)
             
             
-            Rank1PercentProgress.progress = Float(UserDefaults.standard.value(forKey: "Ranking_Percent1") as? String ?? "0")!
-            Rank2PercentProgress.progress = Float(UserDefaults.standard.value(forKey: "Ranking_Percent2") as? String ?? "0")!
-            Rank3PercentProgress.progress = Float(UserDefaults.standard.value(forKey: "Ranking_Percent3") as? String ?? "0")!
-            Rank4PercentProgress.progress = Float(UserDefaults.standard.value(forKey: "Ranking_Percent4") as? String ?? "0")!
+//            Rank1PercentProgress.progress = Float(UserDefaults.standard.value(forKey: "Ranking_Percent1") as? String ?? "0")!
+//            Rank2PercentProgress.progress = Float(UserDefaults.standard.value(forKey: "Ranking_Percent2") as? String ?? "0")!
+//            Rank3PercentProgress.progress = Float(UserDefaults.standard.value(forKey: "Ranking_Percent3") as? String ?? "0")!
+//            Rank4PercentProgress.progress = Float(UserDefaults.standard.value(forKey: "Ranking_Percent4") as? String ?? "0")!
+            Rank1PercentProgress.progress = 0
+            Rank2PercentProgress.progress = 0
+            Rank3PercentProgress.progress = 0
+            Rank4PercentProgress.progress = 0
             
             
        
@@ -135,7 +143,7 @@ class MainViewController: UIViewController {
             Rank4PercentProgress.progressTintColor? = UIColor(displayP3Red: 190/255, green: 190/255, blue: 255/255, alpha: 1)
             Rank4PercentProgress.trackTintColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
             
- 
+            ShowAnimation()
             
         }
         else {
@@ -185,7 +193,60 @@ class MainViewController: UIViewController {
         
     }
     
-
+    
+    //MARK: -애니메이션 파트
+    private func PrepareAnimation() {
+        
+        Rank1View.alpha = 0
+        Rank2View.alpha = 0
+        Rank3View.alpha = 0
+        Rank4View.alpha = 0
+        
+        InfoView.alpha = 0
+    }
+    
+    private func ShowAnimation() {
+        
+        
+        UIView.animate(withDuration: 0.8, animations: {
+            self.InfoView.alpha = 1
+        }, completion: {_ in
+            
+            //랭킹 애니메이션
+            UIView.animate(withDuration: 0.5, animations: {
+                self.Rank1View.alpha = 1
+                self.Rank2View.alpha = 1
+                self.Rank3View.alpha = 1
+                self.Rank4View.alpha = 1
+                
+            } , completion: { _ in
+                print("completion")
+                self.startAnimateProgress()
+                
+            })
+        })
+        
+        
+    }
+    
+    func startAnimateProgress() {
+        
+        maxtime = 0.0
+        time?.invalidate()
+        time = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(progressAnimate), userInfo: nil, repeats: true)
+               
+    }
+    @objc func progressAnimate() {
+        
+        maxtime += 0.01
+        Rank1PercentProgress.setProgress((Rank1Percent * maxtime), animated: true)
+        Rank2PercentProgress.setProgress((Rank2Percent * maxtime), animated: true)
+        Rank3PercentProgress.setProgress((Rank3Percent * maxtime), animated: true)
+        Rank4PercentProgress.setProgress((Rank4Percent * maxtime), animated: true)
+        
+        if maxtime >= 1.0 { time?.invalidate()}
+        
+    }
 
 }
 
