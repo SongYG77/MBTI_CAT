@@ -61,6 +61,11 @@ class MainViewController: UIViewController {
         
         appDelegate.mainVC = self
 
+        InfoView.layer.cornerRadius = 20
+        InfoView.layer.borderWidth = 2
+        InfoView.layer.borderColor = UIColor(displayP3Red: 249/255, green: 212/255, blue: 153/255, alpha: 1).cgColor
+        Rank2PercentProgress.clipsToBounds = true
+        
         Rank1PercentProgress.transform = Rank1PercentProgress.transform.scaledBy(x: 1, y: 3)
         Rank1PercentProgress.layer.cornerRadius = 10
         Rank1PercentProgress.clipsToBounds = true

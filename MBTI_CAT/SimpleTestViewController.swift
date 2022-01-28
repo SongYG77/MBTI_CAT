@@ -8,27 +8,25 @@
 import UIKit
 
 class SimpleTestViewController: UIViewController {
-
+    
+    
+    @IBOutlet weak var StartButton: UIButton!
+    @IBOutlet weak var TestNoticeTV: UITextView!
+    
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
-    }
-    
-
-    @IBAction func onBtnTest(_ sender: UIButton) {
+        StartButton.layer.borderWidth = 2
+        StartButton.layer.borderColor = UIColor(displayP3Red: 249/255, green: 212/255, blue: 153/255, alpha: 1).cgColor
+        StartButton.layer.cornerRadius = 10
+        StartButton.clipsToBounds = true
         
-        UserDefaults.standard.set("ISFJ", forKey: "UserRes")
-        UserDefaults.standard.set("0.4", forKey: "EI_Data")
-        UserDefaults.standard.set("0.1", forKey: "NS_Data")
-        UserDefaults.standard.set("0.8", forKey: "FT_Data")
-        UserDefaults.standard.set("0.2", forKey: "PJ_Data")
-        
-        print(UserDefaults.standard.value(forKey: "UserRes") as! String)
-        
-        
+        TestNoticeTV.layer.borderWidth = 2
+        TestNoticeTV.layer.borderColor = UIColor(displayP3Red: 249/255, green: 212/255, blue: 153/255, alpha: 1).cgColor
+        TestNoticeTV.layer.cornerRadius = 20
+        TestNoticeTV.clipsToBounds = true
         
     }
     

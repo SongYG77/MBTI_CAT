@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="나의 고양이" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xZa-YI-yob">
-                                <rect key="frame" x="104" y="84" width="206" height="60"/>
+                                <rect key="frame" x="104" y="76" width="206" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="WK9-7n-1sI"/>
                                 </constraints>
@@ -28,13 +28,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="나와 닮은 고양이" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4bv-IA-PW4">
-                                <rect key="frame" x="20" y="181" width="158" height="29"/>
+                                <rect key="frame" x="20" y="164" width="158" height="29"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hxW-er-cQC">
-                                <rect key="frame" x="355" y="170" width="39" height="30"/>
+                                <rect key="frame" x="355" y="155" width="39" height="30"/>
                                 <state key="normal" title="초기화">
                                     <color key="titleColor" red="0.5" green="0.13512577605904191" blue="0.15600175065470073" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
@@ -43,7 +43,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NLg-SV-5Rx">
-                                <rect key="frame" x="20" y="403" width="374" height="60"/>
+                                <rect key="frame" x="20" y="398" width="374" height="60"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="고양이종류" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FCy-lf-7Rj">
                                         <rect key="frame" x="8" y="11" width="135" height="38"/>
@@ -74,7 +74,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6h8-Sz-JZJ">
-                                <rect key="frame" x="20" y="471" width="374" height="60"/>
+                                <rect key="frame" x="20" y="466" width="374" height="60"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="고양이종류" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="imf-ds-oeg">
                                         <rect key="frame" x="8" y="11" width="135" height="38"/>
@@ -104,7 +104,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xnq-e4-ECb">
-                                <rect key="frame" x="20" y="539" width="374" height="60"/>
+                                <rect key="frame" x="20" y="534" width="374" height="60"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="고양이종류" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xbj-YQ-Oc7">
                                         <rect key="frame" x="8" y="11" width="135" height="38"/>
@@ -134,7 +134,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dVr-cs-1e3">
-                                <rect key="frame" x="20" y="607" width="374" height="60"/>
+                                <rect key="frame" x="20" y="602" width="374" height="60"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="고양이종류" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rc8-as-Xka">
                                         <rect key="frame" x="8" y="11" width="135" height="38"/>
@@ -166,13 +166,13 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="닮은 고양이 순위" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xu1-HQ-saf">
-                                <rect key="frame" x="20" y="372" width="158" height="29"/>
+                                <rect key="frame" x="20" y="359" width="158" height="29"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dgs-OX-Scg">
-                                <rect key="frame" x="20" y="218" width="374" height="146"/>
+                                <rect key="frame" x="20" y="203" width="374" height="146"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LQx-ki-FoM">
                                         <rect key="frame" x="8" y="8" width="147" height="130"/>
@@ -195,31 +195,29 @@
                             <constraint firstItem="dVr-cs-1e3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="99t-e9-wzS"/>
                             <constraint firstItem="Dgs-OX-Scg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9Sw-ns-dG0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6h8-Sz-JZJ" secondAttribute="trailing" constant="20" id="9bi-WA-TMZ"/>
-                            <constraint firstItem="NLg-SV-5Rx" firstAttribute="top" secondItem="Xu1-HQ-saf" secondAttribute="bottom" constant="2" id="A2g-ib-ZB6"/>
+                            <constraint firstItem="NLg-SV-5Rx" firstAttribute="top" secondItem="Xu1-HQ-saf" secondAttribute="bottom" constant="10" id="A2g-ib-ZB6"/>
                             <constraint firstItem="Dgs-OX-Scg" firstAttribute="top" secondItem="hxW-er-cQC" secondAttribute="bottom" constant="18" id="Cel-AN-PDL"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Xnq-e4-ECb" secondAttribute="trailing" constant="20" id="FvN-Xz-F1j"/>
-                            <constraint firstItem="xZa-YI-yob" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="GFA-ks-QU9"/>
+                            <constraint firstItem="xZa-YI-yob" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="GFA-ks-QU9"/>
                             <constraint firstItem="dVr-cs-1e3" firstAttribute="top" secondItem="Xnq-e4-ECb" secondAttribute="bottom" constant="8" id="Ghh-Ih-lJf"/>
                             <constraint firstItem="xZa-YI-yob" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="KrB-rZ-P7f"/>
                             <constraint firstItem="NLg-SV-5Rx" firstAttribute="height" secondItem="Dgs-OX-Scg" secondAttribute="height" multiplier="0.410959" id="LQ1-Ws-gpa"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hxW-er-cQC" secondAttribute="trailing" constant="20" id="REt-Yg-msS"/>
-                            <constraint firstItem="NLg-SV-5Rx" firstAttribute="top" secondItem="Xu1-HQ-saf" secondAttribute="bottom" constant="2" id="Skt-dJ-3dH"/>
                             <constraint firstItem="Xnq-e4-ECb" firstAttribute="height" secondItem="NLg-SV-5Rx" secondAttribute="height" id="Tgb-wv-j9W"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dVr-cs-1e3" secondAttribute="trailing" constant="20" id="UyC-uT-VJX"/>
                             <constraint firstItem="4bv-IA-PW4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ZlR-Ci-AHn"/>
-                            <constraint firstItem="NLg-SV-5Rx" firstAttribute="top" secondItem="Xu1-HQ-saf" secondAttribute="bottom" constant="2" id="cLq-dE-cC6"/>
                             <constraint firstItem="Dgs-OX-Scg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="f78-3G-oJp"/>
                             <constraint firstItem="NLg-SV-5Rx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="fLL-Pd-SgX"/>
                             <constraint firstItem="Xnq-e4-ECb" firstAttribute="top" secondItem="6h8-Sz-JZJ" secondAttribute="bottom" constant="8" id="fo5-Wq-P1f"/>
-                            <constraint firstItem="Dgs-OX-Scg" firstAttribute="top" secondItem="4bv-IA-PW4" secondAttribute="bottom" constant="8" symbolic="YES" id="iXq-NM-aQR"/>
+                            <constraint firstItem="Dgs-OX-Scg" firstAttribute="top" secondItem="4bv-IA-PW4" secondAttribute="bottom" constant="10" id="iXq-NM-aQR"/>
                             <constraint firstItem="6h8-Sz-JZJ" firstAttribute="height" secondItem="NLg-SV-5Rx" secondAttribute="height" id="jMc-j3-hfR"/>
                             <constraint firstItem="6h8-Sz-JZJ" firstAttribute="top" secondItem="NLg-SV-5Rx" secondAttribute="bottom" constant="8" id="jQQ-Tg-xss"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NLg-SV-5Rx" secondAttribute="trailing" constant="20" id="jWN-4B-mfp"/>
-                            <constraint firstItem="4bv-IA-PW4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="137" id="pUH-Ze-ed8"/>
+                            <constraint firstItem="4bv-IA-PW4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="120" id="pUH-Ze-ed8"/>
                             <constraint firstItem="Xnq-e4-ECb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="qPl-ii-DDf"/>
-                            <constraint firstItem="Xu1-HQ-saf" firstAttribute="top" secondItem="Dgs-OX-Scg" secondAttribute="bottom" constant="8" symbolic="YES" id="stQ-xI-Fcp"/>
-                            <constraint firstItem="Dgs-OX-Scg" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.903382" id="uZR-GN-P4i"/>
+                            <constraint firstItem="Xu1-HQ-saf" firstAttribute="top" secondItem="Dgs-OX-Scg" secondAttribute="bottom" constant="10" id="stQ-xI-Fcp"/>
                             <constraint firstItem="Xu1-HQ-saf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ufO-iI-HdJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Dgs-OX-Scg" secondAttribute="trailing" constant="20" id="wGV-gZ-296"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Dgs-OX-Scg" secondAttribute="trailing" constant="20" id="wyT-8g-ehj"/>
                         </constraints>
                     </view>
@@ -254,40 +252,66 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZa-bT-Pzq">
-                                <rect key="frame" x="102" y="304" width="221" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="나와 비슷한 고양이 찾기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ioz-Gh-aUF">
+                                <rect key="frame" x="63" y="114" width="288" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="개발자 테스트 버튼"/>
-                                <connections>
-                                    <action selector="onBtnTest:" destination="UQi-mb-20q" eventType="touchUpInside" id="6xq-fm-LOd"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t1T-fv-PxS">
-                                <rect key="frame" x="184" y="530" width="47" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                <state key="normal" title="시작"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rnb-uo-4ey">
+                                <rect key="frame" x="20" y="310" width="374" height="180"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="MUl-Jh-U4r"/>
+                                </constraints>
+                                <string key="text"> 나와 성격이 비슷한 고양이는 어떤 고양이 일지 찾아봅시다. 
+
+테스트는 총 12가지 문항입니다. 
+
+각 문항에 자신과 비슷한 정도를 선택해주세요.
+
+</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t1T-fv-PxS">
+                                <rect key="frame" x="172" y="545" width="70" height="41"/>
+                                <color key="backgroundColor" red="0.9107408588" green="0.92705676020000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="Pmg-Xb-u2s"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="onBtnStart:" destination="UQi-mb-20q" eventType="touchUpInside" id="8qG-os-m4H"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="나와 비슷한 고양이 찾기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ioz-Gh-aUF">
-                                <rect key="frame" x="68" y="117" width="289" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="IEX-Iz-Qb7"/>
                         <color key="backgroundColor" red="1" green="0.97138073979999995" blue="0.93401892009999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ioz-Gh-aUF" firstAttribute="leading" secondItem="IEX-Iz-Qb7" secondAttribute="leading" constant="63" id="8hM-T5-jz6"/>
+                            <constraint firstItem="rnb-uo-4ey" firstAttribute="top" secondItem="ioz-Gh-aUF" secondAttribute="bottom" constant="160" id="GPm-CM-Mn0"/>
+                            <constraint firstItem="IEX-Iz-Qb7" firstAttribute="trailing" secondItem="ioz-Gh-aUF" secondAttribute="trailing" constant="63" id="KAr-ji-WUd"/>
+                            <constraint firstItem="rnb-uo-4ey" firstAttribute="leading" secondItem="IEX-Iz-Qb7" secondAttribute="leading" constant="20" id="NJx-X9-1PU"/>
+                            <constraint firstItem="IEX-Iz-Qb7" firstAttribute="trailing" secondItem="rnb-uo-4ey" secondAttribute="trailing" constant="20" id="RPT-SA-iAP"/>
+                            <constraint firstItem="ioz-Gh-aUF" firstAttribute="top" secondItem="IEX-Iz-Qb7" secondAttribute="top" constant="70" id="XLk-rE-sng"/>
+                            <constraint firstItem="t1T-fv-PxS" firstAttribute="centerX" secondItem="gNT-oA-0qM" secondAttribute="centerX" id="fr1-Ic-lss"/>
+                            <constraint firstItem="t1T-fv-PxS" firstAttribute="top" secondItem="rnb-uo-4ey" secondAttribute="bottom" constant="55" id="gWa-ld-ajy"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="71i-Ci-35G"/>
+                    <connections>
+                        <outlet property="StartButton" destination="t1T-fv-PxS" id="f5n-D1-S8G"/>
+                        <outlet property="TestNoticeTV" destination="rnb-uo-4ey" id="UVk-rN-hGX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YFA-d2-E4U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-536" y="1546"/>
+            <point key="canvasLocation" x="-536.231884057971" y="1545.5357142857142"/>
         </scene>
         <!--First Test View Controller-->
         <scene sceneID="t94-Oa-3Yr">
@@ -307,7 +331,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KL4-7f-do1" customClass="DLRadioButton">
-                                <rect key="frame" x="10" y="514" width="80" height="80"/>
+                                <rect key="frame" x="10" y="507" width="80" height="80"/>
                                 <color key="backgroundColor" red="1" green="0.97138073979999995" blue="0.93401892009999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="C8n-2E-hQa"/>
@@ -340,7 +364,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j7Y-5I-hng" customClass="DLRadioButton">
-                                <rect key="frame" x="324" y="514" width="80" height="80"/>
+                                <rect key="frame" x="324" y="507" width="80" height="80"/>
                                 <color key="backgroundColor" red="1" green="0.97138073979999995" blue="0.93401892009999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="3md-bO-w3J"/>
@@ -369,7 +393,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MFO-Uv-p0A" customClass="DLRadioButton">
-                                <rect key="frame" x="104" y="524" width="60" height="60"/>
+                                <rect key="frame" x="104" y="517" width="60" height="60"/>
                                 <color key="backgroundColor" red="1" green="0.97138073979999995" blue="0.93401892009999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="LbO-OH-Rpz"/>
@@ -391,7 +415,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pM9-Rz-I5z" customClass="DLRadioButton">
-                                <rect key="frame" x="250" y="524" width="60" height="60"/>
+                                <rect key="frame" x="250" y="517" width="60" height="60"/>
                                 <color key="backgroundColor" red="1" green="0.97138073979999995" blue="0.93401892009999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="b42-tg-NrR"/>
@@ -413,7 +437,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vfv-8K-cug" customClass="DLRadioButton">
-                                <rect key="frame" x="177" y="524" width="60" height="60"/>
+                                <rect key="frame" x="177" y="517" width="60" height="60"/>
                                 <color key="backgroundColor" red="1" green="0.97138073979999995" blue="0.93401892009999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="8P5-W0-T6e"/>
@@ -448,20 +472,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="테스트 진행도" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2tQ-SI-XCC">
-                                <rect key="frame" x="111.5" y="79" width="191" height="43"/>
-                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="35"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="나와 비슷한 고양이 찾기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2tQ-SI-XCC">
+                                <rect key="frame" x="65.5" y="79" width="283.5" height="36"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00/00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Omp-MP-pPI">
-                                <rect key="frame" x="168.5" y="132" width="77" height="33"/>
+                                <rect key="frame" x="168.5" y="125" width="77" height="33"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dIQ-zP-tQD">
-                                <rect key="frame" x="10" y="210" width="394" height="201"/>
+                                <rect key="frame" x="10" y="203" width="394" height="201"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="문항" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQx-CR-BOc">
                                         <rect key="frame" x="29" y="8" width="336" height="185"/>
@@ -561,7 +585,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="랭킹 표시" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="nvv-T7-yV5">
                                 <rect key="frame" x="20" y="250" width="374" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" red="1" green="0.97647058959999999" blue="0.94901961089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -569,7 +593,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="랭킹 표시" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="BW2-T5-GTA">
                                 <rect key="frame" x="20" y="305" width="374" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" red="1" green="0.97647058959999999" blue="0.94901961089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -577,7 +601,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="랭킹 표시" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oFx-UJ-fC2">
                                 <rect key="frame" x="20" y="351" width="374" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" red="1" green="0.97647058959999999" blue="0.94901961089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -585,7 +609,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="랭킹 표시" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pK6-2Y-Vl1">
                                 <rect key="frame" x="20" y="406" width="374" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" red="1" green="0.97647058959999999" blue="0.94901961089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
