@@ -22,21 +22,23 @@ class FirstTestViewController: UIViewController {
     @IBOutlet weak var ProgressTestLabel: UILabel!
     @IBOutlet weak var NextButton: UIButton!
     @IBOutlet weak var TestText_TV: UITextView!
+    @IBOutlet weak var TestProgress: UIProgressView!
+    @IBOutlet weak var TestTextCountLabel: UILabel!
     
     
     let testText : Array<String> = [
-        "\n 1번 \n\n 나는 평소에 여기저기 돌아다니는 것을 좋아한다.",
-        "\n 2번 \n\n 여행, 산책, 운동을 즐겨하는 편이다.",
-        "\n 3번 \n\n 나는 처음 보는 사람과 쉽게 친해지는 편이다.",
-        "\n 4번 \n\n 나는 다른 사람에게 정을 많이 준다.",
-        "\n 5번 \n\n 나는 새로운 환경에 쉽게 적응하고 편해진다.",
-        "\n 6번 \n\n 처음 접하는 것에 대해 거부감이 없다.",
-        "\n 7번 \n\n 나는 혼자 놀아도 재미있게 놀 수 있다.",
-        "\n 8번 \n\n 나는 주변에서 머리가 좋다는 말을 종종 듣는다.",
-        "\n 9번 \n\n 나는 규칙적인 식단, 운동 등 자기관리가 철저하다.",
-        "\n 10번 \n\n 나는 주변에서 말이 많다는 말을 자주 듣는다.",
-        "\n 11번 \n\n 나는 다양한 것에 궁금증을 종종 느낀다.",
-        "\n 12번 \n\n 나는 종종 다른사람들에게 장난을 친다.",
+        "\n\n 나는 평소에 여기저기 돌아다니는 것을 좋아한다.",
+        "\n\n 여행, 산책, 운동을 즐겨하는 편이다.",
+        "\n\n 나는 처음 보는 사람과 쉽게 친해지는 편이다.",
+        "\n\n 나는 다른 사람에게 정을 많이 준다.",
+        "\n\n 나는 새로운 환경에 쉽게 적응하고 편해진다.",
+        "\n\n 처음 접하는 것에 대해 거부감이 없다.",
+        "\n\n 나는 혼자 놀아도 재미있게 놀 수 있다.",
+        "\n\n 나는 주변에서 머리가 좋다는 말을 종종 듣는다.",
+        "\n\n 나는 규칙적인 식단, 운동 등 자기관리가 철저하다.",
+        "\n\n 나는 주변에서 말이 많다는 말을 자주 듣는다.",
+        "\n\n 나는 다양한 것에 궁금증을 종종 느낀다.",
+        "\n\n 나는 종종 다른사람들에게 장난을 친다.",
     ]
     
     
@@ -58,12 +60,14 @@ class FirstTestViewController: UIViewController {
         
         all_test_count = testText.count
         
-       
-        TestText_View.layer.cornerRadius = 40
-        TestText_View.clipsToBounds = true
-        TestText_View.layer.borderWidth = 2
-        TestText_View.layer.borderColor = UIColor.black.cgColor
+        TestProgress.transform = TestProgress.transform.scaledBy(x: 1, y: 3)
         
+        
+        TestTextCountLabel.clipsToBounds = true
+        TestTextCountLabel.layer.cornerRadius = 20
+        TestTextCountLabel.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+        // 위쪽 둥근 값
+        // 하단은 minxmax maxxmax
         super.viewDidLoad()
         
         
@@ -73,6 +77,9 @@ class FirstTestViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         
+        
+        TestProgress.setProgress(Float(progresstestcount + 1) / 12, animated: true)  
+        TestTextCountLabel.text = String(progresstestcount + 1) + "번"
         
         if progresstestcount + 1 == all_test_count {
             // print("프로그래스" ,progresstestcount)

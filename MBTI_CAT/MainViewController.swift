@@ -136,16 +136,16 @@ class MainViewController: UIViewController {
             
             
        
-            Rank1PercentProgress.progressTintColor? = UIColor(displayP3Red: 100/255, green: 100/255, blue: 255/255, alpha: 1)
+            Rank1PercentProgress.progressTintColor? = UIColor(displayP3Red: 164/255, green: 255/255, blue: 237/255, alpha: 1)
             Rank1PercentProgress.trackTintColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
             
-            Rank2PercentProgress.progressTintColor? = UIColor(displayP3Red: 190/255, green: 190/255, blue: 255/255, alpha: 1)
+            Rank2PercentProgress.progressTintColor? = UIColor(displayP3Red: 210/255, green: 255/255, blue: 237/255, alpha: 1)
             Rank2PercentProgress.trackTintColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
             
-            Rank3PercentProgress.progressTintColor? = UIColor(displayP3Red: 190/255, green: 190/255, blue: 255/255, alpha: 1)
+            Rank3PercentProgress.progressTintColor? = UIColor(displayP3Red: 210/255, green: 255/255, blue: 237/255, alpha: 1)
             Rank3PercentProgress.trackTintColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
             
-            Rank4PercentProgress.progressTintColor? = UIColor(displayP3Red: 190/255, green: 190/255, blue: 255/255, alpha: 1)
+            Rank4PercentProgress.progressTintColor? = UIColor(displayP3Red: 210/255, green: 255/255, blue: 237/255, alpha: 1)
             Rank4PercentProgress.trackTintColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
             
             ShowAnimation()
