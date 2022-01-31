@@ -1,16 +1,20 @@
 PODS:
   - DLRadioButton (1.4.12)
+  - Toast-Swift (5.0.1)
 
 DEPENDENCIES:
   - DLRadioButton (~> 1.4)
+  - Toast-Swift (~> 5.0.1)
 
 SPEC REPOS:
   trunk:
     - DLRadioButton
+    - Toast-Swift
 
 SPEC CHECKSUMS:
   DLRadioButton: d7c4e225ed0e8013cef7be61455230c7557ad7c1
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
 
-PODFILE CHECKSUM: f29e85e63979658863b3fb0073ab8b18f0e31198
+PODFILE CHECKSUM: 0e7d53fb02ad6c24312b913fe10d5756e4972afb
 
 COCOAPODS: 1.11.2

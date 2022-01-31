@@ -8,4 +8,6 @@ target 'MBTI_CAT' do
   # Pods for MBTI_CAT
 
   pod 'DLRadioButton', '~> 1.4'
+  pod 'Toast-Swift', '~> 5.0.1'
+  
 end
