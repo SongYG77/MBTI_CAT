@@ -10,6 +10,7 @@ import UIKit
 class SimpleTestViewController: UIViewController {
     
     
+    @IBOutlet weak var NoticeTitle_Label: UILabel!
     @IBOutlet weak var StartButton: UIButton!
     @IBOutlet weak var TestNoticeTV: UITextView!
     
@@ -23,10 +24,19 @@ class SimpleTestViewController: UIViewController {
         StartButton.layer.cornerRadius = 10
         StartButton.clipsToBounds = true
         
+        
+        
+        
+        NoticeTitle_Label.clipsToBounds = true
+        NoticeTitle_Label.layer.cornerRadius = 15
+        NoticeTitle_Label.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+        
         TestNoticeTV.layer.borderWidth = 2
         TestNoticeTV.layer.borderColor = UIColor(displayP3Red: 249/255, green: 212/255, blue: 153/255, alpha: 1).cgColor
-        TestNoticeTV.layer.cornerRadius = 20
+        TestNoticeTV.layer.cornerRadius = 15
+        TestNoticeTV.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
         TestNoticeTV.clipsToBounds = true
+        
         
     }
     

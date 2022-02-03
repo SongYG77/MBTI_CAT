@@ -39,7 +39,8 @@ class MainViewController: UIViewController {
     
     @IBOutlet weak var InfoView: UIView!
     
-    @IBOutlet weak var ResetBtn: UIButton!
+    @IBOutlet weak var SimilarTitle_Label: UILabel!
+    @IBOutlet weak var RankTitle_Label: UILabel!
     
     
     
@@ -61,10 +62,15 @@ class MainViewController: UIViewController {
         
         appDelegate.mainVC = self
 
-        InfoView.layer.cornerRadius = 20
+        InfoView.layer.cornerRadius = 15
+        InfoView.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
         InfoView.layer.borderWidth = 2
         InfoView.layer.borderColor = UIColor(displayP3Red: 249/255, green: 212/255, blue: 153/255, alpha: 1).cgColor
-        Rank2PercentProgress.clipsToBounds = true
+        
+        SimilarTitle_Label.layer.cornerRadius = 15
+        SimilarTitle_Label.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+        SimilarTitle_Label.clipsToBounds = true
+        
         
         Rank1PercentProgress.transform = Rank1PercentProgress.transform.scaledBy(x: 1, y: 3)
         Rank1PercentProgress.layer.cornerRadius = 10
@@ -82,18 +88,24 @@ class MainViewController: UIViewController {
         Rank4PercentProgress.layer.cornerRadius = 10
         Rank4PercentProgress.clipsToBounds = true
         
+        
         Rank1View.layer.borderWidth = 2
         Rank1View.layer.borderColor = UIColor(displayP3Red: 249/255, green: 212/255, blue: 153/255, alpha: 1).cgColor
-        Rank1View.layer.cornerRadius = 15
+        Rank1View.layer.cornerRadius = 0
         Rank2View.layer.borderWidth = 2
         Rank2View.layer.borderColor = UIColor(displayP3Red: 249/255, green: 212/255, blue: 153/255, alpha: 1).cgColor
-        Rank2View.layer.cornerRadius = 15
+        Rank2View.layer.cornerRadius = 0
         Rank3View.layer.borderWidth = 2
         Rank3View.layer.borderColor = UIColor(displayP3Red: 249/255, green: 212/255, blue: 153/255, alpha: 1).cgColor
-        Rank3View.layer.cornerRadius = 15
+        Rank3View.layer.cornerRadius = 0
         Rank4View.layer.borderWidth = 2
         Rank4View.layer.borderColor = UIColor(displayP3Red: 249/255, green: 212/255, blue: 153/255, alpha: 1).cgColor
         Rank4View.layer.cornerRadius = 15
+        Rank4View.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
+        
+        RankTitle_Label.layer.cornerRadius = 15
+        RankTitle_Label.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+        RankTitle_Label.clipsToBounds = true
         
         
         if UserDefaults.standard.value(forKey: "UserRes") != nil {
@@ -117,7 +129,6 @@ class MainViewController: UIViewController {
             UserInfo = (UserDefaults.standard.value(forKey: "CatRanking1") as! String)
             UserMBTI_Image.image = UIImage(named: UserInfo! + "_Image.png")
             UserMBTI_Image.isHidden = false
-            ResetBtn.isHidden = false
             
             Rank1CatLabel.text = "1. " + (UserDefaults.standard.value(forKey: "CatRanking1") as! String)
             Rank2CatLabel.text = "2. " + (UserDefaults.standard.value(forKey: "CatRanking2") as! String)
@@ -155,7 +166,6 @@ class MainViewController: UIViewController {
             
             UserMBTI_Image.image = nil
             UserMBTI_Image.isHidden = true
-            ResetBtn.isHidden = true
             
             Rank1PercentProgress.progress = 0.5
             
@@ -172,31 +182,7 @@ class MainViewController: UIViewController {
     
     
     
-    @IBAction func onBtnReset(_ sender: UIButton) {
-        let alert = UIAlertController(title: "주의!", message: "사용자 정보가 초기화됩니다.", preferredStyle: .alert)
-        let resetAltyes = UIAlertAction(title: "네", style: .destructive){
-            (_) in
-            
-            UserDefaults.standard.removeObject(forKey: "UserRes")
-            UserDefaults.standard.removeObject(forKey: "EI_Data")
-            UserDefaults.standard.removeObject(forKey: "NS_Data")
-            UserDefaults.standard.removeObject(forKey: "FT_Data")
-            UserDefaults.standard.removeObject(forKey: "PJ_Data")
-            
-            self.viewDidAppear(true)
-        }
-        let resetAltno = UIAlertAction(title: "아니오" , style: .cancel, handler: nil)
-        
-        alert.addAction(resetAltyes)
-        alert.addAction(resetAltno)
-        
-        present(alert, animated: true, completion: nil)
-        
-        
-        
-        
-        
-    }
+  
     
     
     //MARK: -애니메이션 파트

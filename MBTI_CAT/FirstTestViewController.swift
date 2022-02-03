@@ -24,6 +24,7 @@ class FirstTestViewController: UIViewController {
     @IBOutlet weak var TestText_TV: UITextView!
     @IBOutlet weak var TestProgress: UIProgressView!
     @IBOutlet weak var TestTextCountLabel: UILabel!
+    //@IBOutlet weak var NextButton: UIButton!
     
     
     let testText : Array<String> = [
@@ -62,13 +63,24 @@ class FirstTestViewController: UIViewController {
         
         TestProgress.transform = TestProgress.transform.scaledBy(x: 1, y: 3)
         
+        TestText_View.layer.borderWidth = 2
+        TestText_View.layer.borderColor = UIColor(displayP3Red: 249/255, green: 212/255, blue: 153/255, alpha: 1).cgColor
+        TestText_View.layer.cornerRadius = 15
+        TestText_View.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
+        TestText_View.clipsToBounds = true
+        
         
         TestTextCountLabel.clipsToBounds = true
-        TestTextCountLabel.layer.cornerRadius = 20
+        TestTextCountLabel.layer.cornerRadius = 15
         TestTextCountLabel.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
         // 위쪽 둥근 값
         // 하단은 minxmax maxxmax
         super.viewDidLoad()
+        
+        NextButton.layer.borderWidth = 2
+        NextButton.layer.borderColor = UIColor(displayP3Red: 249/255, green: 212/255, blue: 153/255, alpha: 1).cgColor
+        NextButton.layer.cornerRadius = 10
+        NextButton.clipsToBounds = true
         
         
     }
