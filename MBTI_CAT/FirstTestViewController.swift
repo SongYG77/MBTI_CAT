@@ -7,6 +7,7 @@
 
 import UIKit
 import DLRadioButton
+import Toast_Swift
 
 class FirstTestViewController: UIViewController {
     
@@ -118,7 +119,12 @@ class FirstTestViewController: UIViewController {
         
         
         guard selectresultValue != -1 else {
+            
+            var style = ToastStyle()
+            style.messageColor = UIColor.white
+            style.backgroundColor = UIColor(displayP3Red: 155/255, green: 134/255, blue: 98/255, alpha: 1)
             print("다 입력되지 않음.")
+            self.view.makeToast("입력되지 않았습니다.", duration: 1.0, style: style)
             return
         }
         

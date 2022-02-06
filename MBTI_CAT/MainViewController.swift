@@ -50,11 +50,9 @@ class MainViewController: UIViewController {
     
     var time : Timer?
     var maxtime : Float = 0.0
-    var Rank1Percent = Float( UserDefaults.standard.value(forKey: "Ranking_Percent1") as? String ?? "0" )!
-    var Rank2Percent = Float( UserDefaults.standard.value(forKey: "Ranking_Percent2") as? String ?? "0" )!
-    var Rank3Percent = Float( UserDefaults.standard.value(forKey: "Ranking_Percent3") as? String ?? "0" )!
-    var Rank4Percent = Float( UserDefaults.standard.value(forKey: "Ranking_Percent4") as? String ?? "0" )!
     
+    
+    var isnewData : Bool = false
     
 
     override func viewDidLoad() {
@@ -168,16 +166,29 @@ class MainViewController: UIViewController {
             UserMBTI_Image.isHidden = true
             
             Rank1PercentProgress.progress = 0.5
+            Rank2PercentProgress.progress = 0.5
+            Rank3PercentProgress.progress = 0.5
+            Rank4PercentProgress.progress = 0.5
             
             Rank1PercentProgress.progressTintColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
             Rank1PercentProgress.trackTintColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
+            Rank2PercentProgress.progressTintColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
+            Rank2PercentProgress.trackTintColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
+            Rank3PercentProgress.progressTintColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
+            Rank3PercentProgress.trackTintColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
+            Rank4PercentProgress.progressTintColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
+            Rank4PercentProgress.trackTintColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
             
-            
+            ShowAnimation()
         }
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        
+    
+        print("Will Appear")
+        if isnewData == true {
+            PrepareAnimation() 
+        }
     }
     
     
@@ -228,6 +239,11 @@ class MainViewController: UIViewController {
                
     }
     @objc func progressAnimate() {
+        
+        let Rank1Percent = Float( UserDefaults.standard.value(forKey: "Ranking_Percent1") as? String ?? "0" )!
+        let Rank2Percent = Float( UserDefaults.standard.value(forKey: "Ranking_Percent2") as? String ?? "0" )!
+        let Rank3Percent = Float( UserDefaults.standard.value(forKey: "Ranking_Percent3") as? String ?? "0" )!
+        let Rank4Percent = Float( UserDefaults.standard.value(forKey: "Ranking_Percent4") as? String ?? "0" )!
         
         maxtime += 0.01
         Rank1PercentProgress.setProgress((Rank1Percent * maxtime), animated: true)

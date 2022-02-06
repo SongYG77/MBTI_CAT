@@ -25,7 +25,7 @@ class TestResultViewController: UIViewController {
     @IBOutlet weak var RankingTV4: UITextView!
     
     
-    
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
     var TestResultARR : Array<Float> = [] // 이전 화면에서 받아오는 결과값
     var maxresult : Array<Float> = [0,0,0,0]
     var MyCatRanking : Array<String> = ["","","",""]
@@ -95,6 +95,8 @@ class TestResultViewController: UIViewController {
 
     @IBAction func onBtnStoreResult(_ sender: UIButton) {
         
+        let mainVC = storyboard?.instantiateViewController(identifier: "FirstMainVC") as! MainViewController
+        
         UserDefaults.standard.setValue(MyCatRanking[0], forKey: "CatRanking1")
         UserDefaults.standard.setValue(MyCatRanking[1], forKey: "CatRanking2")
         UserDefaults.standard.setValue(MyCatRanking[2], forKey: "CatRanking3")
@@ -105,7 +107,7 @@ class TestResultViewController: UIViewController {
         UserDefaults.standard.setValue(String(format: "%.2f",percentRanking[2]), forKey: "Ranking_Percent3")
         UserDefaults.standard.setValue(String(format: "%.2f",percentRanking[3]), forKey: "Ranking_Percent4")
         
-        
+        mainVC.isnewData = true
         
         
         print("결과가 저장되었습니다.")

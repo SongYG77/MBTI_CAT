@@ -513,13 +513,6 @@
                                     <action selector="onBtnM:" destination="iYo-Je-4fR" eventType="touchUpInside" id="yNE-NV-SvJ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="아니오" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vj3-Ni-oVv">
-                                <rect key="frame" x="331" y="473" width="65" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="나와 비슷한 고양이 찾기" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2tQ-SI-XCC">
                                 <rect key="frame" x="30" y="79" width="354" height="36"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="30"/>
@@ -552,7 +545,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="예" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D9G-AK-YN0">
-                                <rect key="frame" x="39" y="473" width="22" height="30"/>
+                                <rect key="frame" x="39" y="468" width="22" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="25"/>
                                 <nil key="textColor"/>
@@ -576,6 +569,13 @@
                                 <rect key="frame" x="191" y="477" width="33" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="아니오" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vj3-Ni-oVv">
+                                <rect key="frame" x="332" y="468" width="65" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -834,7 +834,7 @@
                                             </textView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="성격" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wcH-FU-lHz">
                                                 <rect key="frame" x="10" y="434" width="394" height="35"/>
-                                                <color key="backgroundColor" red="0.56862745100000001" green="0.47843137250000001" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="backgroundColor" red="0.6064125896" green="0.52520060540000002" blue="0.38272437450000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="35" id="Oiy-B8-Fhk"/>
                                                 </constraints>
@@ -951,9 +951,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T1s-Z7-tJr">
-                                <rect key="frame" x="20" y="162" width="374" height="146"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T1s-Z7-tJr">
+                                <rect key="frame" x="20" y="162" width="374" height="150"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="clq-QC-Arr">
                                         <rect key="frame" x="8" y="8" width="147" height="130"/>
@@ -961,53 +960,121 @@
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="zhQ-pf-kYd"/>
+                                </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4r7-cP-ulW">
-                                <rect key="frame" x="171" y="345" width="73" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="내 결과 확인"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4r7-cP-ulW">
+                                <rect key="frame" x="57" y="342" width="300" height="39"/>
+                                <color key="backgroundColor" red="0.56862745100000001" green="0.47843137250000001" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="mi8-Zw-b9s"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                <state key="normal" title="내 결과 확인">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onBtnResult:" destination="HHG-nd-EK5" eventType="touchUpInside" id="xUd-J2-OCV"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D9a-Q7-rEk">
-                                <rect key="frame" x="164" y="472" width="86" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="내 결과 초기화"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D9a-Q7-rEk">
+                                <rect key="frame" x="57" y="480" width="300" height="39"/>
+                                <color key="backgroundColor" red="0.56862745100000001" green="0.47843137250000001" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="0Fc-Tk-I4d"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                <state key="normal" title="내 결과 초기화">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onBtnReset:" destination="HHG-nd-EK5" eventType="touchUpInside" id="dk1-nC-dd3"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OJG-2A-Teq">
-                                <rect key="frame" x="35" y="544" width="52" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="공지사항"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OJG-2A-Teq">
+                                <rect key="frame" x="27" y="577" width="70" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="Qe9-JA-C3c"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="공지사항">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2P5-zp-7qn">
-                                <rect key="frame" x="188" y="544" width="39" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="개발자"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fd0-T5-8jW">
+                                <rect key="frame" x="317" y="577" width="70" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="VA9-HE-vDd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="건의사항">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fd0-T5-8jW">
-                                <rect key="frame" x="317" y="544" width="52" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="건의사항"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="마이 페이지" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3gS-CB-LmC">
-                                <rect key="frame" x="137" y="84" width="141" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="마이 페이지" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3gS-CB-LmC">
+                                <rect key="frame" x="136.5" y="80" width="141" height="37"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gp5-mz-Ysv">
-                                <rect key="frame" x="153" y="407" width="108" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="고양이 5가지 특성"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gp5-mz-Ysv">
+                                <rect key="frame" x="57" y="411" width="300" height="39"/>
+                                <color key="backgroundColor" red="0.56862745100000001" green="0.47843137250000001" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="OvW-KB-eiI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                <state key="normal" title="고양이 5가지 특성">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onBtnFiveChar:" destination="HHG-nd-EK5" eventType="touchUpInside" id="dtx-wh-f1W"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2P5-zp-7qn">
+                                <rect key="frame" x="172" y="577" width="70" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="nWB-no-P5S"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="개발자">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Jcf-in-ORn"/>
                         <color key="backgroundColor" red="1" green="0.97647058959999999" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Jcf-in-ORn" firstAttribute="trailing" secondItem="T1s-Z7-tJr" secondAttribute="trailing" constant="20" id="1Av-7e-CqI"/>
+                            <constraint firstItem="Jcf-in-ORn" firstAttribute="bottom" secondItem="2P5-zp-7qn" secondAttribute="bottom" constant="200" id="3Sp-C4-ZCq"/>
+                            <constraint firstItem="T1s-Z7-tJr" firstAttribute="leading" secondItem="Jcf-in-ORn" secondAttribute="leading" constant="20" id="AiH-ax-Y3M"/>
+                            <constraint firstItem="T1s-Z7-tJr" firstAttribute="top" secondItem="3gS-CB-LmC" secondAttribute="bottom" constant="45" id="Bcd-6w-pAH"/>
+                            <constraint firstItem="2P5-zp-7qn" firstAttribute="centerX" secondItem="x7K-zl-dor" secondAttribute="centerX" id="HXe-ab-Bje"/>
+                            <constraint firstItem="Jcf-in-ORn" firstAttribute="bottom" secondItem="OJG-2A-Teq" secondAttribute="bottom" constant="200" id="Ia9-Ko-oTV"/>
+                            <constraint firstItem="2P5-zp-7qn" firstAttribute="leading" secondItem="OJG-2A-Teq" secondAttribute="trailing" constant="75" id="Oth-yq-eBM"/>
+                            <constraint firstItem="D9a-Q7-rEk" firstAttribute="centerX" secondItem="x7K-zl-dor" secondAttribute="centerX" id="Ulw-3B-hls"/>
+                            <constraint firstItem="gp5-mz-Ysv" firstAttribute="top" secondItem="4r7-cP-ulW" secondAttribute="bottom" constant="30" id="VT1-2q-3f4"/>
+                            <constraint firstItem="4r7-cP-ulW" firstAttribute="centerX" secondItem="x7K-zl-dor" secondAttribute="centerX" id="bNz-ge-k6E"/>
+                            <constraint firstItem="3gS-CB-LmC" firstAttribute="centerX" secondItem="x7K-zl-dor" secondAttribute="centerX" id="dsx-j6-CFb"/>
+                            <constraint firstItem="3gS-CB-LmC" firstAttribute="top" secondItem="Jcf-in-ORn" secondAttribute="top" constant="36" id="fE3-g0-i6E"/>
+                            <constraint firstItem="fd0-T5-8jW" firstAttribute="leading" secondItem="2P5-zp-7qn" secondAttribute="trailing" constant="75" id="fwR-ZB-leg"/>
+                            <constraint firstItem="Jcf-in-ORn" firstAttribute="bottom" secondItem="fd0-T5-8jW" secondAttribute="bottom" constant="200" id="h7x-6N-c6U"/>
+                            <constraint firstItem="gp5-mz-Ysv" firstAttribute="centerX" secondItem="x7K-zl-dor" secondAttribute="centerX" id="hp3-np-BGX"/>
+                            <constraint firstItem="D9a-Q7-rEk" firstAttribute="top" secondItem="gp5-mz-Ysv" secondAttribute="bottom" constant="30" id="p7y-LL-Eva"/>
+                            <constraint firstItem="4r7-cP-ulW" firstAttribute="top" secondItem="T1s-Z7-tJr" secondAttribute="bottom" constant="30" id="r41-DX-NuE"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="BA9-Cb-i0m"/>
+                    <connections>
+                        <outlet property="FiveCharButton" destination="gp5-mz-Ysv" id="DzO-pu-58A"/>
+                        <outlet property="MyResultButton" destination="4r7-cP-ulW" id="Baw-Ab-ccF"/>
+                        <outlet property="ResetButton" destination="D9a-Q7-rEk" id="ts2-QW-1cR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vz0-zA-MCP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1280" y="1546"/>
+            <point key="canvasLocation" x="1279.7101449275362" y="1545.5357142857142"/>
         </scene>
         <!--Home-->
         <scene sceneID="JA7-bP-kQr">
