@@ -26,6 +26,7 @@ class DevInfoViewController: UIViewController {
         InfoView.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
         InfoView.clipsToBounds = true
         
+        print("Test")
     }
     
 
