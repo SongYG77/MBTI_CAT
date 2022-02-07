@@ -18,6 +18,8 @@
 		1841576E279012A30095F8A9 /* SimpleTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1841576D279012A30095F8A9 /* SimpleTestViewController.swift */; };
 		18415771279012C50095F8A9 /* CharacteristicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18415770279012C50095F8A9 /* CharacteristicViewController.swift */; };
 		18415774279012E20095F8A9 /* MyCharacViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18415773279012E20095F8A9 /* MyCharacViewController.swift */; };
+		1841883827B0F4B800DF7D1A /* DevInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1841883727B0F4B800DF7D1A /* DevInfoViewController.swift */; };
+		1841883B27B1001D00DF7D1A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1841883A27B1001D00DF7D1A /* GoogleService-Info.plist */; };
 		184188BD27954C1E0049D3DD /* FirstTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184188BC27954C1E0049D3DD /* FirstTestViewController.swift */; };
 		1895D24D279E868200567BBF /* DetailContentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1895D24C279E868200567BBF /* DetailContentsViewController.swift */; };
 		E5CD05C10CF99DA94EE5527B /* Pods_MBTI_CAT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 649049F50AE4B343149A5311 /* Pods_MBTI_CAT.framework */; };
@@ -39,6 +41,8 @@
 		1841576D279012A30095F8A9 /* SimpleTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTestViewController.swift; sourceTree = "<group>"; };
 		18415770279012C50095F8A9 /* CharacteristicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacteristicViewController.swift; sourceTree = "<group>"; };
 		18415773279012E20095F8A9 /* MyCharacViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCharacViewController.swift; sourceTree = "<group>"; };
+		1841883727B0F4B800DF7D1A /* DevInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevInfoViewController.swift; sourceTree = "<group>"; };
+		1841883A27B1001D00DF7D1A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		184188BC27954C1E0049D3DD /* FirstTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTestViewController.swift; sourceTree = "<group>"; };
 		1895D24C279E868200567BBF /* DetailContentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailContentsViewController.swift; sourceTree = "<group>"; };
 		649049F50AE4B343149A5311 /* Pods_MBTI_CAT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MBTI_CAT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,6 +94,7 @@
 				18415750279003AE0095F8A9 /* AppDelegate.swift */,
 				18415752279003AE0095F8A9 /* SceneDelegate.swift */,
 				18415756279003AE0095F8A9 /* Main.storyboard */,
+				1841883727B0F4B800DF7D1A /* DevInfoViewController.swift */,
 				1841576A27900C3A0095F8A9 /* TabbarViewController.swift */,
 				18415754279003AE0095F8A9 /* MainViewController.swift */,
 				1841576D279012A30095F8A9 /* SimpleTestViewController.swift */,
@@ -101,6 +106,7 @@
 				18415759279003AE0095F8A9 /* Assets.xcassets */,
 				1841575B279003AE0095F8A9 /* LaunchScreen.storyboard */,
 				1841575E279003AE0095F8A9 /* Info.plist */,
+				1841883A27B1001D00DF7D1A /* GoogleService-Info.plist */,
 				1830AD4E279951C6004DEDD9 /* CatData.xlsx */,
 			);
 			path = MBTI_CAT;
@@ -174,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1841575D279003AE0095F8A9 /* LaunchScreen.storyboard in Resources */,
+				1841883B27B1001D00DF7D1A /* GoogleService-Info.plist in Resources */,
 				1841575A279003AE0095F8A9 /* Assets.xcassets in Resources */,
 				18415758279003AE0095F8A9 /* Main.storyboard in Resources */,
 			);
@@ -238,6 +245,7 @@
 				1895D24D279E868200567BBF /* DetailContentsViewController.swift in Sources */,
 				18415771279012C50095F8A9 /* CharacteristicViewController.swift in Sources */,
 				184188BD27954C1E0049D3DD /* FirstTestViewController.swift in Sources */,
+				1841883827B0F4B800DF7D1A /* DevInfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

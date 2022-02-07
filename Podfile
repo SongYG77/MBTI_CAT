@@ -10,4 +10,8 @@ target 'MBTI_CAT' do
   pod 'DLRadioButton', '~> 1.4'
   pod 'Toast-Swift', '~> 5.0.1'
   
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Firestore'
+  
 end

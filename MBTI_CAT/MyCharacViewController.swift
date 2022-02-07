@@ -78,4 +78,13 @@ class MyCharacController: UIViewController {
     }
     
     
+    @IBAction func onBtnDevInfo(_ sender: UIButton) {
+        
+        let NextVC = self.storyboard?.instantiateViewController(identifier: "DevInfoVC") as! DevInfoViewController
+        
+        self.navigationController?.pushViewController(NextVC, animated: true)
+    }
+    
+    
+    
 }
