@@ -11,6 +11,7 @@
 
 
 import UIKit
+import Firebase
 
 
 @available(iOS 13.0, *)
@@ -42,6 +43,8 @@ class MainViewController: UIViewController {
     @IBOutlet weak var SimilarTitle_Label: UILabel!
     @IBOutlet weak var RankTitle_Label: UILabel!
     
+    @IBOutlet weak var MyCatLabel: UILabel!
+    @IBOutlet weak var MyPersentLabel: UILabel!
     
     
     
@@ -105,15 +108,6 @@ class MainViewController: UIViewController {
         RankTitle_Label.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
         RankTitle_Label.clipsToBounds = true
         
-        
-        if UserDefaults.standard.value(forKey: "UserRes") != nil {
-            UserInfo = (UserDefaults.standard.value(forKey: "UserRes") as! String)
-            UserMBTI_Image.image = UIImage(named: UserInfo! + "_Image.png")
-        }
-        else {
-            UserMBTI_Image.image = nil
-            UserMBTI_Image.isHidden = true
-        }
         
         PrepareAnimation()
     }
@@ -179,7 +173,25 @@ class MainViewController: UIViewController {
             Rank4PercentProgress.progressTintColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
             Rank4PercentProgress.trackTintColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
             
+            
             ShowAnimation()
+        }
+        
+        if UserDefaults.standard.value(forKey: "CatRanking1") != nil {
+            UserInfo = (UserDefaults.standard.value(forKey: "CatRanking1") as! String)
+            UserMBTI_Image.image = UIImage(named: UserInfo! + "_Image.png") ?? nil
+            MyCatLabel.text = UserDefaults.standard.value(forKey: "CatRanking1") as? String
+            
+            let myper = (Float(UserDefaults.standard.value(forKey: "Ranking_Percent1") as? String ?? "0") ?? 0) * 100.0
+            MyPersentLabel.text = "닮은 정도 : " + String(myper) + "%"
+            
+            
+        }
+        else {
+            UserMBTI_Image.image = nil
+            UserMBTI_Image.isHidden = true
+            MyCatLabel.text = "결과가 없습니다."
+            MyPersentLabel.text = ""
         }
     }
     

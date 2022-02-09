@@ -85,6 +85,12 @@ class MyCharacController: UIViewController {
         self.navigationController?.pushViewController(NextVC, animated: true)
     }
     
+    @IBAction func onBtnSuggestions(_ sender: UIButton) {
+        
+        let NextVC = self.storyboard?.instantiateViewController(identifier: "SuggestionsVC") as! SuggestionsViewController
+        
+        self.navigationController?.pushViewController(NextVC, animated: true)
+    }
     
     
 }
