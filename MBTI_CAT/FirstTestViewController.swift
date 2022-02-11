@@ -63,6 +63,7 @@ class FirstTestViewController: UIViewController {
         all_test_count = testText.count
         
         TestProgress.transform = TestProgress.transform.scaledBy(x: 1, y: 3)
+        TestProgress.progressTintColor = UIColor(displayP3Red: 227/255, green: 183/255, blue: 160/255, alpha: 1)
         
         TestText_View.layer.borderWidth = 2
         TestText_View.layer.borderColor = UIColor(displayP3Red: 249/255, green: 212/255, blue: 153/255, alpha: 1).cgColor

@@ -119,7 +119,7 @@ class MainViewController: UIViewController {
             
             
             UserInfo = (UserDefaults.standard.value(forKey: "CatRanking1") as! String)
-            UserMBTI_Image.image = UIImage(named: UserInfo! + "_Image.png")
+            UserMBTI_Image.image = UIImage(named: "SampleCat.png")
             UserMBTI_Image.isHidden = false
             
             Rank1CatLabel.text = "1. " + (UserDefaults.standard.value(forKey: "CatRanking1") as! String)
@@ -139,16 +139,16 @@ class MainViewController: UIViewController {
             
             
        
-            Rank1PercentProgress.progressTintColor? = UIColor(displayP3Red: 164/255, green: 255/255, blue: 237/255, alpha: 1)
+            Rank1PercentProgress.progressTintColor? = UIColor(displayP3Red: 227/255, green: 183/255, blue: 160/255, alpha: 1)
             Rank1PercentProgress.trackTintColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
             
-            Rank2PercentProgress.progressTintColor? = UIColor(displayP3Red: 210/255, green: 255/255, blue: 237/255, alpha: 1)
+            Rank2PercentProgress.progressTintColor? = UIColor(displayP3Red: 237/255, green: 205/255, blue: 187/255, alpha: 1)
             Rank2PercentProgress.trackTintColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
             
-            Rank3PercentProgress.progressTintColor? = UIColor(displayP3Red: 210/255, green: 255/255, blue: 237/255, alpha: 1)
+            Rank3PercentProgress.progressTintColor? = UIColor(displayP3Red: 237/255, green: 205/255, blue: 187/255, alpha: 1)
             Rank3PercentProgress.trackTintColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
             
-            Rank4PercentProgress.progressTintColor? = UIColor(displayP3Red: 210/255, green: 255/255, blue: 237/255, alpha: 1)
+            Rank4PercentProgress.progressTintColor? = UIColor(displayP3Red: 237/255, green: 205/255, blue: 187/255, alpha: 1)
             Rank4PercentProgress.trackTintColor? = UIColor(displayP3Red: 228/255, green: 228/255, blue: 228/255, alpha: 1)
             
             ShowAnimation()
@@ -179,7 +179,7 @@ class MainViewController: UIViewController {
         
         if UserDefaults.standard.value(forKey: "CatRanking1") != nil {
             UserInfo = (UserDefaults.standard.value(forKey: "CatRanking1") as! String)
-            UserMBTI_Image.image = UIImage(named: UserInfo! + "_Image.png") ?? nil
+            UserMBTI_Image.image = UIImage(named: "SampleCat.png") ?? nil
             MyCatLabel.text = UserDefaults.standard.value(forKey: "CatRanking1") as? String
             
             let myper = (Float(UserDefaults.standard.value(forKey: "Ranking_Percent1") as? String ?? "0") ?? 0) * 100.0
@@ -197,7 +197,6 @@ class MainViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
     
-        print("Will Appear")
         if isnewData == true {
             PrepareAnimation() 
         }
@@ -234,7 +233,7 @@ class MainViewController: UIViewController {
                 self.Rank4View.alpha = 1
                 
             } , completion: { _ in
-                print("completion")
+                
                 self.startAnimateProgress()
                 
             })

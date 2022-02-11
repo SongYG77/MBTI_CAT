@@ -92,5 +92,11 @@ class MyCharacController: UIViewController {
         self.navigationController?.pushViewController(NextVC, animated: true)
     }
     
+    @IBAction func onBtnNotice(_ sender: UIButton) {
+        
+        let NextVC = self.storyboard?.instantiateViewController(identifier: "NoticeVC") as! NoticeViewController
+        
+        self.navigationController?.pushViewController(NextVC, animated: true)
+    }
     
 }
