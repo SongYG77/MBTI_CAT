@@ -63,6 +63,7 @@ class NoticeViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         self.navigationController?.popViewController(animated: true)
         
+        
     }
     
   
