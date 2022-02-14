@@ -5,6 +5,8 @@
 //  Created by 송윤근 on 2022/01/24.
 //
 
+// 특징 자세히 보기,
+// 데이터를 어떻게 넘길지도 생각해야함
 import UIKit
 
 class DetailContentsViewController: UIViewController {

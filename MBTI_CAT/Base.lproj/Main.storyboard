@@ -1360,11 +1360,37 @@
                     <connections>
                         <outlet property="BackButton" destination="agf-lc-ZTv" id="1d6-lJ-L6V"/>
                         <outlet property="NoticeTableView" destination="t6h-S6-n0k" id="48G-3b-KlQ"/>
+                        <segue destination="k5m-Af-GK4" kind="show" id="XJx-EV-7bc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vjN-9z-UoK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2902.898550724638" y="2310.9375"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ySX-Lc-4eg">
+            <objects>
+                <viewController id="k5m-Af-GK4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TrI-an-rmz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="공지사항 디테일." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fu6-JT-mbx">
+                                <rect key="frame" x="151" y="111" width="112" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hv2-eT-amP"/>
+                        <color key="backgroundColor" red="1" green="0.97647058959999999" blue="0.92941176889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="u03-w1-tmm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wrn-rW-JcN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3743" y="2322"/>
         </scene>
         <!--Home-->
         <scene sceneID="JA7-bP-kQr">
