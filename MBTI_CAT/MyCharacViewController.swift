@@ -13,6 +13,8 @@
 
 
 import UIKit
+import Firebase
+import FirebaseFirestore
 
 class MyCharacController: UIViewController {
 
@@ -21,8 +23,13 @@ class MyCharacController: UIViewController {
     @IBOutlet weak var FiveCharButton: UIButton!
     @IBOutlet weak var ResetButton: UIButton!
     
+    
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
         MyResultButton.layer.cornerRadius = 15
         MyResultButton.clipsToBounds = true
@@ -92,11 +99,14 @@ class MyCharacController: UIViewController {
         self.navigationController?.pushViewController(NextVC, animated: true)
     }
     
+    
     @IBAction func onBtnNotice(_ sender: UIButton) {
-        
         let NextVC = self.storyboard?.instantiateViewController(identifier: "NoticeVC") as! NoticeViewController
         
         self.navigationController?.pushViewController(NextVC, animated: true)
+    
     }
+    
+        
     
 }
