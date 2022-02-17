@@ -25,6 +25,7 @@
 		188A7EA827B23F2B000718E7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 188A7E8E27B23C34000718E7 /* GoogleService-Info.plist */; };
 		188A7EAB27B241BB000718E7 /* SuggestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188A7EAA27B241BB000718E7 /* SuggestionsViewController.swift */; };
 		1895D24D279E868200567BBF /* DetailContentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1895D24C279E868200567BBF /* DetailContentsViewController.swift */; };
+		18E980CE27BE384F00BFF5D3 /* NoticeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E980CD27BE384F00BFF5D3 /* NoticeDetailViewController.swift */; };
 		E5CD05C10CF99DA94EE5527B /* Pods_MBTI_CAT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 649049F50AE4B343149A5311 /* Pods_MBTI_CAT.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,7 @@
 		188A7E8E27B23C34000718E7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		188A7EAA27B241BB000718E7 /* SuggestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionsViewController.swift; sourceTree = "<group>"; };
 		1895D24C279E868200567BBF /* DetailContentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailContentsViewController.swift; sourceTree = "<group>"; };
+		18E980CD27BE384F00BFF5D3 /* NoticeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeDetailViewController.swift; sourceTree = "<group>"; };
 		649049F50AE4B343149A5311 /* Pods_MBTI_CAT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MBTI_CAT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3AF9D5BF0952755AC3D0DC9 /* Pods-MBTI_CAT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MBTI_CAT.release.xcconfig"; path = "Target Support Files/Pods-MBTI_CAT/Pods-MBTI_CAT.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,6 +114,7 @@
 				188A7EAA27B241BB000718E7 /* SuggestionsViewController.swift */,
 				1829E48927B4F3F500654B60 /* NoticeViewController.swift */,
 				1854FFE827B6227C00CD33D8 /* ANoticeTableViewCell.swift */,
+				18E980CD27BE384F00BFF5D3 /* NoticeDetailViewController.swift */,
 				18415759279003AE0095F8A9 /* Assets.xcassets */,
 				1841575B279003AE0095F8A9 /* LaunchScreen.storyboard */,
 				1841575E279003AE0095F8A9 /* Info.plist */,
@@ -253,6 +256,7 @@
 				1841576E279012A30095F8A9 /* SimpleTestViewController.swift in Sources */,
 				1829E48A27B4F3F500654B60 /* NoticeViewController.swift in Sources */,
 				1832663B2797E5BF00D4C350 /* TestResultViewController.swift in Sources */,
+				18E980CE27BE384F00BFF5D3 /* NoticeDetailViewController.swift in Sources */,
 				1854FFE927B6227C00CD33D8 /* ANoticeTableViewCell.swift in Sources */,
 				1895D24D279E868200567BBF /* DetailContentsViewController.swift in Sources */,
 				18415771279012C50095F8A9 /* CharacteristicViewController.swift in Sources */,

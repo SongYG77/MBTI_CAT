@@ -13,5 +13,6 @@ target 'MBTI_CAT' do
   pod 'Firebase/Analytics'
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'
+  pod 'NVActivityIndicatorView'
   
 end

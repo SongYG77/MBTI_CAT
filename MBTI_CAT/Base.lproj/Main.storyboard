@@ -1367,30 +1367,66 @@
             </objects>
             <point key="canvasLocation" x="2902.898550724638" y="2310.9375"/>
         </scene>
-        <!--View Controller-->
+        <!--Notice Detail View Controller-->
         <scene sceneID="ySX-Lc-4eg">
             <objects>
-                <viewController id="k5m-Af-GK4" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailNoticeVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="k5m-Af-GK4" customClass="NoticeDetailViewController" customModule="MBTI_CAT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TrI-an-rmz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="공지사항 디테일." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fu6-JT-mbx">
-                                <rect key="frame" x="151" y="111" width="112" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="타이틀" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UmL-CX-cYv">
+                                <rect key="frame" x="20" y="113" width="323" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="날짜" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U3b-n1-bAD">
+                                <rect key="frame" x="20" y="177" width="164" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="내용" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="s9K-32-5w2">
+                                <rect key="frame" x="20" y="236" width="374" height="523"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A0Q-VB-2iW">
+                                <rect key="frame" x="20" y="44" width="34" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.56862745100000001" green="0.47843137250000001" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" image="BackIcon"/>
+                                <connections>
+                                    <action selector="onBtnBack:" destination="k5m-Af-GK4" eventType="touchUpInside" id="UR4-9l-4mc"/>
+                                    <action selector="onBtnBack:" destination="8as-uL-TfR" eventType="touchUpInside" id="Xhx-cO-7Uw"/>
+                                    <action selector="onBtnBack:" destination="UoD-6a-axy" eventType="touchUpInside" id="i3o-v1-OTP"/>
+                                    <action selector="onBtnGoBack:" destination="FgA-rT-AhB" eventType="touchUpInside" id="PTw-gE-b1w"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hv2-eT-amP"/>
                         <color key="backgroundColor" red="1" green="0.97647058959999999" blue="0.92941176889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="u03-w1-tmm"/>
+                    <connections>
+                        <outlet property="BackButton" destination="A0Q-VB-2iW" id="L20-K8-TxC"/>
+                        <outlet property="ContentTextView" destination="s9K-32-5w2" id="atR-MG-Wnt"/>
+                        <outlet property="DateLabel" destination="U3b-n1-bAD" id="3t7-gy-hlH"/>
+                        <outlet property="TitleLabel" destination="UmL-CX-cYv" id="UcQ-DZ-nTR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wrn-rW-JcN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3743" y="2322"/>
+            <point key="canvasLocation" x="3740.579710144928" y="2310.9375"/>
         </scene>
         <!--Home-->
         <scene sceneID="JA7-bP-kQr">

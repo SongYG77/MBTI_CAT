@@ -6,8 +6,7 @@
 //
 
 // 해야할 일
-// 파이어베이스에서 데이터를 가져와 테이블에 보여주기
-// 라이프사이클 문제 : 현재 데이터를 불러오기전에 셀 개수를 정함.
+// 날짜별로 정렬 한번 해야할듯.
 
 
 import UIKit
@@ -27,23 +26,27 @@ class NoticeViewController: UIViewController, UITableViewDelegate, UITableViewDa
     var date : Array<String> = [ "2022-02-02", "2022-02-03"]
     
     struct NoticeStruct {
-        var Title : String = ""
-        var Date : String = ""
-        var Content : String = ""
+        var Title : String? = ""
+        var Date : String? = ""
+        var Content : String? = ""
     }
     
+    var NoticeTitleArr : [String] = []
+    var NoticeDateArr : [String] = []
+    var NoticeContentArr : [String] = []
     
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
-    var NoticeArr : [NoticeStruct] = []
+    var NoticeArr : [NoticeStruct]? = []
     
     let db = Firestore.firestore()
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        getData()
+        
         NoticeTableView.delegate = self
         NoticeTableView.dataSource = self
         
@@ -58,8 +61,9 @@ class NoticeViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print(NoticeArr.count)
-        return NoticeArr.count
+        
+        print(NoticeContentArr)
+        return NoticeDateArr.count
         
     }
     
@@ -67,10 +71,11 @@ class NoticeViewController: UIViewController, UITableViewDelegate, UITableViewDa
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = self.NoticeTableView.dequeueReusableCell(withIdentifier: "ANoticeTableViewCell", for: indexPath) as! ANoticeTableViewCell
         
-        cell.NoticeTitleLabel.text = NoticeArr[indexPath.row].Title
-        cell.DateLabel.text = NoticeArr[indexPath.row].Date
+        cell.NoticeTitleLabel.text = NoticeTitleArr[indexPath.row]
+        cell.DateLabel.text = NoticeDateArr[indexPath.row]
         cell.selectionStyle = .none
         return cell
+        
     }
     
     
@@ -80,6 +85,18 @@ class NoticeViewController: UIViewController, UITableViewDelegate, UITableViewDa
         return 70
     }
     
+    //셀 클릭 이벤트
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let NextVC = self.storyboard?.instantiateViewController(identifier: "DetailNoticeVC") as! NoticeDetailViewController
+        
+        NextVC.content = NoticeContentArr[indexPath.row]
+        NextVC.date = NoticeDateArr[indexPath.row]
+        NextVC.noticetitle = NoticeTitleArr[indexPath.row]
+        
+        self.navigationController?.pushViewController(NextVC, animated: true)
+        
+    }
     
     //데이터 가져오기
     func getData() {
@@ -111,13 +128,14 @@ class NoticeViewController: UIViewController, UITableViewDelegate, UITableViewDa
                     data.Date = date
                     data.Content = content
                         
-                    self.NoticeArr.append(data)
+                    self.NoticeArr?.append(data)
                 }
                     
                 
             }
             
             print("get data end")
+            
            
         }
         NoticeTableView.reloadData()
