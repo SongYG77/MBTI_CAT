@@ -23,6 +23,14 @@ class TestResultViewController: UIViewController {
     @IBOutlet weak var RankingTV2: UITextView!
     @IBOutlet weak var RankingTV3: UITextView!
     @IBOutlet weak var RankingTV4: UITextView!
+    @IBOutlet weak var ResultCatImg_Image: UIImageView!
+    
+    @IBOutlet weak var StoreButton: UIButton!
+    @IBOutlet weak var DetailButton: UIButton!
+    
+    @IBOutlet weak var RankTitleLabel: UILabel!
+    @IBOutlet weak var RankFrameView: UIView!
+    
     
     
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
@@ -88,8 +96,38 @@ class TestResultViewController: UIViewController {
         RankingTV2.text = "2. " + MyCatRanking[1] + " : " + String(percentRanking[1] * 100) + "%\n"
         RankingTV3.text = "3. " + MyCatRanking[2] + " : " + String(percentRanking[2] * 100) + "%\n"
         RankingTV4.text = "4. " + MyCatRanking[3] + " : " + String(percentRanking[3] * 100) + "%\n"
-       
         
+        ResultCatImg_Image.image = UIImage(named: "SampleCat.png")
+        
+        RankTitleLabel.clipsToBounds = true
+        RankTitleLabel.layer.cornerRadius = 15
+        RankTitleLabel.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+        
+        ResultLabel.clipsToBounds = true
+        ResultLabel.layer.cornerRadius = 15
+        ResultLabel.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+        
+        ResultCatImg_Image.layer.borderWidth = 2
+        ResultCatImg_Image.layer.borderColor = UIColor(displayP3Red: 249/255, green: 212/255, blue: 153/255, alpha: 1).cgColor
+        ResultCatImg_Image.layer.cornerRadius = 15
+        ResultCatImg_Image.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
+        ResultCatImg_Image.clipsToBounds = true
+        
+        RankFrameView.layer.borderWidth = 2
+        RankFrameView.layer.borderColor = UIColor(displayP3Red: 249/255, green: 212/255, blue: 153/255, alpha: 1).cgColor
+        RankFrameView.layer.cornerRadius = 15
+        RankFrameView.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
+        RankFrameView.clipsToBounds = true
+        
+        StoreButton.layer.cornerRadius = 15
+        StoreButton.clipsToBounds = true
+        StoreButton.layer.borderWidth = 2
+        StoreButton.layer.borderColor = UIColor(displayP3Red: 249/255, green: 212/255, blue: 153/255, alpha: 1).cgColor
+        
+        DetailButton.layer.cornerRadius = 15
+        DetailButton.clipsToBounds = true
+        DetailButton.layer.borderWidth = 2
+        DetailButton.layer.borderColor = UIColor(displayP3Red: 249/255, green: 212/255, blue: 153/255, alpha: 1).cgColor
     }
     
 

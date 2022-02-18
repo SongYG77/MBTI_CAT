@@ -32,10 +32,25 @@ class NoticeDetailViewController: UIViewController {
         BackButton.layer.cornerRadius = 10
         BackButton.clipsToBounds = true
         
+        
+        
+        
+        ContentTextView.layer.borderWidth = 2
+        ContentTextView.layer.borderColor = UIColor(displayP3Red: 249/255, green: 212/255, blue: 153/255, alpha: 1).cgColor
+        ContentTextView.layer.cornerRadius = 15
+        ContentTextView.clipsToBounds = true
+        
+        DateLabel.layer.borderWidth = 2
+        DateLabel.layer.borderColor = UIColor(displayP3Red: 249/255, green: 212/255, blue: 153/255, alpha: 1).cgColor
+        DateLabel.layer.cornerRadius = 10
+        DateLabel.clipsToBounds = true
+        
+        
         TitleLabel.text = noticetitle
-        ContentTextView.text = content
         DateLabel.text = date
         
+        let contenttext = content.replacingOccurrences(of: "\\n", with: "\n")
+        ContentTextView.text = contenttext
         
     }
     

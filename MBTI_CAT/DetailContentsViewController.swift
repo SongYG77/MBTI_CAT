@@ -34,6 +34,9 @@ class DetailContentsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        CatImg_Image.image = UIImage(named: "SampleCat.png")
 
         
         CatNameTitle_Label.clipsToBounds = true

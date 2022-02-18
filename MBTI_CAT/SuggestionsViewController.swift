@@ -42,6 +42,7 @@ class SuggestionsViewController: UIViewController {
     @IBOutlet weak var EmailTextField: UITextField!
     @IBOutlet weak var ContentsTextField: UITextField!
     @IBOutlet weak var BackButton: UIButton!
+    @IBOutlet weak var AcceptButton: UIButton!
     
     
     override func viewDidLoad() {
@@ -52,6 +53,11 @@ class SuggestionsViewController: UIViewController {
         BackButton.layer.borderColor = UIColor(displayP3Red: 249/255, green: 212/255, blue: 153/255, alpha: 1).cgColor
         BackButton.layer.cornerRadius = 10
         BackButton.clipsToBounds = true
+        
+        AcceptButton.layer.cornerRadius = 15
+        AcceptButton.clipsToBounds = true
+        AcceptButton.layer.borderWidth = 2
+        AcceptButton.layer.borderColor = UIColor(displayP3Red: 249/255, green: 212/255, blue: 153/255, alpha: 1).cgColor
         
         EmailTitleLabel.clipsToBounds = true
         EmailTitleLabel.layer.cornerRadius = 15
