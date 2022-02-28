@@ -36,9 +36,9 @@ class DetailContentsViewController: UIViewController {
         super.viewDidLoad()
         
         
-        CatImg_Image.image = UIImage(named: "SampleCat.png")
+        CatImg_Image.image = UIImage(named: CatKinds + ".png")
 
-        
+        CatNameTitle_Label.text = CatKinds
         CatNameTitle_Label.clipsToBounds = true
         CatNameTitle_Label.layer.cornerRadius = 15
         CatNameTitle_Label.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]

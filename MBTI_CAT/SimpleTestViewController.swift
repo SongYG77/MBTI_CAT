@@ -13,12 +13,14 @@ class SimpleTestViewController: UIViewController {
     @IBOutlet weak var NoticeTitle_Label: UILabel!
     @IBOutlet weak var StartButton: UIButton!
     @IBOutlet weak var TestNoticeTV: UITextView!
+    @IBOutlet weak var BGImg: UIImageView!
     
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        BGImg.layer.zPosition = -1
         StartButton.layer.borderWidth = 2
         StartButton.layer.borderColor = UIColor(displayP3Red: 249/255, green: 212/255, blue: 153/255, alpha: 1).cgColor
         StartButton.layer.cornerRadius = 10

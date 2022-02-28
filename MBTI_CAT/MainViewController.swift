@@ -45,6 +45,7 @@ class MainViewController: UIViewController {
     @IBOutlet weak var MyCatLabel: UILabel!
     @IBOutlet weak var MyPersentLabel: UILabel!
     
+    @IBOutlet weak var BGImg: UIImageView!
     
     
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
@@ -56,12 +57,16 @@ class MainViewController: UIViewController {
     
     var isnewData : Bool = false
     
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         appDelegate.mainVC = self
 
+       
+        BGImg.layer.zPosition = -1
+    
         InfoView.layer.cornerRadius = 15
         InfoView.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
         InfoView.layer.borderWidth = 2
@@ -118,7 +123,7 @@ class MainViewController: UIViewController {
             
             
             UserInfo = (UserDefaults.standard.value(forKey: "CatRanking1") as! String)
-            UserMBTI_Image.image = UIImage(named: "SampleCat.png")
+            UserMBTI_Image.image = UIImage(named: UserInfo ?? "SampleCat" + ".png")
             UserMBTI_Image.isHidden = false
             
             Rank1CatLabel.text = "1. " + (UserDefaults.standard.value(forKey: "CatRanking1") as! String)
@@ -178,7 +183,7 @@ class MainViewController: UIViewController {
         
         if UserDefaults.standard.value(forKey: "CatRanking1") != nil {
             UserInfo = (UserDefaults.standard.value(forKey: "CatRanking1") as! String)
-            UserMBTI_Image.image = UIImage(named: "SampleCat.png") ?? nil
+            UserMBTI_Image.image = UIImage(named: UserInfo ?? "SampleCat" + ".png")
             MyCatLabel.text = UserDefaults.standard.value(forKey: "CatRanking1") as? String
             
             let myper = (Float(UserDefaults.standard.value(forKey: "Ranking_Percent1") as? String ?? "0") ?? 0) * 100.0

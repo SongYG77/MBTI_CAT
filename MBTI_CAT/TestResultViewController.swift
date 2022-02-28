@@ -46,7 +46,7 @@ class TestResultViewController: UIViewController {
         "Belinese"      :   "1 1 0 0 1 0 1 1", //    발리니즈
         "Bombay"        :   "1 1 1 0 0 0 0 1", //    봄베이
         "Egyptian Mau"  :   "1 0 0 1 0 0 0 1", //    이집션마우
-        "Cymric"        :   "1 0 1 0 1 0 0 0", //    킴릭
+        "Cymric"        :   "1 0 1 0 1 0 0 0", //    킴릭 (x)
         "American Curl" :   "1 1 0 0 0 0 0 1", //    아메리칸컬
         "Abyssinian"    :   "1 1 0 0 0 0 0 0", //    아비시안
         "Bengal"        :   "1 1 0 0 1 1 0 0", //    뱅갈
@@ -55,18 +55,18 @@ class TestResultViewController: UIViewController {
         "Exotic"        :   "0 0 1 0 0 0 0 0", //    엑조틱
         "American Short":   "1 1 0 1 1 0 0 1", //    아메리칸숏
         "Persian"       :   "0 1 1 0 0 0 0 0", //    페르시안
-        "Burmilla"      :   "0 1 0 0 0 0 0 0", //    버밀라
+        "Burmilla"      :   "0 1 0 0 0 0 0 0", //    버밀라(x)
         "Norwegian forest": "0 1 0 1 0 1 0 0", //    노르웨이숲
         "British Short" :   "0 1 1 1 0 0 0 0", //    브리티시 숏
-        "Himalayan"     :   "0 1 1 0 0 0 0 0", //    히말라얀
+        "Himalayan"     :   "0 1 1 0 0 0 0 0", //    히말라얀(x)
         "Scottish Fold" :   "0 1 0 0 0 0 0 0", //    스코티시 폴드
-        "Siamese"       :   "0 1 0 0 1 0 0 0", //    샴
+        "Siamese"       :   "0 1 0 0 1 0 0 0", //    샴(x)
         "Turkish angora":   "1 0 0 0 0 0 0 0", //    터키시 앙고라
         "Cornish Rex"   :   "1 0 0 0 0 1 0 0", //    코니시 렉스
         "Japanese Bobtail": "1 0 0 0 1 0 0 0", //    재패지즈 밥테일
-        "Javanese"      :   "1 0 0 0 0 0 1 0", //    자바니즈
+        "Javanese"      :   "1 0 0 0 0 0 1 0", //    자바니즈(x)
         "Burmese"       :   "0 0 1 0 0 0 0 1", //    버미즈
-        "Chantilly"     :   "0 0 0 0 0 0 1 0", //    샹틀리
+        "Chantilly"     :   "0 0 0 0 0 0 1 0", //    샹틀리(X)
         "Birman"        :   "0 0 0 0 0 0 0 1", //    버만
     ]
 
@@ -91,7 +91,7 @@ class TestResultViewController: UIViewController {
         RankingTV3.text = "3. " + MyCatRanking[2] + " : " + String(percentRanking[2] * 100) + "%\n"
         RankingTV4.text = "4. " + MyCatRanking[3] + " : " + String(percentRanking[3] * 100) + "%\n"
         
-        ResultCatImg_Image.image = UIImage(named: "SampleCat.png")
+        ResultCatImg_Image.image = UIImage(named: MyCatRanking[0] + ".png")
         
         RankTitleLabel.clipsToBounds = true
         RankTitleLabel.layer.cornerRadius = 15
