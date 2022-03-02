@@ -17,6 +17,12 @@ import NVActivityIndicatorView
 
 class MyCharacController: UIViewController {
 
+    @IBOutlet weak var MyInfoView: UIView!
+    
+    @IBOutlet weak var MyCatImg: UIImageView!
+    @IBOutlet weak var MyCat_Label: UILabel!
+    @IBOutlet weak var CatChar_Label: UILabel!
+    @IBOutlet weak var Persent_Label: UILabel!
     
     @IBOutlet weak var MyResultButton: UIButton!
     @IBOutlet weak var FiveCharButton: UIButton!
@@ -51,7 +57,14 @@ class MyCharacController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
+        
+        
+        MyInfoView.layer.cornerRadius = 15
+        MyInfoView.clipsToBounds = true
+        MyInfoView.layer.borderWidth = 2
+        MyInfoView.layer.borderColor = UIColor(displayP3Red: 249/255, green: 212/255, blue: 153/255, alpha: 1).cgColor
+        
+        
         MyResultButton.layer.cornerRadius = 15
         MyResultButton.clipsToBounds = true
         MyResultButton.layer.borderWidth = 2
@@ -67,8 +80,32 @@ class MyCharacController: UIViewController {
         ResetButton.layer.borderWidth = 2
         ResetButton.layer.borderColor = UIColor(displayP3Red: 249/255, green: 212/255, blue: 153/255, alpha: 1).cgColor
         
+        MyCatImg.layer.cornerRadius = 10
+        MyCatImg.layer.borderWidth = 2
+        MyCatImg.layer.borderColor = UIColor.lightGray.cgColor
+        MyCatImg.clipsToBounds = true
+        
+        
+        
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        if UserDefaults.standard.value(forKey: "CatRanking1") != nil {
+            let UserInfo : String? = (UserDefaults.standard.value(forKey: "CatRanking1") as! String)
+            MyCatImg.image = UIImage(named: UserInfo ?? "SampleCat" + ".png")
+            MyCat_Label.text = UserDefaults.standard.value(forKey: "CatRanking1") as? String
+            
+            let myper = (Float(UserDefaults.standard.value(forKey: "Ranking_Percent1") as? String ?? "0") ?? 0) * 100.0
+            Persent_Label.text = "닮은 정도 : " + String(myper) + "%"
+            
+            
+        }
+        else {
+            MyCatImg.image = nil
+            MyCat_Label.text = "결과가 없습니다."
+            Persent_Label.text = ""
+        }
+    }
 
     @IBAction func onBtnResult(_ sender: UIButton) {
         

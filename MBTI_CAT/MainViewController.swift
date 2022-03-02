@@ -112,6 +112,12 @@ class MainViewController: UIViewController {
         RankTitle_Label.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
         RankTitle_Label.clipsToBounds = true
         
+        UserMBTI_Image.layer.cornerRadius = 10
+        UserMBTI_Image.layer.borderWidth = 2
+        UserMBTI_Image.layer.borderColor = UIColor.lightGray.cgColor
+        UserMBTI_Image.clipsToBounds = true
+        
+        
         
         PrepareAnimation()
     }
@@ -193,7 +199,6 @@ class MainViewController: UIViewController {
         }
         else {
             UserMBTI_Image.image = nil
-            UserMBTI_Image.isHidden = true
             MyCatLabel.text = "결과가 없습니다."
             MyPersentLabel.text = ""
         }

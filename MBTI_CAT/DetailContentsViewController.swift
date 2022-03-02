@@ -77,12 +77,12 @@ class DetailContentsViewController: UIViewController {
         
         BackButton2.layer.borderWidth = 2
         BackButton2.layer.borderColor = UIColor(displayP3Red: 249/255, green: 212/255, blue: 153/255, alpha: 1).cgColor
-        BackButton2.layer.cornerRadius = 10
+        BackButton2.layer.cornerRadius = 15
         BackButton2.clipsToBounds = true
         
         BackButton1.layer.borderWidth = 2
         BackButton1.layer.borderColor = UIColor(displayP3Red: 249/255, green: 212/255, blue: 153/255, alpha: 1).cgColor
-        BackButton1.layer.cornerRadius = 15
+        BackButton1.layer.cornerRadius = 10
         BackButton1.clipsToBounds = true
         
         print(CatKinds)

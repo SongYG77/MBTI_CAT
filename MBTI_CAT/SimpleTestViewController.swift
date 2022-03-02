@@ -33,11 +33,13 @@ class SimpleTestViewController: UIViewController {
         NoticeTitle_Label.layer.cornerRadius = 15
         NoticeTitle_Label.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
         
+        
         TestNoticeTV.layer.borderWidth = 2
         TestNoticeTV.layer.borderColor = UIColor(displayP3Red: 249/255, green: 212/255, blue: 153/255, alpha: 1).cgColor
         TestNoticeTV.layer.cornerRadius = 15
         TestNoticeTV.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
         TestNoticeTV.clipsToBounds = true
+        TestNoticeTV.font = UIFont(name: "Cafe24Syongsyong", size: 21)
         
         
     }

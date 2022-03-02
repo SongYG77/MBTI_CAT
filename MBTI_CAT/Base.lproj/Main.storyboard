@@ -9,6 +9,11 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cafe24Syongsyong.ttf">
+            <string>Cafe24Syongsyong</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -18,17 +23,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="나의 고양이" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xZa-YI-yob">
-                                <rect key="frame" x="104" y="76" width="206" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="WK9-7n-1sI"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="45"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NLg-SV-5Rx">
-                                <rect key="frame" x="20" y="398" width="374" height="60"/>
+                                <rect key="frame" x="20" y="395" width="374" height="60"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="고양이종류" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FCy-lf-7Rj">
                                         <rect key="frame" x="8" y="11" width="135" height="38"/>
@@ -36,7 +32,7 @@
                                             <constraint firstAttribute="height" constant="38" id="8Ix-et-G6i"/>
                                             <constraint firstAttribute="width" constant="135" id="f1P-Oc-LzJ"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="Cafe24Syongsyong" family="Cafe24 Syongsyong" pointSize="17"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -59,7 +55,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6h8-Sz-JZJ">
-                                <rect key="frame" x="20" y="458" width="374" height="60"/>
+                                <rect key="frame" x="20" y="455" width="374" height="60"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="고양이종류" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="imf-ds-oeg">
                                         <rect key="frame" x="8" y="11" width="135" height="38"/>
@@ -67,7 +63,7 @@
                                             <constraint firstAttribute="height" constant="38" id="42P-lR-Xog"/>
                                             <constraint firstAttribute="width" constant="135" id="X1U-Ql-fxW"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="Cafe24Syongsyong" family="Cafe24 Syongsyong" pointSize="17"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -89,7 +85,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xnq-e4-ECb">
-                                <rect key="frame" x="20" y="518" width="374" height="60"/>
+                                <rect key="frame" x="20" y="515" width="374" height="60"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="고양이종류" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xbj-YQ-Oc7">
                                         <rect key="frame" x="8" y="11" width="135" height="38"/>
@@ -97,7 +93,7 @@
                                             <constraint firstAttribute="height" constant="38" id="L4F-lr-oeu"/>
                                             <constraint firstAttribute="width" constant="135" id="VOO-1r-6IX"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="Cafe24Syongsyong" family="Cafe24 Syongsyong" pointSize="17"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -119,7 +115,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dVr-cs-1e3">
-                                <rect key="frame" x="20" y="578" width="374" height="60"/>
+                                <rect key="frame" x="20" y="575" width="374" height="60"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="고양이종류" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rc8-as-Xka">
                                         <rect key="frame" x="8" y="11" width="135" height="38"/>
@@ -127,7 +123,7 @@
                                             <constraint firstAttribute="width" constant="135" id="O2F-H6-85Z"/>
                                             <constraint firstAttribute="height" constant="38" id="gLb-QJ-u2g"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="Cafe24Syongsyong" family="Cafe24 Syongsyong" pointSize="17"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -151,27 +147,27 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dgs-OX-Scg">
-                                <rect key="frame" x="20" y="195" width="374" height="146"/>
+                                <rect key="frame" x="20" y="191" width="374" height="146"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LQx-ki-FoM">
                                         <rect key="frame" x="8" y="8" width="147" height="130"/>
                                         <color key="backgroundColor" systemColor="systemGray5Color"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="고양이 종류 " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ae6-5I-DXP">
-                                        <rect key="frame" x="163" y="20" width="203" height="24"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <rect key="frame" x="163" y="20" width="203" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="Cafe24Syongsyong" family="Cafe24 Syongsyong" pointSize="21"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="특징" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kDc-XU-h8Z">
-                                        <rect key="frame" x="163" y="64" width="203" height="17"/>
-                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                        <rect key="frame" x="163" y="63.5" width="203" height="15.5"/>
+                                        <fontDescription key="fontDescription" name="Cafe24Syongsyong" family="Cafe24 Syongsyong" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="닮은 정도 : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Te-LX-xaV">
-                                        <rect key="frame" x="163" y="96" width="203" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="163" y="94" width="203" height="19"/>
+                                        <fontDescription key="fontDescription" name="Cafe24Syongsyong" family="Cafe24 Syongsyong" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -195,23 +191,23 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="닮은 고양이 순위" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p6n-8j-iGg">
-                                <rect key="frame" x="20" y="371" width="374" height="35"/>
+                                <rect key="frame" x="20" y="367" width="374" height="35"/>
                                 <color key="backgroundColor" red="0.56862745100000001" green="0.47843137250000001" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="bkn-sm-x9U"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="27"/>
+                                <fontDescription key="fontDescription" name="Cafe24Syongsyong" family="Cafe24 Syongsyong" pointSize="27"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="닮은 고양이" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="43b-4p-mwa">
-                                <rect key="frame" x="20" y="160" width="374" height="35"/>
+                                <rect key="frame" x="20" y="156" width="374" height="35"/>
                                 <color key="backgroundColor" red="0.56862745100000001" green="0.47843137250000001" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="FtN-DS-7CK"/>
                                     <constraint firstAttribute="height" constant="35" id="PFe-0e-F3c"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="27"/>
+                                <fontDescription key="fontDescription" name="Cafe24Syongsyong" family="Cafe24 Syongsyong" pointSize="27"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -220,6 +216,13 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="109" id="rOP-bv-aSE"/>
                                     <constraint firstAttribute="height" constant="125" id="z54-lx-8b5"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo_Title2" translatesAutoresizingMaskIntoConstraints="NO" id="fSl-e0-39Q">
+                                <rect key="frame" x="72" y="59" width="280" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="ZJ4-bW-mzo"/>
+                                    <constraint firstAttribute="height" constant="70" id="pRO-WK-HjJ"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -232,14 +235,14 @@
                             <constraint firstItem="Dgs-OX-Scg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9Sw-ns-dG0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6h8-Sz-JZJ" secondAttribute="trailing" constant="20" id="9bi-WA-TMZ"/>
                             <constraint firstItem="p6n-8j-iGg" firstAttribute="top" secondItem="Dgs-OX-Scg" secondAttribute="bottom" constant="30" id="Dom-xf-xCw"/>
+                            <constraint firstItem="43b-4p-mwa" firstAttribute="top" secondItem="fSl-e0-39Q" secondAttribute="bottom" constant="27" id="Fjk-5L-avE"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Xnq-e4-ECb" secondAttribute="trailing" constant="20" id="FvN-Xz-F1j"/>
-                            <constraint firstItem="xZa-YI-yob" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="GFA-ks-QU9"/>
                             <constraint firstItem="dVr-cs-1e3" firstAttribute="top" secondItem="Xnq-e4-ECb" secondAttribute="bottom" id="Ghh-Ih-lJf"/>
+                            <constraint firstItem="fSl-e0-39Q" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="HgI-hv-NdZ"/>
                             <constraint firstItem="p6n-8j-iGg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="KVP-Ko-sBr"/>
-                            <constraint firstItem="xZa-YI-yob" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="KrB-rZ-P7f"/>
                             <constraint firstItem="NLg-SV-5Rx" firstAttribute="height" secondItem="Dgs-OX-Scg" secondAttribute="height" multiplier="0.410959" id="LQ1-Ws-gpa"/>
-                            <constraint firstItem="43b-4p-mwa" firstAttribute="top" secondItem="xZa-YI-yob" secondAttribute="bottom" constant="24" id="LuW-58-FFT"/>
                             <constraint firstItem="Hs2-GN-VPx" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="18" id="PE7-zS-Xhs"/>
+                            <constraint firstItem="fSl-e0-39Q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="5" id="Tbd-cp-kL2"/>
                             <constraint firstItem="Xnq-e4-ECb" firstAttribute="height" secondItem="NLg-SV-5Rx" secondAttribute="height" id="Tgb-wv-j9W"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dVr-cs-1e3" secondAttribute="trailing" constant="20" id="UyC-uT-VJX"/>
                             <constraint firstItem="NLg-SV-5Rx" firstAttribute="firstBaseline" secondItem="p6n-8j-iGg" secondAttribute="baseline" id="d8D-01-NZ0"/>
@@ -283,7 +286,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1346.376811594203" y="1545.5357142857142"/>
+            <point key="canvasLocation" x="-1346" y="1546"/>
         </scene>
         <!--Simple Test View Controller-->
         <scene sceneID="J7o-OE-Ue7">
@@ -293,14 +296,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="나와 비슷한 고양이 찾기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ioz-Gh-aUF">
-                                <rect key="frame" x="63" y="114" width="288" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="나와 비슷한 고양이 찾기" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ioz-Gh-aUF">
+                                <rect key="frame" x="53.5" y="114" width="307" height="38.5"/>
+                                <fontDescription key="fontDescription" name="Cafe24Syongsyong" family="Cafe24 Syongsyong" pointSize="35"/>
+                                <color key="textColor" red="0.46231025902993189" green="0.32170715094421776" blue="0.16283701853333335" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rnb-uo-4ey">
-                                <rect key="frame" x="20" y="330" width="374" height="180"/>
+                                <rect key="frame" x="20" y="332.5" width="374" height="180"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="180" id="MUl-Jh-U4r"/>
@@ -309,20 +312,18 @@
 
 테스트는 총 12가지 문항입니다. 
 
-각 문항에 자신과 비슷한 정도를 선택해주세요.
-
-</string>
+각 문항에 자신과 비슷한 정도를 선택해주세요.</string>
                                 <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Cafe24Syongsyong" family="Cafe24 Syongsyong" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t1T-fv-PxS">
-                                <rect key="frame" x="172" y="565" width="70" height="41"/>
+                                <rect key="frame" x="172" y="567.5" width="70" height="39"/>
                                 <color key="backgroundColor" red="0.56862745100000001" green="0.47843137250000001" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="Pmg-Xb-u2s"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="Cafe24Syongsyong" family="Cafe24 Syongsyong" pointSize="24"/>
                                 <state key="normal" title="Start">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -331,18 +332,18 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="안내사항" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QZs-39-JWq">
-                                <rect key="frame" x="20" y="295" width="374" height="35"/>
+                                <rect key="frame" x="20" y="297.5" width="374" height="35"/>
                                 <color key="backgroundColor" red="0.56862745100000001" green="0.47843137250000001" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="3cF-GP-pOJ"/>
                                     <constraint firstAttribute="height" constant="35" id="az8-tC-PuD"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="27"/>
+                                <fontDescription key="fontDescription" name="Cafe24Syongsyong" family="Cafe24 Syongsyong" pointSize="27"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Norwegian forest2" translatesAutoresizingMaskIntoConstraints="NO" id="A5E-mT-psJ">
-                                <rect key="frame" x="274" y="202" width="120" height="128"/>
+                                <rect key="frame" x="274" y="204.5" width="120" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="dau-7S-Olz"/>
                                     <constraint firstAttribute="height" constant="128" id="hpI-bw-wgF"/>
@@ -354,15 +355,14 @@
                         <constraints>
                             <constraint firstItem="rnb-uo-4ey" firstAttribute="top" secondItem="A5E-mT-psJ" secondAttribute="bottom" id="1fE-7g-wZT"/>
                             <constraint firstItem="QZs-39-JWq" firstAttribute="leading" secondItem="IEX-Iz-Qb7" secondAttribute="leading" constant="20" id="2wi-rP-2do"/>
-                            <constraint firstItem="ioz-Gh-aUF" firstAttribute="leading" secondItem="IEX-Iz-Qb7" secondAttribute="leading" constant="63" id="8hM-T5-jz6"/>
                             <constraint firstItem="rnb-uo-4ey" firstAttribute="top" secondItem="ioz-Gh-aUF" secondAttribute="bottom" constant="180" id="GPm-CM-Mn0"/>
-                            <constraint firstItem="IEX-Iz-Qb7" firstAttribute="trailing" secondItem="ioz-Gh-aUF" secondAttribute="trailing" constant="63" id="KAr-ji-WUd"/>
                             <constraint firstItem="rnb-uo-4ey" firstAttribute="leading" secondItem="IEX-Iz-Qb7" secondAttribute="leading" constant="20" id="NJx-X9-1PU"/>
                             <constraint firstItem="IEX-Iz-Qb7" firstAttribute="trailing" secondItem="rnb-uo-4ey" secondAttribute="trailing" constant="20" id="RPT-SA-iAP"/>
                             <constraint firstItem="ioz-Gh-aUF" firstAttribute="top" secondItem="IEX-Iz-Qb7" secondAttribute="top" constant="70" id="XLk-rE-sng"/>
                             <constraint firstItem="t1T-fv-PxS" firstAttribute="centerX" secondItem="gNT-oA-0qM" secondAttribute="centerX" id="fr1-Ic-lss"/>
                             <constraint firstItem="t1T-fv-PxS" firstAttribute="top" secondItem="rnb-uo-4ey" secondAttribute="bottom" constant="55" id="gWa-ld-ajy"/>
                             <constraint firstItem="rnb-uo-4ey" firstAttribute="top" secondItem="QZs-39-JWq" secondAttribute="bottom" id="iTY-wf-aG9"/>
+                            <constraint firstItem="ioz-Gh-aUF" firstAttribute="centerX" secondItem="gNT-oA-0qM" secondAttribute="centerX" id="n4r-9f-zT1"/>
                             <constraint firstItem="IEX-Iz-Qb7" firstAttribute="trailing" secondItem="QZs-39-JWq" secondAttribute="trailing" constant="20" id="r3z-Ct-bRs"/>
                             <constraint firstItem="IEX-Iz-Qb7" firstAttribute="trailing" secondItem="A5E-mT-psJ" secondAttribute="trailing" constant="20" id="w3p-j2-38N"/>
                         </constraints>
@@ -389,7 +389,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KL4-7f-do1" customClass="DLRadioButton">
-                                <rect key="frame" x="29" y="503" width="60" height="60"/>
+                                <rect key="frame" x="29" y="502.5" width="60" height="60"/>
                                 <color key="backgroundColor" red="1" green="0.97647058959999999" blue="0.94901961089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="C8n-2E-hQa"/>
@@ -422,7 +422,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j7Y-5I-hng" customClass="DLRadioButton">
-                                <rect key="frame" x="325" y="503" width="60" height="60"/>
+                                <rect key="frame" x="325" y="502.5" width="60" height="60"/>
                                 <color key="backgroundColor" red="1" green="0.97647058959999999" blue="0.94901961089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="3md-bO-w3J"/>
@@ -451,7 +451,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MFO-Uv-p0A" customClass="DLRadioButton">
-                                <rect key="frame" x="113" y="508" width="50" height="50"/>
+                                <rect key="frame" x="113" y="507.5" width="50" height="50"/>
                                 <color key="backgroundColor" red="1" green="0.97647058959999999" blue="0.94901961089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="LbO-OH-Rpz"/>
@@ -473,7 +473,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pM9-Rz-I5z" customClass="DLRadioButton">
-                                <rect key="frame" x="251" y="508" width="50" height="50"/>
+                                <rect key="frame" x="251" y="507.5" width="50" height="50"/>
                                 <color key="backgroundColor" red="1" green="0.97647058959999999" blue="0.94901961089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="b42-tg-NrR"/>
@@ -495,7 +495,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vfv-8K-cug" customClass="DLRadioButton">
-                                <rect key="frame" x="187" y="513" width="40" height="40"/>
+                                <rect key="frame" x="187" y="512.5" width="40" height="40"/>
                                 <color key="backgroundColor" red="1" green="0.97647058959999999" blue="0.94901961089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="AM5-wQ-BN7"/>
@@ -517,25 +517,25 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="나와 비슷한 고양이 찾기" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2tQ-SI-XCC">
-                                <rect key="frame" x="30" y="79" width="354" height="36"/>
-                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="30"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="30" y="79" width="354" height="38.5"/>
+                                <fontDescription key="fontDescription" name="Cafe24Syongsyong" family="Cafe24 Syongsyong" pointSize="35"/>
+                                <color key="textColor" red="0.462310259" green="0.32170715090000002" blue="0.16283701850000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00/00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Omp-MP-pPI">
-                                <rect key="frame" x="168.5" y="125" width="77" height="33"/>
-                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="27"/>
+                                <rect key="frame" x="177" y="127.5" width="60.5" height="30"/>
+                                <fontDescription key="fontDescription" name="Cafe24Syongsyong" family="Cafe24 Syongsyong" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dIQ-zP-tQD">
-                                <rect key="frame" x="10" y="233" width="394" height="170"/>
+                                <rect key="frame" x="10" y="232.5" width="394" height="170"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="문항" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQx-CR-BOc">
                                         <rect key="frame" x="29" y="7" width="336" height="156.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="textColor" systemColor="labelColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <fontDescription key="fontDescription" name="Cafe24Syongsyong" family="Cafe24 Syongsyong" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
@@ -548,22 +548,22 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="예" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D9G-AK-YN0">
-                                <rect key="frame" x="49" y="466.5" width="20" height="28"/>
+                                <rect key="frame" x="49" y="466" width="20" height="28"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="28" id="lkX-vx-dbg"/>
                                     <constraint firstAttribute="width" constant="20" id="m63-bg-aAC"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="23"/>
+                                <fontDescription key="fontDescription" name="Cafe24Syongsyong" family="Cafe24 Syongsyong" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="문항" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WPo-Gu-hV2">
-                                <rect key="frame" x="10" y="198" width="394" height="35"/>
+                                <rect key="frame" x="10" y="197.5" width="394" height="35"/>
                                 <color key="backgroundColor" red="0.56862745098039214" green="0.47843137254901957" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="UfZ-rh-Rfe"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="27"/>
+                                <fontDescription key="fontDescription" name="Cafe24Syongsyong" family="Cafe24 Syongsyong" pointSize="27"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -572,33 +572,33 @@
                                 <color key="progressTintColor" red="0.56862745100000001" green="0.97647058959999999" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </progressView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="아니오" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vj3-Ni-oVv">
-                                <rect key="frame" x="322.5" y="465.5" width="65" height="30"/>
+                                <rect key="frame" x="322.5" y="465" width="65" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Cyu-j4-A5O"/>
                                     <constraint firstAttribute="width" constant="65" id="SWE-VR-1jP"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="23"/>
+                                <fontDescription key="fontDescription" name="Cafe24Syongsyong" family="Cafe24 Syongsyong" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="중간" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nvc-N0-H9P">
-                                <rect key="frame" x="190.5" y="469" width="33" height="23"/>
+                                <rect key="frame" x="190.5" y="468.5" width="33" height="23"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="33" id="LQA-l2-4kz"/>
                                     <constraint firstAttribute="height" constant="23" id="NV1-3J-Swb"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="19"/>
+                                <fontDescription key="fontDescription" name="Cafe24Syongsyong" family="Cafe24 Syongsyong" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HDh-RE-SvM">
-                                <rect key="frame" x="304" y="723" width="90" height="36"/>
+                                <rect key="frame" x="299" y="723" width="95" height="36"/>
                                 <color key="backgroundColor" red="0.56862745100000001" green="0.47843137250000001" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="Grh-mw-3nv"/>
-                                    <constraint firstAttribute="width" constant="90" id="lzI-sh-MpP"/>
+                                    <constraint firstAttribute="width" constant="95" id="lzI-sh-MpP"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Cafe24Syongsyong" family="Cafe24 Syongsyong" pointSize="25"/>
                                 <state key="normal" title="Next &gt;">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -681,7 +681,7 @@
                                     <constraint firstAttribute="height" constant="36" id="E1L-g6-6YA"/>
                                     <constraint firstAttribute="width" constant="140" id="IMo-2l-kuW"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                <fontDescription key="fontDescription" name="Cafe24Syongsyong" family="Cafe24 Syongsyong" pointSize="25"/>
                                 <state key="normal" title="결과 저장">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -695,12 +695,13 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="7sT-ZG-yPN"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="31"/>
+                                <fontDescription key="fontDescription" name="Cafe24Syongsyong" family="Cafe24 Syongsyong" pointSize="31"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dqu-6u-IUb">
                                 <rect key="frame" x="40" y="144" width="334" height="210"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="210" id="PvR-m9-4N9"/>
                                 </constraints>
@@ -711,7 +712,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="MMk-Il-u8i"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                <fontDescription key="fontDescription" name="Cafe24Syongsyong" family="Cafe24 Syongsyong" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -725,7 +726,7 @@
                                             <constraint firstAttribute="height" constant="35" id="LB8-Qm-SHH"/>
                                         </constraints>
                                         <color key="textColor" systemColor="labelColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <fontDescription key="fontDescription" name="Cafe24Syongsyong" family="Cafe24 Syongsyong" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="랭킹 표시" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oFx-UJ-fC2">
@@ -735,7 +736,7 @@
                                             <constraint firstAttribute="height" constant="35" id="AzS-wt-Yx8"/>
                                         </constraints>
                                         <color key="textColor" systemColor="labelColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <fontDescription key="fontDescription" name="Cafe24Syongsyong" family="Cafe24 Syongsyong" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="랭킹 표시" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pK6-2Y-Vl1">
@@ -745,7 +746,7 @@
                                             <constraint firstAttribute="height" constant="35" id="zkf-0D-YdE"/>
                                         </constraints>
                                         <color key="textColor" systemColor="labelColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <fontDescription key="fontDescription" name="Cafe24Syongsyong" family="Cafe24 Syongsyong" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="랭킹 표시" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BW2-T5-GTA">
@@ -755,7 +756,7 @@
                                             <constraint firstAttribute="height" constant="35" id="CGm-dx-S11"/>
                                         </constraints>
                                         <color key="textColor" systemColor="labelColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <fontDescription key="fontDescription" name="Cafe24Syongsyong" family="Cafe24 Syongsyong" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
@@ -783,7 +784,7 @@
                                     <constraint firstAttribute="height" constant="36" id="nVa-Z9-iyA"/>
                                     <constraint firstAttribute="width" constant="140" id="sXn-2w-bre"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                <fontDescription key="fontDescription" name="Cafe24Syongsyong" family="Cafe24 Syongsyong" pointSize="26"/>
                                 <state key="normal" title="자세히 보기">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -868,22 +869,25 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gUJ-x1-eBT">
                                 <rect key="frame" x="20" y="125" width="84" height="77"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <state key="normal" title="Button" image="Belinese"/>
                                 <connections>
                                     <action selector="onBtnBelinese:" destination="y49-JE-rcr" eventType="touchUpInside" id="dd7-KV-mqi"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="고양이 특징" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DUA-BE-ihG">
-                                <rect key="frame" x="137" y="63" width="141" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="고양이 특징" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DUA-BE-ihG">
+                                <rect key="frame" x="134" y="79" width="146" height="39"/>
+                                <fontDescription key="fontDescription" name="Cafe24Syongsyong" family="Cafe24 Syongsyong" pointSize="35"/>
+                                <color key="textColor" red="0.462310259" green="0.32170715090000002" blue="0.16283701850000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="peV-82-Rnc"/>
-                        <color key="backgroundColor" red="1" green="0.97647058959999999" blue="0.94901961089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="1" green="0.97647058959999999" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="DUA-BE-ihG" firstAttribute="centerX" secondItem="8ba-sf-Zpq" secondAttribute="centerX" id="1Wo-Bd-tjr"/>
+                            <constraint firstItem="DUA-BE-ihG" firstAttribute="top" secondItem="peV-82-Rnc" secondAttribute="top" constant="35" id="e3h-3L-Zq6"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="KY6-Ni-wW6"/>
                     <connections>
@@ -909,21 +913,21 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1167"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ukb-lL-T9n">
-                                                <rect key="frame" x="40" y="114" width="334" height="200"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <rect key="frame" x="40" y="110" width="334" height="200"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="200" id="lgu-LT-Mc0"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="고양이 종류 예정" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DU4-ra-G1E">
-                                                <rect key="frame" x="40" y="70" width="334" height="44"/>
+                                                <rect key="frame" x="40" y="70" width="334" height="40"/>
                                                 <color key="backgroundColor" red="0.56862745100000001" green="0.47843137250000001" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="36"/>
+                                                <fontDescription key="fontDescription" name="Cafe24Syongsyong" family="Cafe24 Syongsyong" pointSize="36"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6XA-rp-abX">
-                                                <rect key="frame" x="10" y="769" width="394" height="230"/>
+                                                <rect key="frame" x="10" y="765" width="394" height="230"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="230" id="n3G-B7-YI4"/>
@@ -934,12 +938,12 @@
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pjf-YZ-cLR">
-                                                <rect key="frame" x="142" y="1054" width="130" height="39"/>
+                                                <rect key="frame" x="142" y="1050" width="130" height="39"/>
                                                 <color key="backgroundColor" red="0.56862745100000001" green="0.47843137250000001" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="130" id="Fj1-Za-tEG"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <fontDescription key="fontDescription" name="Cafe24Syongsyong" family="Cafe24 Syongsyong" pointSize="24"/>
                                                 <state key="normal" title="돌아가기">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -948,7 +952,7 @@
                                                 </connections>
                                             </button>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SxS-eQ-rg5">
-                                                <rect key="frame" x="40" y="314" width="334" height="60"/>
+                                                <rect key="frame" x="40" y="310" width="334" height="60"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="dob-WC-y6V"/>
@@ -958,28 +962,28 @@
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="성격" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wcH-FU-lHz">
-                                                <rect key="frame" x="10" y="434" width="394" height="35"/>
+                                                <rect key="frame" x="10" y="430" width="394" height="35"/>
                                                 <color key="backgroundColor" red="0.6064125896" green="0.52520060540000002" blue="0.38272437450000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="35" id="Oiy-B8-Fhk"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="27"/>
+                                                <fontDescription key="fontDescription" name="Cafe24Syongsyong" family="Cafe24 Syongsyong" pointSize="27"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="특징" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="evC-27-rEf">
-                                                <rect key="frame" x="10" y="734" width="394" height="35"/>
+                                                <rect key="frame" x="10" y="730" width="394" height="35"/>
                                                 <color key="backgroundColor" red="0.56862745100000001" green="0.47843137250000001" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="35" id="Zj1-pr-5Tj"/>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="iku-dM-hlL"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="27"/>
+                                                <fontDescription key="fontDescription" name="Cafe24Syongsyong" family="Cafe24 Syongsyong" pointSize="27"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="86w-gi-a3z">
-                                                <rect key="frame" x="10" y="469" width="394" height="230"/>
+                                                <rect key="frame" x="10" y="465" width="394" height="230"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="230" id="Hay-h0-WDX"/>
@@ -989,12 +993,15 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TZj-Nf-UCd">
-                                                <rect key="frame" x="10" y="8" width="34" height="33"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TZj-Nf-UCd">
+                                                <rect key="frame" x="20" y="8" width="34" height="34"/>
                                                 <color key="backgroundColor" red="0.56862745100000001" green="0.47843137250000001" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="34" id="QWc-BI-Kht"/>
+                                                    <constraint firstAttribute="width" constant="34" id="aMS-bH-5YF"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                <state key="normal" image="BackIcon"/>
+                                                <state key="normal" image="BackIcon2"/>
                                                 <connections>
                                                     <action selector="onBtnGoBack:" destination="FgA-rT-AhB" eventType="touchUpInside" id="IlI-OB-1Dn"/>
                                                 </connections>
@@ -1005,6 +1012,7 @@
                                             <constraint firstItem="6XA-rp-abX" firstAttribute="leading" secondItem="02d-ao-QqQ" secondAttribute="leading" constant="10" id="2ZX-xz-5MM"/>
                                             <constraint firstItem="evC-27-rEf" firstAttribute="top" secondItem="86w-gi-a3z" secondAttribute="bottom" constant="35" id="5F9-gc-Kvo"/>
                                             <constraint firstAttribute="trailing" secondItem="86w-gi-a3z" secondAttribute="trailing" constant="10" id="5NM-AK-skY"/>
+                                            <constraint firstItem="TZj-Nf-UCd" firstAttribute="top" secondItem="02d-ao-QqQ" secondAttribute="top" constant="8" id="6pq-l2-t0f"/>
                                             <constraint firstItem="86w-gi-a3z" firstAttribute="top" secondItem="wcH-FU-lHz" secondAttribute="bottom" id="9D2-0I-gn5"/>
                                             <constraint firstItem="DU4-ra-G1E" firstAttribute="top" secondItem="02d-ao-QqQ" secondAttribute="top" constant="70" id="DAf-Dg-IA7"/>
                                             <constraint firstItem="Ukb-lL-T9n" firstAttribute="leading" secondItem="02d-ao-QqQ" secondAttribute="leading" constant="40" id="Gpm-30-QQX"/>
@@ -1016,6 +1024,7 @@
                                             <constraint firstItem="6XA-rp-abX" firstAttribute="top" secondItem="evC-27-rEf" secondAttribute="bottom" id="XYh-b2-tLT"/>
                                             <constraint firstItem="wcH-FU-lHz" firstAttribute="leading" secondItem="02d-ao-QqQ" secondAttribute="leading" constant="10" id="ZDu-eS-227"/>
                                             <constraint firstItem="Pjf-YZ-cLR" firstAttribute="top" secondItem="6XA-rp-abX" secondAttribute="bottom" constant="55" id="b1U-Ss-PjT"/>
+                                            <constraint firstItem="TZj-Nf-UCd" firstAttribute="leading" secondItem="02d-ao-QqQ" secondAttribute="leading" constant="20" id="eJy-sc-WkS"/>
                                             <constraint firstAttribute="trailing" secondItem="Ukb-lL-T9n" secondAttribute="trailing" constant="40" id="fGL-bG-ZdJ"/>
                                             <constraint firstAttribute="height" constant="1167" id="gCl-GW-POT"/>
                                             <constraint firstAttribute="trailing" secondItem="DU4-ra-G1E" secondAttribute="trailing" constant="40" id="jlD-CT-YeV"/>
@@ -1066,7 +1075,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sxs-ib-09U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="464" y="2267"/>
+            <point key="canvasLocation" x="463.768115942029" y="2266.7410714285711"/>
         </scene>
         <!--My Charac Controller-->
         <scene sceneID="cxc-Xl-Ryj">
@@ -1077,25 +1086,58 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T1s-Z7-tJr">
-                                <rect key="frame" x="20" y="162" width="374" height="150"/>
+                                <rect key="frame" x="20" y="162.5" width="374" height="150"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="clq-QC-Arr">
-                                        <rect key="frame" x="8" y="8" width="147" height="130"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="clq-QC-Arr">
+                                        <rect key="frame" x="8" y="8" width="147" height="134"/>
+                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
                                     </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="특징" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tb8-24-wHA">
+                                        <rect key="frame" x="163" y="65.5" width="203" height="18"/>
+                                        <fontDescription key="fontDescription" name="Cafe24Syongsyong" family="Cafe24 Syongsyong" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="닮은 정도 : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="luv-Yv-A9r">
+                                        <rect key="frame" x="163" y="98.5" width="203" height="21"/>
+                                        <fontDescription key="fontDescription" name="Cafe24Syongsyong" family="Cafe24 Syongsyong" pointSize="19"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="고양이 종류 " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zmt-6u-SaJ">
+                                        <rect key="frame" x="163" y="18" width="203" height="23.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="203" id="gPp-8e-s21"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Cafe24Syongsyong" family="Cafe24 Syongsyong" pointSize="21"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstItem="clq-QC-Arr" firstAttribute="leading" secondItem="T1s-Z7-tJr" secondAttribute="leading" constant="8" id="0s4-PI-sf7"/>
+                                    <constraint firstItem="luv-Yv-A9r" firstAttribute="top" secondItem="Tb8-24-wHA" secondAttribute="bottom" constant="15" id="3yD-TN-6NY"/>
+                                    <constraint firstAttribute="trailing" secondItem="zmt-6u-SaJ" secondAttribute="trailing" constant="8" id="DBn-ls-Q2C"/>
+                                    <constraint firstItem="Tb8-24-wHA" firstAttribute="top" secondItem="zmt-6u-SaJ" secondAttribute="bottom" constant="24" id="Tjs-0P-KBR"/>
+                                    <constraint firstItem="zmt-6u-SaJ" firstAttribute="top" secondItem="T1s-Z7-tJr" secondAttribute="top" constant="18" id="V0S-AA-vQj"/>
+                                    <constraint firstAttribute="bottom" secondItem="clq-QC-Arr" secondAttribute="bottom" constant="8" id="ZBu-MC-bOM"/>
+                                    <constraint firstAttribute="trailing" secondItem="luv-Yv-A9r" secondAttribute="trailing" constant="8" id="chB-7y-SMd"/>
+                                    <constraint firstItem="luv-Yv-A9r" firstAttribute="leading" secondItem="clq-QC-Arr" secondAttribute="trailing" constant="8" id="dTk-r4-cwZ"/>
+                                    <constraint firstItem="clq-QC-Arr" firstAttribute="top" secondItem="T1s-Z7-tJr" secondAttribute="top" constant="8" id="if6-pa-gPE"/>
+                                    <constraint firstAttribute="trailing" secondItem="Tb8-24-wHA" secondAttribute="trailing" constant="8" id="mE7-oF-bBh"/>
+                                    <constraint firstItem="Tb8-24-wHA" firstAttribute="leading" secondItem="clq-QC-Arr" secondAttribute="trailing" constant="8" id="p1Z-k4-VhW"/>
+                                    <constraint firstItem="zmt-6u-SaJ" firstAttribute="leading" secondItem="clq-QC-Arr" secondAttribute="trailing" constant="8" id="zb9-Ys-72d"/>
                                     <constraint firstAttribute="height" constant="150" id="zhQ-pf-kYd"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4r7-cP-ulW">
-                                <rect key="frame" x="57" y="342" width="300" height="39"/>
+                                <rect key="frame" x="57" y="342.5" width="300" height="39"/>
                                 <color key="backgroundColor" red="0.56862745100000001" green="0.47843137250000001" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="mi8-Zw-b9s"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                <fontDescription key="fontDescription" name="Cafe24Syongsyong" family="Cafe24 Syongsyong" pointSize="24"/>
                                 <state key="normal" title="내 결과 확인">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -1104,12 +1146,12 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D9a-Q7-rEk">
-                                <rect key="frame" x="57" y="480" width="300" height="39"/>
+                                <rect key="frame" x="57" y="480.5" width="300" height="39"/>
                                 <color key="backgroundColor" red="0.56862745100000001" green="0.47843137250000001" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="0Fc-Tk-I4d"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                <fontDescription key="fontDescription" name="Cafe24Syongsyong" family="Cafe24 Syongsyong" pointSize="24"/>
                                 <state key="normal" title="내 결과 초기화">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -1118,11 +1160,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OJG-2A-Teq">
-                                <rect key="frame" x="27" y="559" width="70" height="36"/>
+                                <rect key="frame" x="27" y="559.5" width="70" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="Qe9-JA-C3c"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Cafe24Syongsyong" family="Cafe24 Syongsyong" pointSize="21"/>
                                 <state key="normal" title="공지사항">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -1131,11 +1173,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fd0-T5-8jW">
-                                <rect key="frame" x="317" y="559" width="70" height="36"/>
+                                <rect key="frame" x="317" y="559.5" width="70" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="VA9-HE-vDd"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Cafe24Syongsyong" family="Cafe24 Syongsyong" pointSize="21"/>
                                 <state key="normal" title="건의사항">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -1144,18 +1186,18 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="마이 페이지" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3gS-CB-LmC">
-                                <rect key="frame" x="136.5" y="80" width="141" height="37"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="130.5" y="79" width="153" height="38.5"/>
+                                <fontDescription key="fontDescription" name="Cafe24Syongsyong" family="Cafe24 Syongsyong" pointSize="35"/>
+                                <color key="textColor" red="0.462310259" green="0.32170715090000002" blue="0.16283701850000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gp5-mz-Ysv">
-                                <rect key="frame" x="57" y="411" width="300" height="39"/>
+                                <rect key="frame" x="57" y="411.5" width="300" height="39"/>
                                 <color key="backgroundColor" red="0.56862745100000001" green="0.47843137250000001" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="OvW-KB-eiI"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                <fontDescription key="fontDescription" name="Cafe24Syongsyong" family="Cafe24 Syongsyong" pointSize="24"/>
                                 <state key="normal" title="고양이 5가지 특성">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -1164,11 +1206,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2P5-zp-7qn">
-                                <rect key="frame" x="172" y="559" width="70" height="36"/>
+                                <rect key="frame" x="172" y="559.5" width="70" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="nWB-no-P5S"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Cafe24Syongsyong" family="Cafe24 Syongsyong" pointSize="21"/>
                                 <state key="normal" title="개발자">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -1190,7 +1232,7 @@
                             <constraint firstItem="gp5-mz-Ysv" firstAttribute="top" secondItem="4r7-cP-ulW" secondAttribute="bottom" constant="30" id="VT1-2q-3f4"/>
                             <constraint firstItem="4r7-cP-ulW" firstAttribute="centerX" secondItem="x7K-zl-dor" secondAttribute="centerX" id="bNz-ge-k6E"/>
                             <constraint firstItem="3gS-CB-LmC" firstAttribute="centerX" secondItem="x7K-zl-dor" secondAttribute="centerX" id="dsx-j6-CFb"/>
-                            <constraint firstItem="3gS-CB-LmC" firstAttribute="top" secondItem="Jcf-in-ORn" secondAttribute="top" constant="36" id="fE3-g0-i6E"/>
+                            <constraint firstItem="3gS-CB-LmC" firstAttribute="top" secondItem="Jcf-in-ORn" secondAttribute="top" constant="35" id="fE3-g0-i6E"/>
                             <constraint firstItem="fd0-T5-8jW" firstAttribute="leading" secondItem="2P5-zp-7qn" secondAttribute="trailing" constant="75" id="fwR-ZB-leg"/>
                             <constraint firstItem="gp5-mz-Ysv" firstAttribute="centerX" secondItem="x7K-zl-dor" secondAttribute="centerX" id="hp3-np-BGX"/>
                             <constraint firstItem="D9a-Q7-rEk" firstAttribute="top" secondItem="gp5-mz-Ysv" secondAttribute="bottom" constant="30" id="p7y-LL-Eva"/>
@@ -1201,8 +1243,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="BA9-Cb-i0m"/>
                     <connections>
+                        <outlet property="CatChar_Label" destination="Tb8-24-wHA" id="aFf-Qc-Ntb"/>
                         <outlet property="FiveCharButton" destination="gp5-mz-Ysv" id="DzO-pu-58A"/>
+                        <outlet property="MyCatImg" destination="clq-QC-Arr" id="Smz-b1-4Lx"/>
+                        <outlet property="MyCat_Label" destination="zmt-6u-SaJ" id="f5U-UG-v5g"/>
+                        <outlet property="MyInfoView" destination="T1s-Z7-tJr" id="dbc-di-Ixt"/>
                         <outlet property="MyResultButton" destination="4r7-cP-ulW" id="Baw-Ab-ccF"/>
+                        <outlet property="Persent_Label" destination="luv-Yv-A9r" id="VyS-mm-w0I"/>
                         <outlet property="ResetButton" destination="D9a-Q7-rEk" id="ts2-QW-1cR"/>
                         <segue destination="jyk-ZL-VlV" kind="show" id="LMn-RW-uKS"/>
                         <segue destination="UoD-6a-axy" kind="show" id="8Gf-9B-1V0"/>
@@ -1222,12 +1269,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Made By" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w3h-X8-BiA">
-                                <rect key="frame" x="87" y="364" width="240" height="29"/>
+                                <rect key="frame" x="87" y="366.5" width="240" height="26.5"/>
                                 <color key="backgroundColor" red="0.56862745100000001" green="0.47843137250000001" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="hL5-4s-QWV"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="Cafe24Syongsyong" family="Cafe24 Syongsyong" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1235,16 +1282,16 @@
                                 <rect key="frame" x="87" y="393" width="240" height="110"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SongYG77" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="txi-b2-1Ti">
-                                        <rect key="frame" x="80" y="27" width="81" height="21"/>
+                                        <rect key="frame" x="80" y="27" width="77" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="Cafe24Syongsyong" family="Cafe24 Syongsyong" pointSize="19"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="songyg77dev@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ObY-VW-py5">
-                                        <rect key="frame" x="23" y="56" width="195" height="21"/>
+                                        <rect key="frame" x="23" y="56" width="190" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="Cafe24Syongsyong" family="Cafe24 Syongsyong" pointSize="19"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1255,12 +1302,15 @@
                                     <constraint firstAttribute="width" constant="240" id="Wfp-Kr-by5"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="clV-2B-hl3">
-                                <rect key="frame" x="20" y="44" width="34" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="clV-2B-hl3">
+                                <rect key="frame" x="20" y="52" width="34" height="34"/>
                                 <color key="backgroundColor" red="0.56862745100000001" green="0.47843137250000001" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="Bow-Cc-nSj"/>
+                                    <constraint firstAttribute="width" constant="34" id="CFQ-lG-NvU"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" image="BackIcon"/>
+                                <state key="normal" image="BackIcon2"/>
                                 <connections>
                                     <action selector="onBtnBack:" destination="jyk-ZL-VlV" eventType="touchUpInside" id="U6e-KD-eft"/>
                                     <action selector="onBtnBack:" destination="UoD-6a-axy" eventType="touchUpInside" id="yE6-fo-JSh"/>
@@ -1272,8 +1322,10 @@
                         <color key="backgroundColor" red="1" green="0.97647058959999999" blue="0.94117647410000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="Jj7-gQ-7c6" firstAttribute="centerY" secondItem="Ueq-0z-4o2" secondAttribute="centerY" id="12j-BO-6ni"/>
+                            <constraint firstItem="clV-2B-hl3" firstAttribute="leading" secondItem="auf-rm-NKX" secondAttribute="leading" constant="20" id="2fQ-5Y-VQ6"/>
                             <constraint firstItem="Jj7-gQ-7c6" firstAttribute="centerX" secondItem="Ueq-0z-4o2" secondAttribute="centerX" id="Dfd-QC-xsQ"/>
                             <constraint firstItem="w3h-X8-BiA" firstAttribute="centerX" secondItem="Ueq-0z-4o2" secondAttribute="centerX" id="YVX-oF-hds"/>
+                            <constraint firstItem="clV-2B-hl3" firstAttribute="top" secondItem="auf-rm-NKX" secondAttribute="top" constant="8" id="dsu-Yd-km7"/>
                             <constraint firstItem="Jj7-gQ-7c6" firstAttribute="top" secondItem="w3h-X8-BiA" secondAttribute="bottom" id="zbI-tp-IRK"/>
                         </constraints>
                     </view>
@@ -1297,7 +1349,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="이메일을 입력하세요(선택)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rK8-Mb-Wix">
-                                <rect key="frame" x="40" y="246" width="334" height="45"/>
+                                <rect key="frame" x="40" y="242" width="334" height="45"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="Xma-nQ-l9e"/>
@@ -1306,7 +1358,7 @@
                                 <textInputTraits key="textInputTraits" textContentType="email"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="justified" adjustsFontSizeToFit="NO" minimumFontSize="22" translatesAutoresizingMaskIntoConstraints="NO" id="0Kz-FK-tQG">
-                                <rect key="frame" x="40" y="371" width="334" height="270"/>
+                                <rect key="frame" x="40" y="367" width="334" height="270"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="270" id="LTh-lY-prU"/>
@@ -1315,33 +1367,33 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이메일" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dtt-4t-8fB">
-                                <rect key="frame" x="40" y="211" width="334" height="35"/>
+                                <rect key="frame" x="40" y="207" width="334" height="35"/>
                                 <color key="backgroundColor" red="0.56862745100000001" green="0.47843137250000001" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="JSd-bS-At6"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                <fontDescription key="fontDescription" name="Cafe24Syongsyong" family="Cafe24 Syongsyong" pointSize="25"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="건의사항" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gfY-iF-tq3">
-                                <rect key="frame" x="40" y="336" width="334" height="35"/>
+                                <rect key="frame" x="40" y="332" width="334" height="35"/>
                                 <color key="backgroundColor" red="0.56862745100000001" green="0.47843137250000001" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="KVa-2Z-oId"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                <fontDescription key="fontDescription" name="Cafe24Syongsyong" family="Cafe24 Syongsyong" pointSize="25"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="건의 사항" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UES-EZ-Ffb">
-                                <rect key="frame" x="149.5" y="89" width="115" height="37"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="153.5" y="89" width="107" height="33"/>
+                                <fontDescription key="fontDescription" name="Cafe24Syongsyong" family="Cafe24 Syongsyong" pointSize="30"/>
+                                <color key="textColor" red="0.462310259" green="0.32170715090000002" blue="0.16283701850000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J7N-F3-mub">
-                                <rect key="frame" x="170" y="679" width="74" height="30"/>
+                                <rect key="frame" x="170" y="675" width="74" height="30"/>
                                 <color key="backgroundColor" red="0.58823531870000001" green="0.47450977560000002" blue="0.35294118520000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="cc5-yY-dCH"/>
@@ -1354,12 +1406,15 @@
                                     <action selector="onBtnAdd:" destination="UoD-6a-axy" eventType="touchUpInside" id="gSk-Kj-QRk"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zoe-LT-0b1">
-                                <rect key="frame" x="20" y="44" width="34" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zoe-LT-0b1">
+                                <rect key="frame" x="20" y="52" width="34" height="34"/>
                                 <color key="backgroundColor" red="0.56862745100000001" green="0.47843137250000001" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="Owa-az-3D0"/>
+                                    <constraint firstAttribute="width" constant="34" id="ilm-gB-ZeF"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" image="BackIcon"/>
+                                <state key="normal" image="BackIcon2"/>
                                 <connections>
                                     <action selector="onBtnBack:" destination="UoD-6a-axy" eventType="touchUpInside" id="J1m-KQ-xtj"/>
                                     <action selector="onBtnGoBack:" destination="FgA-rT-AhB" eventType="touchUpInside" id="jDY-3m-xyv"/>
@@ -1369,8 +1424,10 @@
                         <viewLayoutGuide key="safeArea" id="c53-63-YVe"/>
                         <color key="backgroundColor" red="1" green="0.97647058959999999" blue="0.93725490570000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="zoe-LT-0b1" firstAttribute="top" secondItem="c53-63-YVe" secondAttribute="top" constant="8" id="0AM-f6-WJL"/>
                             <constraint firstItem="0Kz-FK-tQG" firstAttribute="leading" secondItem="c53-63-YVe" secondAttribute="leading" constant="40" id="1yY-4P-CO6"/>
                             <constraint firstItem="rK8-Mb-Wix" firstAttribute="leading" secondItem="c53-63-YVe" secondAttribute="leading" constant="40" id="2gP-Fd-irg"/>
+                            <constraint firstItem="zoe-LT-0b1" firstAttribute="leading" secondItem="c53-63-YVe" secondAttribute="leading" constant="20" id="3VQ-8l-gz9"/>
                             <constraint firstItem="c53-63-YVe" firstAttribute="trailing" secondItem="0Kz-FK-tQG" secondAttribute="trailing" constant="40" id="7qE-q8-s4L"/>
                             <constraint firstItem="gfY-iF-tq3" firstAttribute="top" secondItem="rK8-Mb-Wix" secondAttribute="bottom" constant="45" id="91o-wM-cWg"/>
                             <constraint firstItem="UES-EZ-Ffb" firstAttribute="centerX" secondItem="Okl-3u-lbK" secondAttribute="centerX" id="DX7-Xw-EX5"/>
@@ -1448,19 +1505,21 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="공지사항" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RrI-UQ-EIx">
-                                <rect key="frame" x="153" y="68" width="108" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="공지사항" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RrI-UQ-EIx">
+                                <rect key="frame" x="155.5" y="79" width="103" height="35.5"/>
+                                <fontDescription key="fontDescription" name="Cafe24Syongsyong" family="Cafe24 Syongsyong" pointSize="32"/>
+                                <color key="textColor" red="0.462310259" green="0.32170715090000002" blue="0.16283701850000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="agf-lc-ZTv">
-                                <rect key="frame" x="20" y="72" width="34" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="agf-lc-ZTv">
+                                <rect key="frame" x="20" y="52" width="34" height="34"/>
                                 <color key="backgroundColor" red="0.56862745100000001" green="0.47843137250000001" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="AtL-eJ-pf0"/>
+                                    <constraint firstAttribute="width" constant="34" id="LEV-fw-5yJ"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" image="BackIcon"/>
+                                <state key="normal" image="BackIcon2"/>
                                 <connections>
                                     <action selector="onBtnBack:" destination="8as-uL-TfR" eventType="touchUpInside" id="Nsc-Yb-Exq"/>
                                     <action selector="onBtnBack:" destination="UoD-6a-axy" eventType="touchUpInside" id="z8K-UN-7rm"/>
@@ -1470,6 +1529,12 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4Ix-lK-5jW"/>
                         <color key="backgroundColor" red="1" green="0.97647058959999999" blue="0.93333339689999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="RrI-UQ-EIx" firstAttribute="centerX" secondItem="F5t-km-aBn" secondAttribute="centerX" id="0Jl-mE-ccW"/>
+                            <constraint firstItem="RrI-UQ-EIx" firstAttribute="top" secondItem="4Ix-lK-5jW" secondAttribute="top" constant="35" id="XLl-nT-DbF"/>
+                            <constraint firstItem="agf-lc-ZTv" firstAttribute="leading" secondItem="4Ix-lK-5jW" secondAttribute="leading" constant="20" id="cI3-z7-fa8"/>
+                            <constraint firstItem="agf-lc-ZTv" firstAttribute="top" secondItem="4Ix-lK-5jW" secondAttribute="top" constant="8" id="suQ-dA-nFL"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="aiH-Xf-E80"/>
                     <connections>
@@ -1493,10 +1558,13 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ndo-qH-o0j">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A0Q-VB-2iW">
-                                        <rect key="frame" x="19" y="67" width="34" height="33"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A0Q-VB-2iW">
+                                        <rect key="frame" x="19" y="50" width="34" height="34"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="ZBa-SF-rzY"/>
+                                            <constraint firstAttribute="width" constant="34" id="vCG-hl-pvU"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <state key="normal" image="BackIcon"/>
                                         <connections>
@@ -1506,9 +1574,8 @@
                                             <action selector="onBtnGoBack:" destination="FgA-rT-AhB" eventType="touchUpInside" id="PTw-gE-b1w"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="타이틀" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UmL-CX-cYv">
-                                        <rect key="frame" x="76" y="67" width="330" height="33"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="타이틀" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UmL-CX-cYv">
+                                        <rect key="frame" x="76" y="50" width="330" height="33.5"/>
                                         <color key="backgroundColor" red="0.66274511810000003" green="0.54509806630000002" blue="0.42745098469999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1518,6 +1585,11 @@
                                 <color key="backgroundColor" red="0.66274511810000003" green="0.54509806630000002" blue="0.42745098469999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="0ja-6L-RXH"/>
+                                    <constraint firstAttribute="trailing" secondItem="UmL-CX-cYv" secondAttribute="trailing" constant="8" id="ZC9-Cr-WoR"/>
+                                    <constraint firstItem="UmL-CX-cYv" firstAttribute="leading" secondItem="A0Q-VB-2iW" secondAttribute="trailing" constant="23" id="f2x-7P-SsJ"/>
+                                    <constraint firstItem="A0Q-VB-2iW" firstAttribute="top" secondItem="ndo-qH-o0j" secondAttribute="top" constant="50" id="iXh-p2-csX"/>
+                                    <constraint firstItem="UmL-CX-cYv" firstAttribute="top" secondItem="ndo-qH-o0j" secondAttribute="top" constant="50" id="nJ7-uB-wvN"/>
+                                    <constraint firstItem="A0Q-VB-2iW" firstAttribute="leading" secondItem="ndo-qH-o0j" secondAttribute="leading" constant="19" id="wDl-Tz-NCb"/>
                                 </constraints>
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="내용" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s9K-32-5w2">
@@ -1658,7 +1730,9 @@
     </scenes>
     <resources>
         <image name="BackIcon" width="50" height="50"/>
+        <image name="BackIcon2" width="50" height="50"/>
         <image name="Belinese" width="285" height="320"/>
+        <image name="Logo_Title2" width="874" height="235"/>
         <image name="Norwegian forest2" width="285" height="320"/>
         <image name="Rusian Blue" width="285" height="320"/>
         <image name="doc.plaintext" catalog="system" width="115" height="128"/>
@@ -1676,9 +1750,6 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGray3Color">
-            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray5Color">
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
