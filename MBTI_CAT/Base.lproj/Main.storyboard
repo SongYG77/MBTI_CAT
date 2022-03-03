@@ -297,7 +297,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="나와 비슷한 고양이 찾기" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ioz-Gh-aUF">
-                                <rect key="frame" x="53.5" y="114" width="307" height="38.5"/>
+                                <rect key="frame" x="20" y="114" width="374" height="38.5"/>
                                 <fontDescription key="fontDescription" name="Cafe24Syongsyong" family="Cafe24 Syongsyong" pointSize="35"/>
                                 <color key="textColor" red="0.46231025902993189" green="0.32170715094421776" blue="0.16283701853333335" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -355,7 +355,9 @@
                         <constraints>
                             <constraint firstItem="rnb-uo-4ey" firstAttribute="top" secondItem="A5E-mT-psJ" secondAttribute="bottom" id="1fE-7g-wZT"/>
                             <constraint firstItem="QZs-39-JWq" firstAttribute="leading" secondItem="IEX-Iz-Qb7" secondAttribute="leading" constant="20" id="2wi-rP-2do"/>
+                            <constraint firstItem="IEX-Iz-Qb7" firstAttribute="trailing" secondItem="ioz-Gh-aUF" secondAttribute="trailing" constant="20" id="B8S-Cd-tcZ"/>
                             <constraint firstItem="rnb-uo-4ey" firstAttribute="top" secondItem="ioz-Gh-aUF" secondAttribute="bottom" constant="180" id="GPm-CM-Mn0"/>
+                            <constraint firstItem="ioz-Gh-aUF" firstAttribute="leading" secondItem="IEX-Iz-Qb7" secondAttribute="leading" constant="20" id="LIS-kV-swB"/>
                             <constraint firstItem="rnb-uo-4ey" firstAttribute="leading" secondItem="IEX-Iz-Qb7" secondAttribute="leading" constant="20" id="NJx-X9-1PU"/>
                             <constraint firstItem="IEX-Iz-Qb7" firstAttribute="trailing" secondItem="rnb-uo-4ey" secondAttribute="trailing" constant="20" id="RPT-SA-iAP"/>
                             <constraint firstItem="ioz-Gh-aUF" firstAttribute="top" secondItem="IEX-Iz-Qb7" secondAttribute="top" constant="70" id="XLk-rE-sng"/>
@@ -1185,8 +1187,8 @@
                                     <action selector="onBtnSuggestions:" destination="HHG-nd-EK5" eventType="touchUpInside" id="GkQ-I6-wdc"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="마이 페이지" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3gS-CB-LmC">
-                                <rect key="frame" x="130.5" y="79" width="153" height="38.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="마이 페이지" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3gS-CB-LmC">
+                                <rect key="frame" x="20" y="79" width="374" height="38.5"/>
                                 <fontDescription key="fontDescription" name="Cafe24Syongsyong" family="Cafe24 Syongsyong" pointSize="35"/>
                                 <color key="textColor" red="0.462310259" green="0.32170715090000002" blue="0.16283701850000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -1235,9 +1237,11 @@
                             <constraint firstItem="3gS-CB-LmC" firstAttribute="top" secondItem="Jcf-in-ORn" secondAttribute="top" constant="35" id="fE3-g0-i6E"/>
                             <constraint firstItem="fd0-T5-8jW" firstAttribute="leading" secondItem="2P5-zp-7qn" secondAttribute="trailing" constant="75" id="fwR-ZB-leg"/>
                             <constraint firstItem="gp5-mz-Ysv" firstAttribute="centerX" secondItem="x7K-zl-dor" secondAttribute="centerX" id="hp3-np-BGX"/>
+                            <constraint firstItem="3gS-CB-LmC" firstAttribute="leading" secondItem="Jcf-in-ORn" secondAttribute="leading" constant="20" id="krC-35-r8L"/>
                             <constraint firstItem="D9a-Q7-rEk" firstAttribute="top" secondItem="gp5-mz-Ysv" secondAttribute="bottom" constant="30" id="p7y-LL-Eva"/>
                             <constraint firstItem="4r7-cP-ulW" firstAttribute="top" secondItem="T1s-Z7-tJr" secondAttribute="bottom" constant="30" id="r41-DX-NuE"/>
                             <constraint firstItem="fd0-T5-8jW" firstAttribute="top" secondItem="D9a-Q7-rEk" secondAttribute="bottom" constant="40" id="tvk-Bz-UN4"/>
+                            <constraint firstItem="Jcf-in-ORn" firstAttribute="trailing" secondItem="3gS-CB-LmC" secondAttribute="trailing" constant="20" id="uyB-RG-373"/>
                             <constraint firstItem="2P5-zp-7qn" firstAttribute="top" secondItem="D9a-Q7-rEk" secondAttribute="bottom" constant="40" id="zsa-Mz-mZ9"/>
                         </constraints>
                     </view>
