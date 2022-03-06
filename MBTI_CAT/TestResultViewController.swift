@@ -30,7 +30,7 @@ class TestResultViewController: UIViewController {
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     var TestResultARR : Array<Float> = [] // 이전 화면에서 받아오는 결과값
     var maxresult : Array<Float> = [0,0,0,0]
-    var MyCatRanking : Array<String> = ["","","",""]
+    var MyCatRanking : Array<String> = ["","","",""] 
     var percentRanking : Array<Float> = [0,0,0,0]
     var splitnum : Int = 0
     var Resultcountvalue = 0
