@@ -28,7 +28,7 @@ class CharacteristicViewController: UIViewController {
         
         let NextVC = self.storyboard?.instantiateViewController(identifier: "DetailContentsVC") as! DetailContentsViewController
         
-        NextVC.CatKinds = "Belinese"
+        NextVC.CatKinds = "Maine Coon"
         
         self.navigationController?.pushViewController(NextVC, animated: true)
         
