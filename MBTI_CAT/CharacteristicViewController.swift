@@ -28,11 +28,45 @@ class CharacteristicViewController: UIViewController {
         
         let NextVC = self.storyboard?.instantiateViewController(identifier: "DetailContentsVC") as! DetailContentsViewController
         
-        NextVC.CatKinds = "Maine Coon"
+        NextVC.CatKinds = "Belinese"
         
         self.navigationController?.pushViewController(NextVC, animated: true)
         
     }
     
-
+    @IBAction func onBtnBombay(_ sender: UIButton) {
+        
+        let NextVC = self.storyboard?.instantiateViewController(identifier: "DetailContentsVC") as! DetailContentsViewController
+        
+        NextVC.CatKinds = "Bombay"
+        
+        self.navigationController?.pushViewController(NextVC, animated: true)
+    }
+    
+    @IBAction func onBtnEgyptianMau(_ sender: UIButton) {
+        
+        let NextVC = self.storyboard?.instantiateViewController(identifier: "DetailContentsVC") as! DetailContentsViewController
+        
+        NextVC.CatKinds = "Egyptian Mau"
+        
+        self.navigationController?.pushViewController(NextVC, animated: true)
+    }
+    
+    @IBAction func onBtnCymric(_ sender: UIButton) {
+        let NextVC = self.storyboard?.instantiateViewController(identifier: "DetailContentsVC") as! DetailContentsViewController
+        
+        NextVC.CatKinds = "Cymric"
+        
+        self.navigationController?.pushViewController(NextVC, animated: true)
+    }
+    
+    @IBAction func onBtnAmericanCurl(_ sender: UIButton) {
+        
+        let NextVC = self.storyboard?.instantiateViewController(identifier: "DetailContentsVC") as! DetailContentsViewController
+        
+        NextVC.CatKinds = "American Curl"
+        
+        self.navigationController?.pushViewController(NextVC, animated: true)
+    }
+    
 }
