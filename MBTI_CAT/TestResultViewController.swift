@@ -50,7 +50,7 @@ class TestResultViewController: UIViewController {
         "American Curl" :   "1 1 0 0 0 0 0 1", //    아메리칸컬
         "Abyssinian"    :   "1 1 0 0 0 0 0 0", //    아비시안
         "Bengal"        :   "1 1 0 0 1 1 0 0", //    뱅갈
-        "Ragdoll"       :   "0 1 1 0 0 0 0 0", //    렉돌
+        "Ragdoll"       :   "1 1 1 0 0 0 0 0", //    렉돌
         "Maine Coon"    :   "0 1 1 1 0 0 1 0", //    메인쿤
         "Exotic"        :   "0 0 1 0 0 0 0 0", //    엑조틱
         "American Short":   "1 1 0 1 1 0 0 1", //    아메리칸숏
@@ -58,7 +58,7 @@ class TestResultViewController: UIViewController {
         "Burmilla"      :   "0 1 0 0 0 0 0 0", //    버밀라(x)
         "Norwegian forest": "0 1 0 1 0 1 0 0", //    노르웨이숲
         "British Short" :   "0 1 1 1 0 0 0 0", //    브리티시 숏
-        "Himalayan"     :   "0 1 1 0 0 0 0 0", //    히말라얀(x)
+        "Himalayan"     :   "0 1 1 0 0 0 0 1", //    히말라얀(x)
         "Scottish Fold" :   "0 1 0 0 0 0 0 0", //    스코티시 폴드
         "Siamese"       :   "0 1 0 0 1 0 0 0", //    샴(x)
         "Turkish angora":   "1 0 0 0 0 0 0 0", //    터키시 앙고라

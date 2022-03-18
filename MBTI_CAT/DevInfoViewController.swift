@@ -11,6 +11,9 @@ class DevInfoViewController: UIViewController {
 
     @IBOutlet weak var MadeByLabel: UILabel!
     @IBOutlet weak var InfoView: UIView!
+    @IBOutlet weak var TabmadeinfoView: UIView!
+    @IBOutlet weak var TabMadeLabel: UILabel!
+    
     @IBOutlet weak var BackButton: UIButton!
     
     
@@ -20,6 +23,10 @@ class DevInfoViewController: UIViewController {
         MadeByLabel.clipsToBounds = true
         MadeByLabel.layer.cornerRadius = 15
         MadeByLabel.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+        
+        TabMadeLabel.clipsToBounds = true
+        TabMadeLabel.layer.cornerRadius = 15
+        TabMadeLabel.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
         
         BackButton.layer.borderWidth = 2
         BackButton.layer.borderColor = UIColor(displayP3Red: 249/255, green: 212/255, blue: 153/255, alpha: 1).cgColor
@@ -32,6 +39,12 @@ class DevInfoViewController: UIViewController {
         InfoView.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
         InfoView.clipsToBounds = true
         
+        TabmadeinfoView.layer.borderWidth = 2
+        TabmadeinfoView.layer.borderColor = UIColor(displayP3Red: 249/255, green: 212/255, blue: 153/255, alpha: 1).cgColor
+        TabmadeinfoView.layer.cornerRadius = 15
+        TabmadeinfoView.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
+        TabmadeinfoView.clipsToBounds = true
+        
         print("Test")
     }
     
@@ -42,5 +55,10 @@ class DevInfoViewController: UIViewController {
         
     }
     
-
+    @IBAction func onBtnWebView(_ sender: UIButton) {
+        let NextVC = self.storyboard?.instantiateViewController(identifier: "WebViewVC") as! TabImageWebViewController
+        
+        self.navigationController?.pushViewController(NextVC, animated: true)
+    }
+    
 }

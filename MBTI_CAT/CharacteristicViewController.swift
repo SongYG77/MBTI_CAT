@@ -34,6 +34,24 @@ class CharacteristicViewController: UIViewController {
         
     }
     
+    @IBAction func onBtnNorwegianforest(_ sender: UIButton) {
+        let NextVC = self.storyboard?.instantiateViewController(identifier: "DetailContentsVC") as! DetailContentsViewController
+        
+        NextVC.CatKinds = "Norwegian forest"
+        
+        self.navigationController?.pushViewController(NextVC, animated: true)
+    }
+    
+    
+    
+    @IBAction func onBtnMaineCoon(_ sender: UIButton) {
+        let NextVC = self.storyboard?.instantiateViewController(identifier: "DetailContentsVC") as! DetailContentsViewController
+        
+        NextVC.CatKinds = "Maine Coon"
+        
+        self.navigationController?.pushViewController(NextVC, animated: true)
+    }
+    
     @IBAction func onBtnBombay(_ sender: UIButton) {
         
         let NextVC = self.storyboard?.instantiateViewController(identifier: "DetailContentsVC") as! DetailContentsViewController
@@ -68,5 +86,90 @@ class CharacteristicViewController: UIViewController {
         
         self.navigationController?.pushViewController(NextVC, animated: true)
     }
+    
+    @IBAction func onBtnAbyssinian(_ sender: UIButton) {
+        let NextVC = self.storyboard?.instantiateViewController(identifier: "DetailContentsVC") as! DetailContentsViewController
+        
+        NextVC.CatKinds = "Abyssinian"
+        
+        self.navigationController?.pushViewController(NextVC, animated: true)
+    }
+    
+    @IBAction func onBtnBengal(_ sender: UIButton) {
+        let NextVC = self.storyboard?.instantiateViewController(identifier: "DetailContentsVC") as! DetailContentsViewController
+        
+        NextVC.CatKinds = "Bengal"
+        
+        self.navigationController?.pushViewController(NextVC, animated: true)
+    }
+    
+    @IBAction func onBtnRagdoll(_ sender: UIButton) {
+        let NextVC = self.storyboard?.instantiateViewController(identifier: "DetailContentsVC") as! DetailContentsViewController
+        
+        NextVC.CatKinds = "Ragdoll"
+        
+        self.navigationController?.pushViewController(NextVC, animated: true)
+    }
+    
+    @IBAction func onBtnExotic(_ sender: UIButton) {
+        let NextVC = self.storyboard?.instantiateViewController(identifier: "DetailContentsVC") as! DetailContentsViewController
+        
+        NextVC.CatKinds = "Exotic"
+        
+        self.navigationController?.pushViewController(NextVC, animated: true)
+    }
+    
+    
+    @IBAction func onBtnAmericanShort(_ sender: UIButton) {
+        let NextVC = self.storyboard?.instantiateViewController(identifier: "DetailContentsVC") as! DetailContentsViewController
+        
+        NextVC.CatKinds = "American Short"
+        
+        self.navigationController?.pushViewController(NextVC, animated: true)
+    }
+    
+    
+    @IBAction func onBtnPersian(_ sender: UIButton) {
+        
+        let NextVC = self.storyboard?.instantiateViewController(identifier: "DetailContentsVC") as! DetailContentsViewController
+        
+        NextVC.CatKinds = "Persian"
+        
+        self.navigationController?.pushViewController(NextVC, animated: true)
+    }
+    
+    @IBAction func onBtnBurmilla(_ sender: UIButton) {
+        let NextVC = self.storyboard?.instantiateViewController(identifier: "DetailContentsVC") as! DetailContentsViewController
+        
+        NextVC.CatKinds = "Burmilla"
+        
+        self.navigationController?.pushViewController(NextVC, animated: true)
+    }
+    
+    @IBAction func onBtnBritishShort(_ sender: UIButton) {
+        let NextVC = self.storyboard?.instantiateViewController(identifier: "DetailContentsVC") as! DetailContentsViewController
+        
+        NextVC.CatKinds = "British Short"
+        
+        self.navigationController?.pushViewController(NextVC, animated: true)
+    }
+    
+    @IBAction func onBtnHimalayan(_ sender: UIButton) {
+        let NextVC = self.storyboard?.instantiateViewController(identifier: "DetailContentsVC") as! DetailContentsViewController
+        
+        NextVC.CatKinds = "Himalayan"
+        
+        self.navigationController?.pushViewController(NextVC, animated: true)
+    }
+    
+    @IBAction func onBtnScottishFold(_ sender: UIButton) {
+        
+        let NextVC = self.storyboard?.instantiateViewController(identifier: "DetailContentsVC") as! DetailContentsViewController
+        
+        NextVC.CatKinds = "Scottish Fold"
+        
+        self.navigationController?.pushViewController(NextVC, animated: true)
+    }
+    
     
 }

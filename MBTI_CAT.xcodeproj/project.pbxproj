@@ -27,6 +27,7 @@
 		188A7EAB27B241BB000718E7 /* SuggestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188A7EAA27B241BB000718E7 /* SuggestionsViewController.swift */; };
 		1895D24D279E868200567BBF /* DetailContentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1895D24C279E868200567BBF /* DetailContentsViewController.swift */; };
 		18E980CE27BE384F00BFF5D3 /* NoticeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E980CD27BE384F00BFF5D3 /* NoticeDetailViewController.swift */; };
+		18F46EDB27E4580C006E8ACB /* TabImageWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F46EDA27E4580C006E8ACB /* TabImageWebViewController.swift */; };
 		E5CD05C10CF99DA94EE5527B /* Pods_MBTI_CAT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 649049F50AE4B343149A5311 /* Pods_MBTI_CAT.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +56,7 @@
 		188A7EAA27B241BB000718E7 /* SuggestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionsViewController.swift; sourceTree = "<group>"; };
 		1895D24C279E868200567BBF /* DetailContentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailContentsViewController.swift; sourceTree = "<group>"; };
 		18E980CD27BE384F00BFF5D3 /* NoticeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeDetailViewController.swift; sourceTree = "<group>"; };
+		18F46EDA27E4580C006E8ACB /* TabImageWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabImageWebViewController.swift; sourceTree = "<group>"; };
 		649049F50AE4B343149A5311 /* Pods_MBTI_CAT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MBTI_CAT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3AF9D5BF0952755AC3D0DC9 /* Pods-MBTI_CAT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MBTI_CAT.release.xcconfig"; path = "Target Support Files/Pods-MBTI_CAT/Pods-MBTI_CAT.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,6 +117,7 @@
 				1895D24C279E868200567BBF /* DetailContentsViewController.swift */,
 				18415773279012E20095F8A9 /* MyCharacViewController.swift */,
 				1841883727B0F4B800DF7D1A /* DevInfoViewController.swift */,
+				18F46EDA27E4580C006E8ACB /* TabImageWebViewController.swift */,
 				188A7EAA27B241BB000718E7 /* SuggestionsViewController.swift */,
 				1829E48927B4F3F500654B60 /* NoticeViewController.swift */,
 				1854FFE827B6227C00CD33D8 /* ANoticeTableViewCell.swift */,
@@ -252,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1841576B27900C3A0095F8A9 /* TabbarViewController.swift in Sources */,
+				18F46EDB27E4580C006E8ACB /* TabImageWebViewController.swift in Sources */,
 				18415755279003AE0095F8A9 /* MainViewController.swift in Sources */,
 				18415774279012E20095F8A9 /* MyCharacViewController.swift in Sources */,
 				18415751279003AE0095F8A9 /* AppDelegate.swift in Sources */,
