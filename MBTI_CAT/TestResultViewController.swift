@@ -62,13 +62,42 @@ class TestResultViewController: UIViewController {
         "Scottish Fold" :   "0 1 0 0 0 0 0 0", //    스코티시 폴드
         "Siamese"       :   "0 1 0 0 1 0 0 0", //    샴(x)
         "Turkish angora":   "1 0 0 0 0 0 0 0", //    터키시 앙고라
-        "Cornish Rex"   :   "1 0 0 0 0 1 0 0", //    코니시 렉스
+        "Cornish Rex"   :   "1 1 0 0 0 1 0 0", //    코니시 렉스
         "Japanese Bobtail": "1 0 0 0 1 0 0 0", //    재패지즈 밥테일
         "Javanese"      :   "1 0 0 0 0 0 1 0", //    자바니즈(x)
         "Burmese"       :   "0 0 1 0 0 0 0 1", //    버미즈
         "Chantilly"     :   "0 0 0 0 0 0 1 0", //    샹틀리(X)
         "Birman"        :   "0 0 0 0 0 0 0 1", //    버만
     ]
+    
+    var CatNickname : Dictionary = [
+                "Belinese"      :   "발리 댄서 고양이", //    발리니즈
+                "Bombay"        :   "검은 고양이 네로", //    봄베이
+                "Egyptian Mau"  :   "도도한 이집트 고양이", //    이집션마우
+                "Cymric"        :   "토끼 고양이", //    킴릭 (x)
+                "American Curl" :   "초승달 귀 고양이", //    아메리칸컬
+                "Abyssinian"    :   "사막여우 고양이", //    아비시안
+                "Bengal"        :   "상냥한 맹수 고양이", //    뱅갈
+                "Ragdoll"       :   "인형 같은 고양이", //    렉돌
+                "Maine Coon"    :   "젠틀 자이언트 고양이", //    메인쿤
+                "Exotic"        :   "파자마를 입은 페르시안", //    엑조틱
+                "American Short":   "동글동글 귀여운 고양이", //    아메리칸숏
+                "Persian"       :   "귀부인 고양이", //    페르시안
+                "Burmilla"      :   "아름다운 고양이", //    버밀라(x)
+                "Norwegian forest": "관리하는 고양이", //    노르웨이숲
+                "British Short" :   "유쾌한 고양이", //    브리티시 숏
+                "Himalayan"     :   "온순한 고양이", //    히말라얀(x)
+                "Scottish Fold" :   "동글동글한 고양이", //    스코티시 폴드
+                "Siamese"       :   "고양이의 여왕", //    샴(x)
+                "Turkish angora":   "새하얀 고양이", //    터키시 앙고라
+                "Cornish Rex"   :   "곱슬곱슬 고양이", //    코니시 렉스
+                "Japanese Bobtail": "영리한 고양이", //    재패지즈 밥테일
+                "Javanese"      :   "헌신적인 고양이", //    자바니즈(x)
+                "Burmese"       :   "행운을 주는 고양이", //    버미즈
+                "Chantilly"     :   "수다쟁이 고양이", //    샹틀리(X)
+                "Birman"        :   "양말 고양이", //    버만
+    
+        ]
 
     
     
@@ -129,6 +158,7 @@ class TestResultViewController: UIViewController {
         
         let mainVC = storyboard?.instantiateViewController(identifier: "FirstMainVC") as! MainViewController
         
+        UserDefaults.standard.setValue(CatNickname[User_Result], forKey: "Nickname")
         UserDefaults.standard.setValue(MyCatRanking[0], forKey: "CatRanking1")
         UserDefaults.standard.setValue(MyCatRanking[1], forKey: "CatRanking2")
         UserDefaults.standard.setValue(MyCatRanking[2], forKey: "CatRanking3")
@@ -198,6 +228,16 @@ class TestResultViewController: UIViewController {
             
             
         }
+        
+    }
+    
+    @IBAction func onBtnDetail(_ sender: UIButton) {
+        
+        let NextVC = self.storyboard?.instantiateViewController(identifier: "DetailContentsVC") as! DetailContentsViewController
+        
+        NextVC.CatKinds = User_Result
+        
+        self.navigationController?.pushViewController(NextVC, animated: true)
         
     }
     

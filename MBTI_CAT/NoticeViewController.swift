@@ -7,7 +7,7 @@
 
 // 해야할 일
 // 날짜별로 정렬 한번 해야할듯.
-
+// 일단 완료
 
 import UIKit
 import Firebase

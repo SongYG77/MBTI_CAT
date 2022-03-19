@@ -3,7 +3,7 @@
 //  MBTI_CAT
 //
 //  Created by 송윤근 on 2022/01/17.
-//
+//  완료
 
 import UIKit
 import DLRadioButton

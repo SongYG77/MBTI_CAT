@@ -171,5 +171,70 @@ class CharacteristicViewController: UIViewController {
         self.navigationController?.pushViewController(NextVC, animated: true)
     }
     
+    @IBAction func onBtnSiamese(_ sender: UIButton) {
+        let NextVC = self.storyboard?.instantiateViewController(identifier: "DetailContentsVC") as! DetailContentsViewController
+        
+        NextVC.CatKinds = "Siamese"
+        
+        self.navigationController?.pushViewController(NextVC, animated: true)
+    }
+    
+    @IBAction func onBtnTurkishangora(_ sender: UIButton) {
+        let NextVC = self.storyboard?.instantiateViewController(identifier: "DetailContentsVC") as! DetailContentsViewController
+        
+        NextVC.CatKinds = "Turkish angora"
+        
+        self.navigationController?.pushViewController(NextVC, animated: true)
+    }
+    
+    @IBAction func onBtnCornishRex(_ sender: UIButton) {
+        let NextVC = self.storyboard?.instantiateViewController(identifier: "DetailContentsVC") as! DetailContentsViewController
+        
+        NextVC.CatKinds = "Cornish Rex"
+        
+        self.navigationController?.pushViewController(NextVC, animated: true)
+    }
+    
+    @IBAction func onBtnJapaneseBobtail(_ sender: UIButton) {
+        let NextVC = self.storyboard?.instantiateViewController(identifier: "DetailContentsVC") as! DetailContentsViewController
+        
+        NextVC.CatKinds = "Japanese Bobtail"
+        
+        self.navigationController?.pushViewController(NextVC, animated: true)
+    }
+    
+    @IBAction func onBtnJavanese(_ sender: UIButton) {
+        let NextVC = self.storyboard?.instantiateViewController(identifier: "DetailContentsVC") as! DetailContentsViewController
+        
+        NextVC.CatKinds = "Javanese"
+        
+        self.navigationController?.pushViewController(NextVC, animated: true)
+        
+    }
+    
+    @IBAction func onBtnBurmese(_ sender: UIButton) {
+        let NextVC = self.storyboard?.instantiateViewController(identifier: "DetailContentsVC") as! DetailContentsViewController
+        
+        NextVC.CatKinds = "Burmese"
+        
+        self.navigationController?.pushViewController(NextVC, animated: true)
+    }
+    
+   
+    @IBAction func onBtnChantilly(_ sender: UIButton) {
+        let NextVC = self.storyboard?.instantiateViewController(identifier: "DetailContentsVC") as! DetailContentsViewController
+        
+        NextVC.CatKinds = "Chantilly"
+        
+        self.navigationController?.pushViewController(NextVC, animated: true)
+    }
+    
+    @IBAction func onBtnBirman(_ sender: UIButton) {
+        let NextVC = self.storyboard?.instantiateViewController(identifier: "DetailContentsVC") as! DetailContentsViewController
+        
+        NextVC.CatKinds = "Birman"
+        
+        self.navigationController?.pushViewController(NextVC, animated: true)
+    }
     
 }

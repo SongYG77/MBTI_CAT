@@ -20,6 +20,7 @@ class MainViewController: UIViewController {
     
     @IBOutlet weak var UserMBTI_Image: UIImageView!
     
+    @IBOutlet weak var NicknameLabel: UILabel!
     
     @IBOutlet weak var Rank1PercentProgress: UIProgressView!
     @IBOutlet weak var Rank1CatLabel: UILabel!
@@ -133,6 +134,7 @@ class MainViewController: UIViewController {
             UserInfo = (UserDefaults.standard.value(forKey: "CatRanking1") as! String)
             UserMBTI_Image.image = UIImage(named: UserInfo ?? "SampleCat" + ".png")
             UserMBTI_Image.isHidden = false
+            NicknameLabel.text = (UserDefaults.standard.value(forKey: "Nickname") as! String)
             
             Rank1CatLabel.text = "1. " + (UserDefaults.standard.value(forKey: "CatRanking1") as! String)
             Rank2CatLabel.text = "2. " + (UserDefaults.standard.value(forKey: "CatRanking2") as! String)
@@ -169,7 +171,7 @@ class MainViewController: UIViewController {
         else {
             
             UserMBTI_Image.image = nil
-            UserMBTI_Image.isHidden = true
+            NicknameLabel.text = ""
             
             Rank1PercentProgress.progress = 0.5
             Rank2PercentProgress.progress = 0.5

@@ -26,7 +26,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NLg-SV-5Rx">
                                 <rect key="frame" x="20" y="395" width="374" height="60"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="고양이종류" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FCy-lf-7Rj">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="냥냥" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FCy-lf-7Rj">
                                         <rect key="frame" x="8" y="11" width="135" height="38"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="38" id="8Ix-et-G6i"/>
@@ -57,7 +57,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6h8-Sz-JZJ">
                                 <rect key="frame" x="20" y="455" width="374" height="60"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="고양이종류" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="imf-ds-oeg">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="연" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="imf-ds-oeg">
                                         <rect key="frame" x="8" y="11" width="135" height="38"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="38" id="42P-lR-Xog"/>
@@ -87,7 +87,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xnq-e4-ECb">
                                 <rect key="frame" x="20" y="515" width="374" height="60"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="고양이종류" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xbj-YQ-Oc7">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="구" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xbj-YQ-Oc7">
                                         <rect key="frame" x="8" y="11" width="135" height="38"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="38" id="L4F-lr-oeu"/>
@@ -117,7 +117,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dVr-cs-1e3">
                                 <rect key="frame" x="20" y="575" width="374" height="60"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="고양이종류" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rc8-as-Xka">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="소" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rc8-as-Xka">
                                         <rect key="frame" x="8" y="11" width="135" height="38"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="135" id="O2F-H6-85Z"/>
@@ -159,14 +159,14 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="특징" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kDc-XU-h8Z">
-                                        <rect key="frame" x="163" y="63.5" width="203" height="15.5"/>
-                                        <fontDescription key="fontDescription" name="Cafe24Syongsyong" family="Cafe24 Syongsyong" pointSize="14"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="특징" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kDc-XU-h8Z">
+                                        <rect key="frame" x="163" y="53.5" width="203" height="20"/>
+                                        <fontDescription key="fontDescription" name="Cafe24Syongsyong" family="Cafe24 Syongsyong" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="닮은 정도 : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Te-LX-xaV">
-                                        <rect key="frame" x="163" y="94" width="203" height="19"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="닮은 정도 : " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Te-LX-xaV">
+                                        <rect key="frame" x="163" y="88.5" width="203" height="19"/>
                                         <fontDescription key="fontDescription" name="Cafe24Syongsyong" family="Cafe24 Syongsyong" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -181,7 +181,7 @@
                                     <constraint firstAttribute="trailing" secondItem="ae6-5I-DXP" secondAttribute="trailing" constant="8" id="Bgh-G1-XlG"/>
                                     <constraint firstItem="ae6-5I-DXP" firstAttribute="leading" secondItem="LQx-ki-FoM" secondAttribute="trailing" constant="8" id="DjD-3b-kVT"/>
                                     <constraint firstItem="LQx-ki-FoM" firstAttribute="top" secondItem="Dgs-OX-Scg" secondAttribute="top" constant="8" id="G2J-Oe-HSG"/>
-                                    <constraint firstItem="kDc-XU-h8Z" firstAttribute="top" secondItem="ae6-5I-DXP" secondAttribute="bottom" constant="20" id="KMz-o4-QZ9"/>
+                                    <constraint firstItem="kDc-XU-h8Z" firstAttribute="top" secondItem="ae6-5I-DXP" secondAttribute="bottom" constant="10" id="KMz-o4-QZ9"/>
                                     <constraint firstItem="LQx-ki-FoM" firstAttribute="width" secondItem="Dgs-OX-Scg" secondAttribute="width" multiplier="0.393048" id="Khn-11-fwx"/>
                                     <constraint firstAttribute="height" constant="146" id="Ooi-Jz-euN"/>
                                     <constraint firstItem="kDc-XU-h8Z" firstAttribute="leading" secondItem="LQx-ki-FoM" secondAttribute="trailing" constant="8" id="WNo-Nl-U33"/>
@@ -267,6 +267,7 @@
                         <outlet property="InfoView" destination="Dgs-OX-Scg" id="cdr-Mo-t4g"/>
                         <outlet property="MyCatLabel" destination="ae6-5I-DXP" id="kMa-rU-fsI"/>
                         <outlet property="MyPersentLabel" destination="5Te-LX-xaV" id="5Lf-eA-Jki"/>
+                        <outlet property="NicknameLabel" destination="kDc-XU-h8Z" id="YGn-eW-CHY"/>
                         <outlet property="Rank1CatLabel" destination="FCy-lf-7Rj" id="CNT-oM-IiC"/>
                         <outlet property="Rank1PercentProgress" destination="ogP-o3-IYz" id="GnE-VH-DoJ"/>
                         <outlet property="Rank1View" destination="NLg-SV-5Rx" id="0RP-t7-OSo"/>
@@ -391,7 +392,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KL4-7f-do1" customClass="DLRadioButton">
-                                <rect key="frame" x="29" y="502.5" width="60" height="60"/>
+                                <rect key="frame" x="29" y="506.5" width="60" height="60"/>
                                 <color key="backgroundColor" red="1" green="0.97647058959999999" blue="0.94901961089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="C8n-2E-hQa"/>
@@ -424,7 +425,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j7Y-5I-hng" customClass="DLRadioButton">
-                                <rect key="frame" x="325" y="502.5" width="60" height="60"/>
+                                <rect key="frame" x="325" y="506.5" width="60" height="60"/>
                                 <color key="backgroundColor" red="1" green="0.97647058959999999" blue="0.94901961089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="3md-bO-w3J"/>
@@ -453,7 +454,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MFO-Uv-p0A" customClass="DLRadioButton">
-                                <rect key="frame" x="113" y="507.5" width="50" height="50"/>
+                                <rect key="frame" x="113" y="511.5" width="50" height="50"/>
                                 <color key="backgroundColor" red="1" green="0.97647058959999999" blue="0.94901961089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="LbO-OH-Rpz"/>
@@ -475,7 +476,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pM9-Rz-I5z" customClass="DLRadioButton">
-                                <rect key="frame" x="251" y="507.5" width="50" height="50"/>
+                                <rect key="frame" x="251" y="511.5" width="50" height="50"/>
                                 <color key="backgroundColor" red="1" green="0.97647058959999999" blue="0.94901961089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="b42-tg-NrR"/>
@@ -497,7 +498,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vfv-8K-cug" customClass="DLRadioButton">
-                                <rect key="frame" x="187" y="512.5" width="40" height="40"/>
+                                <rect key="frame" x="187" y="516.5" width="40" height="40"/>
                                 <color key="backgroundColor" red="1" green="0.97647058959999999" blue="0.94901961089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="AM5-wQ-BN7"/>
@@ -519,19 +520,19 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="나와 비슷한 고양이 찾기" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2tQ-SI-XCC">
-                                <rect key="frame" x="30" y="79" width="354" height="38.5"/>
+                                <rect key="frame" x="30" y="79" width="354" height="41"/>
                                 <fontDescription key="fontDescription" name="Cafe24Syongsyong" family="Cafe24 Syongsyong" pointSize="35"/>
                                 <color key="textColor" red="0.462310259" green="0.32170715090000002" blue="0.16283701850000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00/00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Omp-MP-pPI">
-                                <rect key="frame" x="176.5" y="127.5" width="61" height="30"/>
+                                <rect key="frame" x="172.5" y="130" width="69.5" height="31.5"/>
                                 <fontDescription key="fontDescription" name="Cafe24Syongsyong" family="Cafe24 Syongsyong" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dIQ-zP-tQD">
-                                <rect key="frame" x="10" y="232.5" width="394" height="170"/>
+                                <rect key="frame" x="10" y="236.5" width="394" height="170"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="문항" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQx-CR-BOc">
                                         <rect key="frame" x="29" y="7" width="336" height="156.5"/>
@@ -550,7 +551,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="예" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D9G-AK-YN0">
-                                <rect key="frame" x="49" y="466" width="20" height="28"/>
+                                <rect key="frame" x="49" y="470" width="20" height="28"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="28" id="lkX-vx-dbg"/>
                                     <constraint firstAttribute="width" constant="20" id="m63-bg-aAC"/>
@@ -560,7 +561,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="문항" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WPo-Gu-hV2">
-                                <rect key="frame" x="10" y="197.5" width="394" height="35"/>
+                                <rect key="frame" x="10" y="201.5" width="394" height="35"/>
                                 <color key="backgroundColor" red="0.56862745098039214" green="0.47843137254901957" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="UfZ-rh-Rfe"/>
@@ -574,7 +575,7 @@
                                 <color key="progressTintColor" red="0.56862745100000001" green="0.97647058959999999" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </progressView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="아니오" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vj3-Ni-oVv">
-                                <rect key="frame" x="322.5" y="465" width="65" height="30"/>
+                                <rect key="frame" x="322.5" y="469" width="65" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Cyu-j4-A5O"/>
                                     <constraint firstAttribute="width" constant="65" id="SWE-VR-1jP"/>
@@ -584,7 +585,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="중간" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nvc-N0-H9P">
-                                <rect key="frame" x="190.5" y="468.5" width="33" height="23"/>
+                                <rect key="frame" x="190.5" y="472.5" width="33" height="23"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="33" id="LQA-l2-4kz"/>
                                     <constraint firstAttribute="height" constant="23" id="NV1-3J-Swb"/>
@@ -790,6 +791,9 @@
                                 <state key="normal" title="자세히 보기">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="onBtnDetail:" destination="S1c-Ia-f9r" eventType="touchUpInside" id="fwW-sg-huq"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6ik-aW-msM"/>
@@ -1020,6 +1024,9 @@
                                     <constraint firstAttribute="height" constant="60" id="Esh-HT-Cm0"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="Siamese"/>
+                                <connections>
+                                    <action selector="onBtnSiamese:" destination="y49-JE-rcr" eventType="touchUpInside" id="VwB-2k-rsI"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HGK-Wu-zVp">
                                 <rect key="frame" x="225.5" y="448" width="66.5" height="60"/>
@@ -1028,6 +1035,9 @@
                                     <constraint firstAttribute="height" constant="60" id="Dre-EO-Obl"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="Turkish angora"/>
+                                <connections>
+                                    <action selector="onBtnTurkishangora:" destination="y49-JE-rcr" eventType="touchUpInside" id="eTf-hh-UZi"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CPZ-Wj-MJM">
                                 <rect key="frame" x="328" y="448" width="66" height="60"/>
@@ -1036,6 +1046,9 @@
                                     <constraint firstAttribute="height" constant="60" id="mGy-IB-ReI"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="Cornish Rex"/>
+                                <connections>
+                                    <action selector="onBtnCornishRex:" destination="y49-JE-rcr" eventType="touchUpInside" id="RTs-9z-Wcv"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="스코티시 폴드" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dot-RT-HeF">
                                 <rect key="frame" x="17" y="508" width="72" height="16"/>
@@ -1068,6 +1081,9 @@
                                     <constraint firstAttribute="height" constant="60" id="9fl-AC-fHn"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="Japanese Bobtail"/>
+                                <connections>
+                                    <action selector="onBtnJapaneseBobtail:" destination="y49-JE-rcr" eventType="touchUpInside" id="XBP-hR-goa"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ylz-Rw-3QA">
                                 <rect key="frame" x="122" y="534" width="66.5" height="60"/>
@@ -1076,6 +1092,9 @@
                                     <constraint firstAttribute="height" constant="60" id="0Jd-hd-KKA"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="Javanese"/>
+                                <connections>
+                                    <action selector="onBtnJavanese:" destination="y49-JE-rcr" eventType="touchUpInside" id="5Bh-hm-Oge"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R22-Wn-Dv0">
                                 <rect key="frame" x="225.5" y="534" width="66.5" height="60"/>
@@ -1084,6 +1103,9 @@
                                     <constraint firstAttribute="height" constant="60" id="TKZ-EN-3Ml"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="Burmese"/>
+                                <connections>
+                                    <action selector="onBtnBurmese:" destination="y49-JE-rcr" eventType="touchUpInside" id="mBd-fn-c0L"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bJG-a0-AmG">
                                 <rect key="frame" x="328" y="534" width="66" height="60"/>
@@ -1092,6 +1114,9 @@
                                     <constraint firstAttribute="height" constant="60" id="F9c-7k-ac0"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="Chantilly"/>
+                                <connections>
+                                    <action selector="onBtnChantilly:" destination="y49-JE-rcr" eventType="touchUpInside" id="YkP-um-qas"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V5W-8u-XOx">
                                 <rect key="frame" x="20" y="620" width="66" height="60"/>
@@ -1100,6 +1125,9 @@
                                     <constraint firstAttribute="height" constant="60" id="FdQ-J9-IFr"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="Birman"/>
+                                <connections>
+                                    <action selector="onBtnBirman:" destination="y49-JE-rcr" eventType="touchUpInside" id="Tyg-hy-dKf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YIh-pJ-zYv">
                                 <rect key="frame" x="122" y="362" width="66.5" height="60"/>
@@ -1470,14 +1498,14 @@
                                                     <action selector="onBtnGoBack:" destination="FgA-rT-AhB" eventType="touchUpInside" id="817-yB-9Se"/>
                                                 </connections>
                                             </button>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SxS-eQ-rg5">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="고양이 별명" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SxS-eQ-rg5">
                                                 <rect key="frame" x="40" y="310" width="334" height="60"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="dob-WC-y6V"/>
                                                 </constraints>
                                                 <color key="textColor" systemColor="labelColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <fontDescription key="fontDescription" name="Cafe24Syongsyong" family="Cafe24 Syongsyong" pointSize="30"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="성격" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wcH-FU-lHz">
@@ -2100,7 +2128,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rgh-W5-6Zn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2845" y="895"/>
+            <point key="canvasLocation" x="2916" y="895"/>
         </scene>
         <!--Notice View Controller-->
         <scene sceneID="0ic-QH-WYx">

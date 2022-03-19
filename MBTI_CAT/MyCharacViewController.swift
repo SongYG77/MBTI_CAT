@@ -97,6 +97,7 @@ class MyCharacController: UIViewController {
             
             let myper = (Float(UserDefaults.standard.value(forKey: "Ranking_Percent1") as? String ?? "0") ?? 0) * 100.0
             Persent_Label.text = "닮은 정도 : " + String(myper) + "%"
+            CatChar_Label.text = (UserDefaults.standard.value(forKey: "Nickname") as! String)
             
             
         }
@@ -104,15 +105,40 @@ class MyCharacController: UIViewController {
             MyCatImg.image = nil
             MyCat_Label.text = "결과가 없습니다."
             Persent_Label.text = ""
+            CatChar_Label.text = ""
         }
     }
 
     @IBAction func onBtnResult(_ sender: UIButton) {
         
+        if UserDefaults.standard.value(forKey: "CatRanking1") != nil {
+            let UserInfo : String? = (UserDefaults.standard.value(forKey: "CatRanking1") as! String)
+            
+            let NextVC = self.storyboard?.instantiateViewController(identifier: "DetailContentsVC") as! DetailContentsViewController
+            
+            NextVC.CatKinds = UserInfo!
+            
+            self.navigationController?.pushViewController(NextVC, animated: true)
+            
+        }
+        else {
+            let alert = UIAlertController(title: "알림", message: "결과가 없습니다!", preferredStyle: .alert)
+            let resultOK = UIAlertAction(title: "확인" , style: .default, handler: nil)
+
+            alert.addAction(resultOK)
+            present(alert, animated: true)
+            
+        }
+       
+        
     }
     
     @IBAction func onBtnFiveChar(_ sender: UIButton) {
-        
+        let alert = UIAlertController(title: "알림", message: "준비중입니다.", preferredStyle: .alert)
+        let resultOK = UIAlertAction(title: "확인" , style: .default, handler: nil)
+
+        alert.addAction(resultOK)
+        present(alert, animated: true)
     }
     
     
