@@ -33,6 +33,7 @@
 
 /* Begin PBXFileReference section */
 		0E5DD73E2EE9DE69359BDAAE /* Pods-MBTI_CAT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MBTI_CAT.debug.xcconfig"; path = "Target Support Files/Pods-MBTI_CAT/Pods-MBTI_CAT.debug.xcconfig"; sourceTree = "<group>"; };
+		180DBDFF27EC3B2E00B29A48 /* MBTI_CAT.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MBTI_CAT.entitlements; sourceTree = "<group>"; };
 		1829E48927B4F3F500654B60 /* NoticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeViewController.swift; sourceTree = "<group>"; };
 		1830AD4E279951C6004DEDD9 /* CatData.xlsx */ = {isa = PBXFileReference; lastKnownFileType = file; path = CatData.xlsx; sourceTree = SOURCE_ROOT; };
 		1832663A2797E5BF00D4C350 /* TestResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestResultViewController.swift; sourceTree = "<group>"; };
@@ -52,6 +53,8 @@
 		184188BC27954C1E0049D3DD /* FirstTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTestViewController.swift; sourceTree = "<group>"; };
 		1852F1A727CF485D00CCCB9A /* Cafe24Syongsyong.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cafe24Syongsyong.ttf; sourceTree = "<group>"; };
 		1854FFE827B6227C00CD33D8 /* ANoticeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ANoticeTableViewCell.swift; sourceTree = "<group>"; };
+		1865677727E5CE490086BB51 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		1865677827E5CE490086BB51 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Main.strings; sourceTree = "<group>"; };
 		188A7E8E27B23C34000718E7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		188A7EAA27B241BB000718E7 /* SuggestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionsViewController.swift; sourceTree = "<group>"; };
 		1895D24C279E868200567BBF /* DetailContentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailContentsViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +106,7 @@
 		1841574F279003AE0095F8A9 /* MBTI_CAT */ = {
 			isa = PBXGroup;
 			children = (
+				180DBDFF27EC3B2E00B29A48 /* MBTI_CAT.entitlements */,
 				1852F1A727CF485D00CCCB9A /* Cafe24Syongsyong.ttf */,
 				18415750279003AE0095F8A9 /* AppDelegate.swift */,
 				18415752279003AE0095F8A9 /* SceneDelegate.swift */,
@@ -181,6 +185,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ko,
 			);
 			mainGroup = 18415744279003AE0095F8A9;
 			productRefGroup = 1841574E279003AE0095F8A9 /* Products */;
@@ -280,6 +285,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				18415757279003AE0095F8A9 /* Base */,
+				1865677827E5CE490086BB51 /* ko */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -288,6 +294,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				1841575C279003AE0095F8A9 /* Base */,
+				1865677727E5CE490086BB51 /* ko */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -299,6 +306,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -360,6 +368,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -417,7 +426,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MBTI_CAT/MBTI_CAT.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = M7KCA787CC;
 				INFOPLIST_FILE = MBTI_CAT/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -425,7 +436,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.SongYG77.MBTI-APP.MBTI-CAT";
+				MARKETING_VERSION = 1.0.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SongYG77.MeowLaboratory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -438,7 +450,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MBTI_CAT/MBTI_CAT.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = M7KCA787CC;
 				INFOPLIST_FILE = MBTI_CAT/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -446,7 +460,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.SongYG77.MBTI-APP.MBTI-CAT";
+				MARKETING_VERSION = 1.0.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SongYG77.MeowLaboratory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

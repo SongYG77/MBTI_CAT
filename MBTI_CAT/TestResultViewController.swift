@@ -5,6 +5,10 @@
 //  Created by 송윤근 on 2022/01/19.
 //
 
+// userDefult에 저장되는 키 값
+// Nickname : 내 고양이 별명
+// CatRanking1,2,3,4 : 비슷한 순위
+// Ranking_Percent1,2,3,4 : 닮은 정도.
 
 
 
@@ -171,6 +175,11 @@ class TestResultViewController: UIViewController {
         
         mainVC.isnewData = true
         
+        let alert = UIAlertController(title: "알림", message: "결과가 저장되었습니다.", preferredStyle: .alert)
+        let resultOK = UIAlertAction(title: "확인" , style: .default, handler: nil)
+
+        alert.addAction(resultOK)
+        present(alert, animated: true)
         
         print("결과가 저장되었습니다.")
     }

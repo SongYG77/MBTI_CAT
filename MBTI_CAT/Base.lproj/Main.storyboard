@@ -392,7 +392,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KL4-7f-do1" customClass="DLRadioButton">
-                                <rect key="frame" x="29" y="506.5" width="60" height="60"/>
+                                <rect key="frame" x="29" y="502.5" width="60" height="60"/>
                                 <color key="backgroundColor" red="1" green="0.97647058959999999" blue="0.94901961089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="C8n-2E-hQa"/>
@@ -425,7 +425,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j7Y-5I-hng" customClass="DLRadioButton">
-                                <rect key="frame" x="325" y="506.5" width="60" height="60"/>
+                                <rect key="frame" x="325" y="502.5" width="60" height="60"/>
                                 <color key="backgroundColor" red="1" green="0.97647058959999999" blue="0.94901961089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="3md-bO-w3J"/>
@@ -454,7 +454,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MFO-Uv-p0A" customClass="DLRadioButton">
-                                <rect key="frame" x="113" y="511.5" width="50" height="50"/>
+                                <rect key="frame" x="113" y="507.5" width="50" height="50"/>
                                 <color key="backgroundColor" red="1" green="0.97647058959999999" blue="0.94901961089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="LbO-OH-Rpz"/>
@@ -476,7 +476,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pM9-Rz-I5z" customClass="DLRadioButton">
-                                <rect key="frame" x="251" y="511.5" width="50" height="50"/>
+                                <rect key="frame" x="251" y="507.5" width="50" height="50"/>
                                 <color key="backgroundColor" red="1" green="0.97647058959999999" blue="0.94901961089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="b42-tg-NrR"/>
@@ -498,7 +498,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vfv-8K-cug" customClass="DLRadioButton">
-                                <rect key="frame" x="187" y="516.5" width="40" height="40"/>
+                                <rect key="frame" x="187" y="512.5" width="40" height="40"/>
                                 <color key="backgroundColor" red="1" green="0.97647058959999999" blue="0.94901961089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="AM5-wQ-BN7"/>
@@ -520,19 +520,19 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="나와 비슷한 고양이 찾기" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2tQ-SI-XCC">
-                                <rect key="frame" x="30" y="79" width="354" height="41"/>
+                                <rect key="frame" x="30" y="79" width="354" height="38.5"/>
                                 <fontDescription key="fontDescription" name="Cafe24Syongsyong" family="Cafe24 Syongsyong" pointSize="35"/>
                                 <color key="textColor" red="0.462310259" green="0.32170715090000002" blue="0.16283701850000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00/00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Omp-MP-pPI">
-                                <rect key="frame" x="172.5" y="130" width="69.5" height="31.5"/>
+                                <rect key="frame" x="177" y="127.5" width="60.5" height="30"/>
                                 <fontDescription key="fontDescription" name="Cafe24Syongsyong" family="Cafe24 Syongsyong" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dIQ-zP-tQD">
-                                <rect key="frame" x="10" y="236.5" width="394" height="170"/>
+                                <rect key="frame" x="10" y="232.5" width="394" height="170"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="문항" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQx-CR-BOc">
                                         <rect key="frame" x="29" y="7" width="336" height="156.5"/>
@@ -551,7 +551,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="예" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D9G-AK-YN0">
-                                <rect key="frame" x="49" y="470" width="20" height="28"/>
+                                <rect key="frame" x="49" y="466" width="20" height="28"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="28" id="lkX-vx-dbg"/>
                                     <constraint firstAttribute="width" constant="20" id="m63-bg-aAC"/>
@@ -561,7 +561,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="문항" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WPo-Gu-hV2">
-                                <rect key="frame" x="10" y="201.5" width="394" height="35"/>
+                                <rect key="frame" x="10" y="197.5" width="394" height="35"/>
                                 <color key="backgroundColor" red="0.56862745098039214" green="0.47843137254901957" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="UfZ-rh-Rfe"/>
@@ -575,7 +575,7 @@
                                 <color key="progressTintColor" red="0.56862745100000001" green="0.97647058959999999" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </progressView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="아니오" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vj3-Ni-oVv">
-                                <rect key="frame" x="322.5" y="469" width="65" height="30"/>
+                                <rect key="frame" x="322.5" y="465" width="65" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Cyu-j4-A5O"/>
                                     <constraint firstAttribute="width" constant="65" id="SWE-VR-1jP"/>
@@ -585,7 +585,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="중간" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nvc-N0-H9P">
-                                <rect key="frame" x="190.5" y="472.5" width="33" height="23"/>
+                                <rect key="frame" x="190.5" y="468.5" width="33" height="23"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="33" id="LQA-l2-4kz"/>
                                     <constraint firstAttribute="height" constant="23" id="NV1-3J-Swb"/>
@@ -1474,10 +1474,10 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6XA-rp-abX">
-                                                <rect key="frame" x="10" y="765" width="394" height="230"/>
+                                                <rect key="frame" x="10" y="745" width="394" height="210"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="230" id="n3G-B7-YI4"/>
+                                                    <constraint firstAttribute="height" constant="210" id="n3G-B7-YI4"/>
                                                 </constraints>
                                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                 <color key="textColor" systemColor="labelColor"/>
@@ -1485,7 +1485,7 @@
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pjf-YZ-cLR">
-                                                <rect key="frame" x="142" y="1050" width="130" height="39"/>
+                                                <rect key="frame" x="142" y="1010" width="130" height="39"/>
                                                 <color key="backgroundColor" red="0.56862745100000001" green="0.47843137250000001" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="130" id="Fj1-Za-tEG"/>
@@ -1519,7 +1519,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="특징" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="evC-27-rEf">
-                                                <rect key="frame" x="10" y="730" width="394" height="35"/>
+                                                <rect key="frame" x="10" y="710" width="394" height="35"/>
                                                 <color key="backgroundColor" red="0.56862745100000001" green="0.47843137250000001" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="35" id="Zj1-pr-5Tj"/>
@@ -1530,10 +1530,10 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="86w-gi-a3z">
-                                                <rect key="frame" x="10" y="465" width="394" height="230"/>
+                                                <rect key="frame" x="10" y="465" width="394" height="210"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="230" id="Hay-h0-WDX"/>
+                                                    <constraint firstAttribute="height" constant="210" id="Hay-h0-WDX"/>
                                                 </constraints>
                                                 <string key="text">  길고 날씬한 체형을 가지고 있는 고양이 입니다. 평균적으로 중장모를 소유한 묘종이고 다른 부위보다 꼬리의 털이 길게 나 있습니다.    우아하고 자연스러운 움직임과 꼬리의 긴 털이 흔들려 발리의 전통 춤과 비슷하여 이름이 붙여졌다. </string>
                                                 <color key="textColor" systemColor="labelColor"/>

@@ -1,0 +1,357 @@
+
+/* Class = "UILabel"; text = "Freepik - Flaticon"; ObjectID = "023-aJ-Lp1"; */
+"023-aJ-Lp1.text" = "Freepik - Flaticon";
+
+/* Class = "UILabel"; text = "노르웨이 숲"; ObjectID = "08l-ZT-xed"; */
+"08l-ZT-xed.text" = "노르웨이 숲";
+
+/* Class = "UIButton"; normalTitle = "개발자"; ObjectID = "2P5-zp-7qn"; */
+"2P5-zp-7qn.normalTitle" = "개발자";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "2oq-P3-St1"; */
+"2oq-P3-St1.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "나와 비슷한 고양이 찾기"; ObjectID = "2tQ-SI-XCC"; */
+"2tQ-SI-XCC.text" = "나와 비슷한 고양이 찾기";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "3Ii-zq-fMt"; */
+"3Ii-zq-fMt.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "버만"; ObjectID = "3es-D6-saa"; */
+"3es-D6-saa.text" = "버만";
+
+/* Class = "UILabel"; text = "마이 페이지"; ObjectID = "3gS-CB-LmC"; */
+"3gS-CB-LmC.text" = "마이 페이지";
+
+/* Class = "UILabel"; text = "아비시니안"; ObjectID = "3ps-aD-zfq"; */
+"3ps-aD-zfq.text" = "아비시니안";
+
+/* Class = "UILabel"; text = "닮은 고양이"; ObjectID = "43b-4p-mwa"; */
+"43b-4p-mwa.text" = "닮은 고양이";
+
+/* Class = "UITabBarItem"; title = "Home"; ObjectID = "4UB-31-LAq"; */
+"4UB-31-LAq.title" = "Home";
+
+/* Class = "UIButton"; normalTitle = "내 고양이 특징"; ObjectID = "4r7-cP-ulW"; */
+"4r7-cP-ulW.normalTitle" = "내 고양이 특징";
+
+/* Class = "UILabel"; text = "닮은 정도 : "; ObjectID = "5Te-LX-xaV"; */
+"5Te-LX-xaV.text" = "닮은 정도 : ";
+
+/* Class = "UIButton"; normalTitle = "자세히 보기"; ObjectID = "613-AL-C5H"; */
+"613-AL-C5H.normalTitle" = "자세히 보기";
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "6XA-rp-abX"; */
+"6XA-rp-abX.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "7Sf-mK-xPJ"; */
+"7Sf-mK-xPJ.normalTitle" = "Button";
+
+/* Class = "UITextView"; text = "  길고 날씬한 체형을 가지고 있는 고양이 입니다. 평균적으로 중장모를 소유한 묘종이고 다른 부위보다 꼬리의 털이 길게 나 있습니다.    우아하고 자연스러운 움직임과 꼬리의 긴 털이 흔들려 발리의 전통 춤과 비슷하여 이름이 붙여졌다. "; ObjectID = "86w-gi-a3z"; */
+"86w-gi-a3z.text" = "  길고 날씬한 체형을 가지고 있는 고양이 입니다. 평균적으로 중장모를 소유한 묘종이고 다른 부위보다 꼬리의 털이 길게 나 있습니다.    우아하고 자연스러운 움직임과 꼬리의 긴 털이 흔들려 발리의 전통 춤과 비슷하여 이름이 붙여졌다. ";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "92j-ys-d2y"; */
+"92j-ys-d2y.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "9nK-VS-R4w"; */
+"9nK-VS-R4w.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "메인 쿤"; ObjectID = "AaS-fo-qSq"; */
+"AaS-fo-qSq.text" = "메인 쿤";
+
+/* Class = "UILabel"; text = "고양이"; ObjectID = "Amk-Uh-VEM"; */
+"Amk-Uh-VEM.text" = "고양이";
+
+/* Class = "UILabel"; text = "킴릭"; ObjectID = "Ay9-wa-VLx"; */
+"Ay9-wa-VLx.text" = "킴릭";
+
+/* Class = "UITextView"; text = "랭킹 표시"; ObjectID = "BW2-T5-GTA"; */
+"BW2-T5-GTA.text" = "랭킹 표시";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "CPZ-Wj-MJM"; */
+"CPZ-Wj-MJM.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "예"; ObjectID = "D9G-AK-YN0"; */
+"D9G-AK-YN0.text" = "예";
+
+/* Class = "UIButton"; normalTitle = "내 결과 초기화"; ObjectID = "D9a-Q7-rEk"; */
+"D9a-Q7-rEk.normalTitle" = "내 결과 초기화";
+
+/* Class = "UILabel"; text = "고양이 종류 예정"; ObjectID = "DU4-ra-G1E"; */
+"DU4-ra-G1E.text" = "고양이 종류 예정";
+
+/* Class = "UILabel"; text = "고양이 특징"; ObjectID = "DUA-BE-ihG"; */
+"DUA-BE-ihG.text" = "고양이 특징";
+
+/* Class = "UILabel"; text = "스코티시 폴드"; ObjectID = "Dot-RT-HeF"; */
+"Dot-RT-HeF.text" = "스코티시 폴드";
+
+/* Class = "UILabel"; text = "이메일"; ObjectID = "Dtt-4t-8fB"; */
+"Dtt-4t-8fB.text" = "이메일";
+
+/* Class = "UILabel"; text = "엑조틱"; ObjectID = "EEc-OD-N3J"; */
+"EEc-OD-N3J.text" = "엑조틱";
+
+/* Class = "UILabel"; text = "냥냥"; ObjectID = "FCy-lf-7Rj"; */
+"FCy-lf-7Rj.text" = "냥냥";
+
+/* Class = "UIButton"; normalTitle = "결과 저장"; ObjectID = "GKL-45-zTk"; */
+"GKL-45-zTk.normalTitle" = "결과 저장";
+
+/* Class = "UIButton"; normalTitle = "Next >"; ObjectID = "HDh-RE-SvM"; */
+"HDh-RE-SvM.normalTitle" = "Next >";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "HGK-Wu-zVp"; */
+"HGK-Wu-zVp.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "I2i-uf-dXX"; */
+"I2i-uf-dXX.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "완료"; ObjectID = "J7N-F3-mub"; */
+"J7N-F3-mub.normalTitle" = "완료";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "JZd-jk-2JP"; */
+"JZd-jk-2JP.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "자바니즈"; ObjectID = "NjW-89-YFo"; */
+"NjW-89-YFo.text" = "자바니즈";
+
+/* Class = "UILabel"; text = "2022-02-02"; ObjectID = "O0f-vN-RQ8"; */
+"O0f-vN-RQ8.text" = "2022-02-02";
+
+/* Class = "UILabel"; text = "렉돌"; ObjectID = "O5Q-av-d6W"; */
+"O5Q-av-d6W.text" = "렉돌";
+
+/* Class = "UIButton"; normalTitle = "공지사항"; ObjectID = "OJG-2A-Teq"; */
+"OJG-2A-Teq.normalTitle" = "공지사항";
+
+/* Class = "UILabel"; text = "songyg77dev@gmail.com"; ObjectID = "ObY-VW-py5"; */
+"ObY-VW-py5.text" = "songyg77dev@gmail.com";
+
+/* Class = "UILabel"; text = "00/00"; ObjectID = "Omp-MP-pPI"; */
+"Omp-MP-pPI.text" = "00/00";
+
+/* Class = "UIButton"; normalTitle = "돌아가기"; ObjectID = "Pjf-YZ-cLR"; */
+"Pjf-YZ-cLR.normalTitle" = "돌아가기";
+
+/* Class = "UILabel"; text = "안내사항"; ObjectID = "QZs-39-JWq"; */
+"QZs-39-JWq.text" = "안내사항";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Qj1-W0-Asi"; */
+"Qj1-W0-Asi.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "R22-Wn-Dv0"; */
+"R22-Wn-Dv0.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "아메리칸 숏"; ObjectID = "RIE-nU-ELy"; */
+"RIE-nU-ELy.text" = "아메리칸 숏";
+
+/* Class = "UILabel"; text = "소"; ObjectID = "Rc8-as-Xka"; */
+"Rc8-as-Xka.text" = "소";
+
+/* Class = "UILabel"; text = "공지사항"; ObjectID = "RrI-UQ-EIx"; */
+"RrI-UQ-EIx.text" = "공지사항";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "SEN-XX-G5d"; */
+"SEN-XX-G5d.normalTitle" = "Button";
+
+/* Class = "UITextView"; text = "고양이 별명"; ObjectID = "SxS-eQ-rg5"; */
+"SxS-eQ-rg5.text" = "고양이 별명";
+
+/* Class = "UILabel"; text = "특징"; ObjectID = "Tb8-24-wHA"; */
+"Tb8-24-wHA.text" = "특징";
+
+/* Class = "UILabel"; text = "2022-02-22"; ObjectID = "U3b-n1-bAD"; */
+"U3b-n1-bAD.text" = "2022-02-22";
+
+/* Class = "UILabel"; text = "건의 사항"; ObjectID = "UES-EZ-Ffb"; */
+"UES-EZ-Ffb.text" = "건의 사항";
+
+/* Class = "UILabel"; text = "히말라얀"; ObjectID = "Uld-AM-Mxj"; */
+"Uld-AM-Mxj.text" = "히말라얀";
+
+/* Class = "UILabel"; text = "타이틀"; ObjectID = "UmL-CX-cYv"; */
+"UmL-CX-cYv.text" = "타이틀";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "V5W-8u-XOx"; */
+"V5W-8u-XOx.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "아니오"; ObjectID = "Vj3-Ni-oVv"; */
+"Vj3-Ni-oVv.text" = "아니오";
+
+/* Class = "UILabel"; text = "문항"; ObjectID = "WPo-Gu-hV2"; */
+"WPo-Gu-hV2.text" = "문항";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "WZk-MV-1LH"; */
+"WZk-MV-1LH.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "발 아이콘  제작자"; ObjectID = "Xjs-49-xsb"; */
+"Xjs-49-xsb.text" = "발 아이콘  제작자";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "YIh-pJ-zYv"; */
+"YIh-pJ-zYv.normalTitle" = "Button";
+
+/* Class = "UITabBarItem"; title = "Charatic"; ObjectID = "YRv-6j-F0d"; */
+"YRv-6j-F0d.title" = "Charatic";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Ylz-Rw-3QA"; */
+"Ylz-Rw-3QA.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ZUl-ka-ddh"; */
+"ZUl-ka-ddh.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "고양이 종류 "; ObjectID = "ae6-5I-DXP"; */
+"ae6-5I-DXP.text" = "고양이 종류 ";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "bJG-a0-AmG"; */
+"bJG-a0-AmG.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "버밀라"; ObjectID = "eYe-r6-Bqi"; */
+"eYe-r6-Bqi.text" = "버밀라";
+
+/* Class = "UILabel"; text = "비슷한 순위"; ObjectID = "eha-md-z8S"; */
+"eha-md-z8S.text" = "비슷한 순위";
+
+/* Class = "UILabel"; text = "특징"; ObjectID = "evC-27-rEf"; */
+"evC-27-rEf.text" = "특징";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "fY0-JJ-0Ku"; */
+"fY0-JJ-0Ku.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "건의사항"; ObjectID = "fd0-T5-8jW"; */
+"fd0-T5-8jW.normalTitle" = "건의사항";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "fxv-tz-du4"; */
+"fxv-tz-du4.normalTitle" = "Button";
+
+/* Class = "UITabBarItem"; title = "Test"; ObjectID = "gD2-h6-7Cc"; */
+"gD2-h6-7Cc.title" = "Test";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "gUJ-x1-eBT"; */
+"gUJ-x1-eBT.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "gfW-pK-PPd"; */
+"gfW-pK-PPd.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "건의사항"; ObjectID = "gfY-iF-tq3"; */
+"gfY-iF-tq3.text" = "건의사항";
+
+/* Class = "UIButton"; normalTitle = "고양이 5가지 특성"; ObjectID = "gp5-mz-Ysv"; */
+"gp5-mz-Ysv.normalTitle" = "고양이 5가지 특성";
+
+/* Class = "UILabel"; text = "봄베이"; ObjectID = "hcV-7u-MTD"; */
+"hcV-7u-MTD.text" = "봄베이";
+
+/* Class = "UILabel"; text = "샴"; ObjectID = "hvq-2c-0AY"; */
+"hvq-2c-0AY.text" = "샴";
+
+/* Class = "UILabel"; text = "연"; ObjectID = "imf-ds-oeg"; */
+"imf-ds-oeg.text" = "연";
+
+/* Class = "UILabel"; text = "나와 비슷한 고양이 찾기"; ObjectID = "ioz-Gh-aUF"; */
+"ioz-Gh-aUF.text" = "나와 비슷한 고양이 찾기";
+
+/* Class = "UITextView"; text = "문항"; ObjectID = "jQx-CR-BOc"; */
+"jQx-CR-BOc.text" = "문항";
+
+/* Class = "UILabel"; text = "아메리칸 컬"; ObjectID = "k6a-MR-Cq4"; */
+"k6a-MR-Cq4.text" = "아메리칸 컬";
+
+/* Class = "UILabel"; text = "특징"; ObjectID = "kDc-XU-h8Z"; */
+"kDc-XU-h8Z.text" = "특징";
+
+/* Class = "UILabel"; text = "페르시안"; ObjectID = "kmm-2a-1Ym"; */
+"kmm-2a-1Ym.text" = "페르시안";
+
+/* Class = "UILabel"; text = "닮은 정도 : "; ObjectID = "luv-Yv-A9r"; */
+"luv-Yv-A9r.text" = "닮은 정도 : ";
+
+/* Class = "UILabel"; text = "재패니즈 밥테일"; ObjectID = "lxa-Wq-8A7"; */
+"lxa-Wq-8A7.text" = "재패니즈 밥테일";
+
+/* Class = "UILabel"; text = "코니시 렉스"; ObjectID = "mH4-jX-hnk"; */
+"mH4-jX-hnk.text" = "코니시 렉스";
+
+/* Class = "UIButton"; normalTitle = "사이트 이동"; ObjectID = "ndy-jo-aYl"; */
+"ndy-jo-aYl.normalTitle" = "사이트 이동";
+
+/* Class = "UILabel"; text = "탭 이미지"; ObjectID = "nt8-bE-DKG"; */
+"nt8-bE-DKG.text" = "탭 이미지";
+
+/* Class = "UILabel"; text = "중간"; ObjectID = "nvc-N0-H9P"; */
+"nvc-N0-H9P.text" = "중간";
+
+/* Class = "UITextView"; text = "랭킹 표시"; ObjectID = "nvv-T7-yV5"; */
+"nvv-T7-yV5.text" = "랭킹 표시";
+
+/* Class = "UITextView"; text = "랭킹 표시"; ObjectID = "oFx-UJ-fC2"; */
+"oFx-UJ-fC2.text" = "랭킹 표시";
+
+/* Class = "UILabel"; text = "닮은 고양이 순위"; ObjectID = "p6n-8j-iGg"; */
+"p6n-8j-iGg.text" = "닮은 고양이 순위";
+
+/* Class = "UITextView"; text = "랭킹 표시"; ObjectID = "pK6-2Y-Vl1"; */
+"pK6-2Y-Vl1.text" = "랭킹 표시";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "pKA-qT-NiT"; */
+"pKA-qT-NiT.normalTitle" = "Button";
+
+/* Class = "UITabBarItem"; title = "MyPage"; ObjectID = "qAl-ug-0ic"; */
+"qAl-ug-0ic.title" = "MyPage";
+
+/* Class = "UILabel"; text = "샹틀리"; ObjectID = "qQ3-hN-CLB"; */
+"qQ3-hN-CLB.text" = "샹틀리";
+
+/* Class = "UITextField"; placeholder = "이메일을 입력하세요(선택)"; ObjectID = "rK8-Mb-Wix"; */
+"rK8-Mb-Wix.placeholder" = "이메일을 입력하세요(선택)";
+
+/* Class = "UITextView"; text = " 나와 성격이 비슷한 고양이는 어떤 고양이 일지 찾아봅시다. \n\n테스트는 총 12가지 문항입니다. \n\n각 문항에 자신과 비슷한 정도를 선택해주세요."; ObjectID = "rnb-uo-4ey"; */
+"rnb-uo-4ey.text" = " 나와 성격이 비슷한 고양이는 어떤 고양이 일지 찾아봅시다. \n\n테스트는 총 12가지 문항입니다. \n\n각 문항에 자신과 비슷한 정도를 선택해주세요.";
+
+/* Class = "UITextView"; text = "내용"; ObjectID = "s9K-32-5w2"; */
+"s9K-32-5w2.text" = "내용";
+
+/* Class = "UILabel"; text = "뱅갈"; ObjectID = "sI1-La-P68"; */
+"sI1-La-P68.text" = "뱅갈";
+
+/* Class = "UIButton"; normalTitle = "Start"; ObjectID = "t1T-fv-PxS"; */
+"t1T-fv-PxS.normalTitle" = "Start";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "tKX-bf-mKH"; */
+"tKX-bf-mKH.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "이집션 마우"; ObjectID = "tXd-IS-ayX"; */
+"tXd-IS-ayX.text" = "이집션 마우";
+
+/* Class = "UILabel"; text = "SongYG77"; ObjectID = "txi-b2-1Ti"; */
+"txi-b2-1Ti.text" = "SongYG77";
+
+/* Class = "UILabel"; text = "브리티시 숏"; ObjectID = "u1e-wp-NT2"; */
+"u1e-wp-NT2.text" = "브리티시 숏";
+
+/* Class = "UILabel"; text = "발리니즈"; ObjectID = "uhE-h8-uxi"; */
+"uhE-h8-uxi.text" = "발리니즈";
+
+/* Class = "UILabel"; text = "Made By"; ObjectID = "w3h-X8-BiA"; */
+"w3h-X8-BiA.text" = "Made By";
+
+/* Class = "UILabel"; text = "버미즈"; ObjectID = "wCt-Fb-P1C"; */
+"wCt-Fb-P1C.text" = "버미즈";
+
+/* Class = "UILabel"; text = "성격"; ObjectID = "wcH-FU-lHz"; */
+"wcH-FU-lHz.text" = "성격";
+
+/* Class = "UILabel"; text = "구"; ObjectID = "xbj-YQ-Oc7"; */
+"xbj-YQ-Oc7.text" = "구";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "xcA-xj-34Z"; */
+"xcA-xj-34Z.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "터키시 앙고라"; ObjectID = "xdz-cj-jGx"; */
+"xdz-cj-jGx.text" = "터키시 앙고라";
+
+/* Class = "UILabel"; text = "2022 테스트 패치 내용입니다."; ObjectID = "xhr-CW-8e1"; */
+"xhr-CW-8e1.text" = "2022 테스트 패치 내용입니다.";
+
+/* Class = "UILabel"; text = "고양이 종류 "; ObjectID = "zmt-6u-SaJ"; */
+"zmt-6u-SaJ.text" = "고양이 종류 ";
