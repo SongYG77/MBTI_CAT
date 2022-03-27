@@ -209,6 +209,7 @@ class MainViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        
     
         if isnewData == true {
             PrepareAnimation() 

@@ -31,9 +31,10 @@ class NoticeViewController: UIViewController, UITableViewDelegate, UITableViewDa
         var Content : String? = ""
     }
     
-    var NoticeTitleArr : [String] = []
-    var NoticeDateArr : [String] = []
-    var NoticeContentArr : [String] = []
+    var NoticeAll : [[String]] = []
+//    var NoticeTitleArr : [String] = []
+//    var NoticeDateArr : [String] = []
+//    var NoticeContentArr : [String] = []
     
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
@@ -62,8 +63,7 @@ class NoticeViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        print(NoticeContentArr)
-        return NoticeDateArr.count
+        return NoticeAll.count
         
     }
     
@@ -71,8 +71,10 @@ class NoticeViewController: UIViewController, UITableViewDelegate, UITableViewDa
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = self.NoticeTableView.dequeueReusableCell(withIdentifier: "ANoticeTableViewCell", for: indexPath) as! ANoticeTableViewCell
         
-        cell.NoticeTitleLabel.text = NoticeTitleArr[indexPath.row]
-        cell.DateLabel.text = NoticeDateArr[indexPath.row]
+//        cell.NoticeTitleLabel.text = NoticeTitleArr[indexPath.row]
+//        cell.DateLabel.text = NoticeDateArr[indexPath.row]
+        cell.NoticeTitleLabel.text = NoticeAll[indexPath.row][1]
+        cell.DateLabel.text = NoticeAll[indexPath.row][0]
         cell.selectionStyle = .none
         return cell
         
@@ -90,9 +92,9 @@ class NoticeViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         let NextVC = self.storyboard?.instantiateViewController(identifier: "DetailNoticeVC") as! NoticeDetailViewController
         
-        NextVC.content = NoticeContentArr[indexPath.row]
-        NextVC.date = NoticeDateArr[indexPath.row]
-        NextVC.noticetitle = NoticeTitleArr[indexPath.row]
+        NextVC.content = NoticeAll[indexPath.row][2]
+        NextVC.date = NoticeAll[indexPath.row][0]
+        NextVC.noticetitle = NoticeAll[indexPath.row][1]
         
         self.navigationController?.pushViewController(NextVC, animated: true)
         

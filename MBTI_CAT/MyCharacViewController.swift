@@ -193,9 +193,11 @@ class MyCharacController: UIViewController {
         let db = Firestore.firestore()
         
         
-        var NoticeTitleArr : [String] = []
-        var NoticeDateArr : [String] = []
-        var NoticeContentArr : [String] = []
+        var NoticeAll : [[String]] = []
+//        var NoticeTitleArr : [String] = []
+//        var NoticeDateArr : [String] = []
+//        var NoticeContentArr : [String] = []
+        var tempArr : [String] = []
         
         
         self.setActivityIndicator()
@@ -216,7 +218,7 @@ class MyCharacController: UIViewController {
             else {
                 
                 for documents in querySnapshot!.documents {
-                    print("\(documents.documentID) => \(documents.data())")
+                    
                     
                     let dataDic = documents.data() as NSDictionary
                     let title = dataDic["Title"] as? String ?? ""
@@ -224,10 +226,16 @@ class MyCharacController: UIViewController {
                     let content = dataDic["Contents"] as? String ?? ""
                     
                     
-                    NoticeTitleArr.append(title)
-                    NoticeDateArr.append(date)
-                    NoticeContentArr.append(content)
+//                    NoticeTitleArr.append(title)
+//                    NoticeDateArr.append(date)
+//                    NoticeContentArr.append(content)
                     
+                    tempArr = []
+                    tempArr.append(date)
+                    tempArr.append(title)
+                    tempArr.append(content)
+                    
+                    NoticeAll.append(tempArr)
                     
                 }
                 
@@ -236,10 +244,15 @@ class MyCharacController: UIViewController {
             
             print("get data end")
             
-            NextVC.NoticeTitleArr = NoticeTitleArr
-            NextVC.NoticeDateArr = NoticeDateArr
-            NextVC.NoticeContentArr = NoticeContentArr
+//            NextVC.NoticeTitleArr = NoticeTitleArr
+//            NextVC.NoticeDateArr = NoticeDateArr
+//            NextVC.NoticeContentArr = NoticeContentArr
             
+            
+            let NoticeAllSort = NoticeAll.sorted(by: { $0[0] > $1[0] })
+            print(NoticeAllSort)
+            
+            NextVC.NoticeAll = NoticeAllSort
             self.activityIndicator.stopAnimating()
             self.loadingBgView.removeFromSuperview()
             

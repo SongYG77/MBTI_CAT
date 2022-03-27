@@ -14,6 +14,8 @@ class DevInfoViewController: UIViewController {
     @IBOutlet weak var InfoView: UIView!
     @IBOutlet weak var TabmadeinfoView: UIView!
     @IBOutlet weak var TabMadeLabel: UILabel!
+    @IBOutlet weak var DesignLabel: UILabel!
+    @IBOutlet weak var DesignInfo: UIView!
     
     @IBOutlet weak var BackButton: UIButton!
     
@@ -28,6 +30,10 @@ class DevInfoViewController: UIViewController {
         TabMadeLabel.clipsToBounds = true
         TabMadeLabel.layer.cornerRadius = 15
         TabMadeLabel.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+        
+        DesignLabel.clipsToBounds = true
+        DesignLabel.layer.cornerRadius = 15
+        DesignLabel.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
         
         BackButton.layer.borderWidth = 2
         BackButton.layer.borderColor = UIColor(displayP3Red: 249/255, green: 212/255, blue: 153/255, alpha: 1).cgColor
@@ -46,6 +52,12 @@ class DevInfoViewController: UIViewController {
         TabmadeinfoView.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
         TabmadeinfoView.clipsToBounds = true
         
+        DesignInfo.layer.borderWidth = 2
+        DesignInfo.layer.borderColor = UIColor(displayP3Red: 249/255, green: 212/255, blue: 153/255, alpha: 1).cgColor
+        DesignInfo.layer.cornerRadius = 15
+        DesignInfo.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
+        DesignInfo.clipsToBounds = true
+        
         print("Test")
     }
     
@@ -60,6 +72,29 @@ class DevInfoViewController: UIViewController {
         let NextVC = self.storyboard?.instantiateViewController(identifier: "WebViewVC") as! TabImageWebViewController
         
         self.navigationController?.pushViewController(NextVC, animated: true)
+    }
+    
+    
+    @IBAction func onBtnYG(_ sender: UIButton) {
+        
+        guard let url = URL(string: "https://www.instagram.com/songyg57/"), UIApplication.shared.canOpenURL(url) else { return }
+
+         UIApplication.shared.open(url, options: [:], completionHandler: nil)
+    }
+    
+    @IBAction func onBtnJoo(_ sender: UIButton) {
+        guard let url = URL(string: "https://www.instagram.com/jooyest/"), UIApplication.shared.canOpenURL(url) else { return }
+
+         UIApplication.shared.open(url, options: [:], completionHandler: nil)
+    }
+    
+    
+    @IBAction func onBtnJin(_ sender: UIButton) {
+        
+        guard let url = URL(string: "https://www.instagram.com/nu_ll.97c/"), UIApplication.shared.canOpenURL(url) else { return }
+
+         UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        
     }
     
 }

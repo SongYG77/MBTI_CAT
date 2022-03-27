@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 import FirebaseFirestore
 
-class SuggestionsViewController: UIViewController {
+class SuggestionsViewController: UIViewController, UITextFieldDelegate {
     
     
     
@@ -40,8 +40,9 @@ class SuggestionsViewController: UIViewController {
     
     @IBOutlet weak var EmailTitleLabel: UILabel!
     @IBOutlet weak var ContentTitleLabel: UILabel!
-    @IBOutlet weak var EmailTextField: UITextField!
-    @IBOutlet weak var ContentsTextField: UITextField!
+    @IBOutlet weak var EmailTextField: UITextField! { didSet { EmailTextField.delegate = self}}
+    @IBOutlet weak var ContentTextView: UITextView!
+    
     @IBOutlet weak var BackButton: UIButton!
     @IBOutlet weak var AcceptButton: UIButton!
     
@@ -73,11 +74,11 @@ class SuggestionsViewController: UIViewController {
         EmailTextField.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
         EmailTextField.clipsToBounds = true
         
-        ContentsTextField.layer.borderWidth = 2
-        ContentsTextField.layer.borderColor = UIColor(displayP3Red: 249/255, green: 212/255, blue: 153/255, alpha: 1).cgColor
-        ContentsTextField.layer.cornerRadius = 15
-        ContentsTextField.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
-        ContentsTextField.clipsToBounds = true
+        ContentTextView.layer.borderWidth = 2
+        ContentTextView.layer.borderColor = UIColor(displayP3Red: 249/255, green: 212/255, blue: 153/255, alpha: 1).cgColor
+        ContentTextView.layer.cornerRadius = 15
+        ContentTextView.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
+        ContentTextView.clipsToBounds = true
 
         let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: 6, height: EmailTextField.frame.height))
         EmailTextField.leftView = paddingView
@@ -85,13 +86,22 @@ class SuggestionsViewController: UIViewController {
         EmailTextField.rightView = paddingView
         EmailTextField.rightViewMode = .always
         
-        let paddingView2 = UIView(frame: CGRect(x: 0, y: 0, width: 6, height: ContentsTextField.frame.height))
-        ContentsTextField.leftView = paddingView2
-        ContentsTextField.leftViewMode = .always
-        ContentsTextField.rightView = paddingView2
-        ContentsTextField.rightViewMode = .always
-        ContentsTextField.contentVerticalAlignment = .top
+//        let paddingView2 = UIView(frame: CGRect(x: 0, y: 0, width: 6, height: ContentsTextField.frame.height))
+//        ContentsTextField.leftView = paddingView2
+//        ContentsTextField.leftViewMode = .always
+//        ContentsTextField.rightView = paddingView2
+//        ContentsTextField.rightViewMode = .always
+//        ContentsTextField.contentVerticalAlignment = .top
         
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
     
     @IBAction func onBtnAdd(_ sender: Any) {
@@ -108,7 +118,7 @@ class SuggestionsViewController: UIViewController {
     
     
     func addSuggetion() {
-        if let isEmail = EmailTextField.text, let isContent = ContentsTextField.text {
+        if let isEmail = EmailTextField.text, let isContent = ContentTextView.text {
             
             var data = Suggestiondata()
             data.Email = isEmail

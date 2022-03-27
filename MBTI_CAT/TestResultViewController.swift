@@ -13,6 +13,7 @@
 
 
 import UIKit
+import StoreKit
 
 class TestResultViewController: UIViewController {
 
@@ -107,6 +108,8 @@ class TestResultViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        SKStoreReviewController.requestReview()
         
         SumResultArr[0] = TestResultARR[0] + TestResultARR[1] / 2
         SumResultArr[1] = TestResultARR[2] + TestResultARR[3] / 2
