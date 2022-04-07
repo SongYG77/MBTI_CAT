@@ -253,8 +253,44 @@ class TestResultViewController: UIViewController {
         
     }
     
+    @IBAction func onBtnRank1Detail(_ sender: UIButton) {
+        
+        let NextVC = self.storyboard?.instantiateViewController(identifier: "DetailContentsVC") as! DetailContentsViewController
+        
+        NextVC.CatKinds = MyCatRanking[0]
+        
+        self.navigationController?.pushViewController(NextVC, animated: true)
+        
+    }
     
     
+    @IBAction func onBtnRank2Detail(_ sender: UIButton) {
+        
+        let NextVC = self.storyboard?.instantiateViewController(identifier: "DetailContentsVC") as! DetailContentsViewController
+        
+        NextVC.CatKinds = MyCatRanking[1]
+        
+        self.navigationController?.pushViewController(NextVC, animated: true)
+    }
     
-
+    
+    @IBAction func onBtnRank3Detail(_ sender: UIButton) {
+        
+        let NextVC = self.storyboard?.instantiateViewController(identifier: "DetailContentsVC") as! DetailContentsViewController
+        
+        NextVC.CatKinds = MyCatRanking[2]
+        
+        self.navigationController?.pushViewController(NextVC, animated: true)
+    }
+    
+    
+    @IBAction func onBtnRank4Detail(_ sender: UIButton) {
+        
+        let NextVC = self.storyboard?.instantiateViewController(identifier: "DetailContentsVC") as! DetailContentsViewController
+        
+        NextVC.CatKinds = MyCatRanking[3]
+        
+        self.navigationController?.pushViewController(NextVC, animated: true)
+    }
+    
 }

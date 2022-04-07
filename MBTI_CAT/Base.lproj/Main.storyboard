@@ -723,7 +723,7 @@
                                 <rect key="frame" x="40" y="462" width="334" height="200"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="랭킹 표시" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nvv-T7-yV5">
-                                        <rect key="frame" x="5" y="15" width="324" height="35"/>
+                                        <rect key="frame" x="5" y="15" width="286" height="35"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="LB8-Qm-SHH"/>
@@ -733,7 +733,7 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="랭킹 표시" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oFx-UJ-fC2">
-                                        <rect key="frame" x="5" y="101" width="324" height="35"/>
+                                        <rect key="frame" x="5" y="101" width="286" height="35"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="AzS-wt-Yx8"/>
@@ -743,7 +743,7 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="랭킹 표시" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pK6-2Y-Vl1">
-                                        <rect key="frame" x="5" y="144" width="324" height="35"/>
+                                        <rect key="frame" x="5" y="144" width="286" height="35"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="zkf-0D-YdE"/>
@@ -753,7 +753,7 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="랭킹 표시" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BW2-T5-GTA">
-                                        <rect key="frame" x="5" y="58" width="324" height="35"/>
+                                        <rect key="frame" x="5" y="58" width="286" height="35"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="CGm-dx-S11"/>
@@ -762,21 +762,81 @@
                                         <fontDescription key="fontDescription" name="Cafe24Syongsyong" family="Cafe24 Syongsyong" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yia-WQ-nu9">
+                                        <rect key="frame" x="296" y="17.5" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="Ori-UC-tSr"/>
+                                            <constraint firstAttribute="height" constant="30" id="bU6-ef-syy"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Cafe24Syongsyong" family="Cafe24 Syongsyong" pointSize="17"/>
+                                        <color key="tintColor" red="0.462310259" green="0.32170715090000002" blue="0.16283701850000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="특징"/>
+                                        <connections>
+                                            <action selector="onBtnRank1Detail:" destination="S1c-Ia-f9r" eventType="touchUpInside" id="Ru4-XF-nDT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i0m-l3-m3N">
+                                        <rect key="frame" x="296" y="60.5" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="Cw8-l9-sb5"/>
+                                            <constraint firstAttribute="height" constant="30" id="ggH-r2-Aia"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Cafe24Syongsyong" family="Cafe24 Syongsyong" pointSize="17"/>
+                                        <color key="tintColor" red="0.462310259" green="0.32170715090000002" blue="0.16283701850000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="특징"/>
+                                        <connections>
+                                            <action selector="onBtnRank2Detail:" destination="S1c-Ia-f9r" eventType="touchUpInside" id="oY4-tq-SRH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oOb-5H-nri">
+                                        <rect key="frame" x="296" y="103.5" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="MEr-n0-DOo"/>
+                                            <constraint firstAttribute="height" constant="30" id="W4P-jM-HOQ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Cafe24Syongsyong" family="Cafe24 Syongsyong" pointSize="17"/>
+                                        <color key="tintColor" red="0.462310259" green="0.32170715090000002" blue="0.16283701850000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="특징"/>
+                                        <connections>
+                                            <action selector="onBtnRank3Detail:" destination="S1c-Ia-f9r" eventType="touchUpInside" id="T0i-SF-7Sa"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rcs-94-Z2A">
+                                        <rect key="frame" x="296" y="146.5" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="3je-4d-bBI"/>
+                                            <constraint firstAttribute="width" constant="30" id="inH-6L-1I6"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Cafe24Syongsyong" family="Cafe24 Syongsyong" pointSize="17"/>
+                                        <color key="tintColor" red="0.462310259" green="0.32170715090000002" blue="0.16283701850000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="특징"/>
+                                        <connections>
+                                            <action selector="onBtnRank4Detail:" destination="S1c-Ia-f9r" eventType="touchUpInside" id="eYE-aI-iJx"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstItem="yia-WQ-nu9" firstAttribute="leading" secondItem="nvv-T7-yV5" secondAttribute="trailing" constant="5" id="1TS-8y-2nm"/>
                                     <constraint firstItem="oFx-UJ-fC2" firstAttribute="leading" secondItem="Pee-TR-YJ1" secondAttribute="leading" constant="5" id="3aZ-Cc-i9n"/>
+                                    <constraint firstAttribute="trailing" secondItem="i0m-l3-m3N" secondAttribute="trailing" constant="8" id="B0V-ZV-fja"/>
                                     <constraint firstAttribute="height" constant="200" id="CdR-Go-n4n"/>
-                                    <constraint firstAttribute="trailing" secondItem="BW2-T5-GTA" secondAttribute="trailing" constant="5" id="Fgj-8o-f77"/>
                                     <constraint firstItem="oFx-UJ-fC2" firstAttribute="top" secondItem="BW2-T5-GTA" secondAttribute="bottom" constant="8" id="Gnx-xP-Q4H"/>
-                                    <constraint firstAttribute="trailing" secondItem="oFx-UJ-fC2" secondAttribute="trailing" constant="5" id="Hhc-wo-0sk"/>
-                                    <constraint firstAttribute="trailing" secondItem="nvv-T7-yV5" secondAttribute="trailing" constant="5" id="J4h-MC-PGd"/>
+                                    <constraint firstItem="yia-WQ-nu9" firstAttribute="centerY" secondItem="nvv-T7-yV5" secondAttribute="centerY" id="H86-Nb-tKJ"/>
+                                    <constraint firstItem="Rcs-94-Z2A" firstAttribute="leading" secondItem="pK6-2Y-Vl1" secondAttribute="trailing" constant="5" id="HE7-pw-FHN"/>
                                     <constraint firstItem="pK6-2Y-Vl1" firstAttribute="top" secondItem="oFx-UJ-fC2" secondAttribute="bottom" constant="8" id="JqF-dT-Sr9"/>
                                     <constraint firstItem="BW2-T5-GTA" firstAttribute="leading" secondItem="Pee-TR-YJ1" secondAttribute="leading" constant="5" id="MA3-0z-mKW"/>
                                     <constraint firstItem="nvv-T7-yV5" firstAttribute="leading" secondItem="Pee-TR-YJ1" secondAttribute="leading" constant="5" id="NvZ-bg-r0s"/>
+                                    <constraint firstItem="i0m-l3-m3N" firstAttribute="leading" secondItem="BW2-T5-GTA" secondAttribute="trailing" constant="5" id="P91-SF-ntP"/>
+                                    <constraint firstItem="Rcs-94-Z2A" firstAttribute="centerY" secondItem="pK6-2Y-Vl1" secondAttribute="centerY" id="T1K-ai-NjK"/>
+                                    <constraint firstAttribute="trailing" secondItem="yia-WQ-nu9" secondAttribute="trailing" constant="8" id="WwR-Rh-d3d"/>
                                     <constraint firstItem="pK6-2Y-Vl1" firstAttribute="leading" secondItem="Pee-TR-YJ1" secondAttribute="leading" constant="5" id="XIh-u5-OP3"/>
-                                    <constraint firstAttribute="trailing" secondItem="pK6-2Y-Vl1" secondAttribute="trailing" constant="5" id="dBm-eG-7jH"/>
+                                    <constraint firstItem="oOb-5H-nri" firstAttribute="leading" secondItem="oFx-UJ-fC2" secondAttribute="trailing" constant="5" id="aTT-Nc-YMa"/>
+                                    <constraint firstAttribute="trailing" secondItem="Rcs-94-Z2A" secondAttribute="trailing" constant="8" id="bbQ-dF-8zS"/>
+                                    <constraint firstItem="i0m-l3-m3N" firstAttribute="centerY" secondItem="BW2-T5-GTA" secondAttribute="centerY" id="bwu-VW-gGd"/>
                                     <constraint firstItem="BW2-T5-GTA" firstAttribute="top" secondItem="nvv-T7-yV5" secondAttribute="bottom" constant="8" id="iEu-7m-TNY"/>
+                                    <constraint firstAttribute="trailing" secondItem="oOb-5H-nri" secondAttribute="trailing" constant="8" id="iIR-je-1N4"/>
+                                    <constraint firstItem="oOb-5H-nri" firstAttribute="centerY" secondItem="oFx-UJ-fC2" secondAttribute="centerY" id="tfj-Eo-OJZ"/>
                                     <constraint firstItem="nvv-T7-yV5" firstAttribute="top" secondItem="Pee-TR-YJ1" secondAttribute="top" constant="15" id="uoy-B0-IYE"/>
                                 </constraints>
                             </view>
@@ -2072,9 +2132,8 @@
                                     <constraint firstAttribute="height" constant="120" id="pYL-GX-aXo"/>
                                 </constraints>
                             </view>
-                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pfD-W8-tds">
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pfD-W8-tds">
                                 <rect key="frame" x="0.0" y="117" width="414" height="745"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -2085,9 +2144,13 @@
                         <viewLayoutGuide key="safeArea" id="sDH-Iy-OnJ"/>
                         <color key="backgroundColor" red="1" green="0.97647058959999999" blue="0.93725490570000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="pfD-W8-tds" firstAttribute="top" secondItem="sDH-Iy-OnJ" secondAttribute="top" constant="73" id="Hr5-HB-rkN"/>
+                            <constraint firstItem="pfD-W8-tds" firstAttribute="leading" secondItem="sDH-Iy-OnJ" secondAttribute="leading" id="TNb-YX-dHj"/>
                             <constraint firstItem="2uV-C1-EPi" firstAttribute="leading" secondItem="sDH-Iy-OnJ" secondAttribute="leading" id="gz5-eX-f41"/>
+                            <constraint firstItem="pfD-W8-tds" firstAttribute="trailing" secondItem="sDH-Iy-OnJ" secondAttribute="trailing" id="mpm-Wl-ddi"/>
                             <constraint firstItem="2uV-C1-EPi" firstAttribute="top" secondItem="ULi-PH-QLS" secondAttribute="top" id="pb1-sg-Arx"/>
                             <constraint firstItem="2uV-C1-EPi" firstAttribute="trailing" secondItem="sDH-Iy-OnJ" secondAttribute="trailing" id="sUt-ZO-Wmt"/>
+                            <constraint firstItem="pfD-W8-tds" firstAttribute="bottom" secondItem="sDH-Iy-OnJ" secondAttribute="bottom" id="xki-i0-JEY"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Qg4-zZ-uP9"/>
