@@ -1863,6 +1863,7 @@
                         <segue destination="jyk-ZL-VlV" kind="show" id="LMn-RW-uKS"/>
                         <segue destination="UoD-6a-axy" kind="show" id="8Gf-9B-1V0"/>
                         <segue destination="8as-uL-TfR" kind="show" id="VRR-Sw-P2O"/>
+                        <segue destination="zUF-ak-XHJ" kind="show" id="C6f-Tc-P0d"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vz0-zA-MCP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -2565,6 +2566,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AsJ-c7-uYy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1279.7101449275362" y="819.64285714285711"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="zc6-WH-YPf">
+            <objects>
+                <viewController id="zUF-ak-XHJ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cKc-oK-4C6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="고양이의 5가지 성격" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w4B-1O-AqJ">
+                                <rect key="frame" x="20" y="59" width="374" height="38.5"/>
+                                <fontDescription key="fontDescription" name="Cafe24Syongsyong" family="Cafe24 Syongsyong" pointSize="35"/>
+                                <color key="textColor" red="0.462310259" green="0.32170715090000002" blue="0.16283701850000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="SDs-Lm-lLO"/>
+                        <color key="backgroundColor" red="1" green="0.97647058959999999" blue="0.92941176889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="SDs-Lm-lLO" firstAttribute="trailing" secondItem="w4B-1O-AqJ" secondAttribute="trailing" constant="20" id="Uae-s0-bzh"/>
+                            <constraint firstItem="w4B-1O-AqJ" firstAttribute="top" secondItem="SDs-Lm-lLO" secondAttribute="top" constant="15" id="klL-Pd-SrG"/>
+                            <constraint firstItem="w4B-1O-AqJ" firstAttribute="leading" secondItem="SDs-Lm-lLO" secondAttribute="leading" constant="20" id="reZ-vd-Hoh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="zda-Lu-AQG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ou6-02-fvi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1280" y="2266"/>
         </scene>
     </scenes>
     <resources>
