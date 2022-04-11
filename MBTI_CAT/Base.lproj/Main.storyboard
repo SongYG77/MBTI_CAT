@@ -2567,10 +2567,10 @@
             </objects>
             <point key="canvasLocation" x="1279.7101449275362" y="819.64285714285711"/>
         </scene>
-        <!--View Controller-->
+        <!--Five Cat Char View Controller-->
         <scene sceneID="zc6-WH-YPf">
             <objects>
-                <viewController id="zUF-ak-XHJ" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FiveCatCharVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zUF-ak-XHJ" customClass="FiveCatCharViewController" customModule="MBTI_CAT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cKc-oK-4C6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
