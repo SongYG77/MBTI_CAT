@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1829E48A27B4F3F500654B60 /* NoticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1829E48927B4F3F500654B60 /* NoticeViewController.swift */; };
+		182F9DE7280411640002D210 /* FiveCatCharViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182F9DE6280411640002D210 /* FiveCatCharViewController.swift */; };
 		1832663B2797E5BF00D4C350 /* TestResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1832663A2797E5BF00D4C350 /* TestResultViewController.swift */; };
 		18415751279003AE0095F8A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18415750279003AE0095F8A9 /* AppDelegate.swift */; };
 		18415753279003AE0095F8A9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18415752279003AE0095F8A9 /* SceneDelegate.swift */; };
@@ -35,6 +36,7 @@
 		0E5DD73E2EE9DE69359BDAAE /* Pods-MBTI_CAT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MBTI_CAT.debug.xcconfig"; path = "Target Support Files/Pods-MBTI_CAT/Pods-MBTI_CAT.debug.xcconfig"; sourceTree = "<group>"; };
 		180DBDFF27EC3B2E00B29A48 /* MBTI_CAT.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MBTI_CAT.entitlements; sourceTree = "<group>"; };
 		1829E48927B4F3F500654B60 /* NoticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeViewController.swift; sourceTree = "<group>"; };
+		182F9DE6280411640002D210 /* FiveCatCharViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveCatCharViewController.swift; sourceTree = "<group>"; };
 		1830AD4E279951C6004DEDD9 /* CatData.xlsx */ = {isa = PBXFileReference; lastKnownFileType = file; path = CatData.xlsx; sourceTree = SOURCE_ROOT; };
 		1832663A2797E5BF00D4C350 /* TestResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestResultViewController.swift; sourceTree = "<group>"; };
 		1841574D279003AE0095F8A9 /* MBTI_CAT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MBTI_CAT.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,6 +122,7 @@
 				18415770279012C50095F8A9 /* CharacteristicViewController.swift */,
 				1895D24C279E868200567BBF /* DetailContentsViewController.swift */,
 				18415773279012E20095F8A9 /* MyCharacViewController.swift */,
+				182F9DE6280411640002D210 /* FiveCatCharViewController.swift */,
 				1841883727B0F4B800DF7D1A /* DevInfoViewController.swift */,
 				18F46EDA27E4580C006E8ACB /* TabImageWebViewController.swift */,
 				188A7EAA27B241BB000718E7 /* SuggestionsViewController.swift */,
@@ -262,6 +265,7 @@
 				1841576B27900C3A0095F8A9 /* TabbarViewController.swift in Sources */,
 				18F46EDB27E4580C006E8ACB /* TabImageWebViewController.swift in Sources */,
 				18415755279003AE0095F8A9 /* MainViewController.swift in Sources */,
+				182F9DE7280411640002D210 /* FiveCatCharViewController.swift in Sources */,
 				18415774279012E20095F8A9 /* MyCharacViewController.swift in Sources */,
 				18415751279003AE0095F8A9 /* AppDelegate.swift in Sources */,
 				188A7EAB27B241BB000718E7 /* SuggestionsViewController.swift in Sources */,
