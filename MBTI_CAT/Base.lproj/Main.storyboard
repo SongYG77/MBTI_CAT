@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Pva-N4-aVI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Pva-N4-aVI">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -900,12 +900,12 @@
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Pva-N4-aVI" customClass="TabbarViewController" customModule="MBTI_CAT" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" itemPositioning="fill" id="gyT-AV-hS8">
+                    <tabBar key="tabBar" tag="1" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" itemPositioning="fill" id="gyT-AV-hS8">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.58823531870000001" green="0.47450977560000002" blue="0.35294118520000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="barTintColor" red="0.58823531870000001" green="0.47450977560000002" blue="0.35294118520000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
@@ -913,6 +913,11 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </tabBar>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="unselectedItemTintColor">
+                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <segue destination="0Rj-iW-j0N" kind="relationship" relationship="viewControllers" id="y1w-sA-aEa"/>
                         <segue destination="Dhg-cg-hbK" kind="relationship" relationship="viewControllers" id="I9q-A3-MXu"/>
@@ -1938,7 +1943,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tab Image" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nt8-bE-DKG">
-                                <rect key="frame" x="87" y="363" width="240" height="27"/>
+                                <rect key="frame" x="87" y="363" width="240" height="26.5"/>
                                 <color key="backgroundColor" red="0.56862745100000001" green="0.47843137250000001" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="c7h-jV-kEj"/>
@@ -1948,10 +1953,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k6G-kP-y7e">
-                                <rect key="frame" x="87" y="390" width="240" height="110"/>
+                                <rect key="frame" x="87" y="389.5" width="240" height="110"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Freepik - Flaticon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="023-aJ-Lp1">
-                                        <rect key="frame" x="49" y="53" width="142" height="21"/>
+                                        <rect key="frame" x="49.5" y="53" width="141.5" height="21"/>
                                         <fontDescription key="fontDescription" name="Cafe24Syongsyong" family="Cafe24 Syongsyong" pointSize="19"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -1987,7 +1992,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Designed By" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rlj-pz-uR9">
-                                <rect key="frame" x="87" y="520" width="240" height="27"/>
+                                <rect key="frame" x="87" y="519.5" width="240" height="26.5"/>
                                 <color key="backgroundColor" red="0.56862745100000001" green="0.47843137250000001" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="0zD-S4-Ija"/>
@@ -1997,7 +2002,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tBU-o3-Ipt">
-                                <rect key="frame" x="87" y="547" width="240" height="120"/>
+                                <rect key="frame" x="87" y="546" width="240" height="120"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="고양이 이미지 : @jooyest" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EG7-XH-9Yz">
                                         <rect key="frame" x="28" y="15" width="184" height="21"/>
@@ -2303,7 +2308,7 @@
                                 <color key="sectionIndexBackgroundColor" red="1" green="0.97647058959999999" blue="0.93333339689999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ANoticeTableViewCell" rowHeight="62" id="OGW-ln-cSu" customClass="ANoticeTableViewCell" customModule="MBTI_CAT" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="55.5" width="414" height="62"/>
+                                        <rect key="frame" x="0.0" y="49.5" width="414" height="62"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OGW-ln-cSu" id="0c5-xy-r4h">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="62"/>
@@ -2510,7 +2515,6 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="Dhg-cg-hbK" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Test" selectedImage="catfoot_fill" id="gD2-h6-7Cc">
                         <imageReference key="image" image="catfoot" renderingMode="original"/>
-                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Xqc-OT-GCd">
@@ -2531,7 +2535,6 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="TKQ-vU-UZ9" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="List" selectedImage="catfoot_fill" id="YRv-6j-F0d">
                         <imageReference key="image" image="catfoot" renderingMode="original"/>
-                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="iMO-60-thr">
@@ -2552,7 +2555,6 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="sU5-jq-fBV" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="MyPage" selectedImage="catfoot_fill" id="qAl-ug-0ic">
                         <imageReference key="image" image="catfoot" renderingMode="original"/>
-                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="wgQ-3U-9sw">
