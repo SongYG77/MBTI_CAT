@@ -17,6 +17,7 @@ class SuggestionsViewController: UIViewController, UITextFieldDelegate {
     struct Suggestiondata {
         var Email : String = ""
         var Content : String = ""
+        var Time : String = ""
         
         //firebase에서 db에 들어가는 데이터
         //클래스와 구조체가 들어갈 수 없다.
@@ -29,7 +30,8 @@ class SuggestionsViewController: UIViewController, UITextFieldDelegate {
         func getDic() -> [String : String] {
             let dict = [
                 "Email" : self.Email,
-                "Content" : self.Content
+                "Content" : self.Content,
+                "Time" : self.Time
             ]
             
             return dict
@@ -119,10 +121,13 @@ class SuggestionsViewController: UIViewController, UITextFieldDelegate {
     
     func addSuggetion() {
         if let isEmail = EmailTextField.text, let isContent = ContentTextView.text {
-            
+            var formatter = DateFormatter()
+            formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+            var current_date_string = formatter.string(from: Date())
             var data = Suggestiondata()
             data.Email = isEmail
             data.Content = isContent
+            data.Time = current_date_string
             //DB에 접근하려면 딕셔너리로 변환을 시켜줘야 한다,
             guard isEmail != "" || isContent != "" else {
                 

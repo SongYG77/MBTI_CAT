@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -29,11 +29,13 @@
 		1895D24D279E868200567BBF /* DetailContentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1895D24C279E868200567BBF /* DetailContentsViewController.swift */; };
 		18E980CE27BE384F00BFF5D3 /* NoticeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E980CD27BE384F00BFF5D3 /* NoticeDetailViewController.swift */; };
 		18F46EDB27E4580C006E8ACB /* TabImageWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F46EDA27E4580C006E8ACB /* TabImageWebViewController.swift */; };
-		E5CD05C10CF99DA94EE5527B /* Pods_MBTI_CAT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 649049F50AE4B343149A5311 /* Pods_MBTI_CAT.framework */; };
+		67549EAE0B0BC1CEB6AF4B75 /* Pods_MBTI_CAT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 037D2108381EE93CD39C673E /* Pods_MBTI_CAT.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0E5DD73E2EE9DE69359BDAAE /* Pods-MBTI_CAT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MBTI_CAT.debug.xcconfig"; path = "Target Support Files/Pods-MBTI_CAT/Pods-MBTI_CAT.debug.xcconfig"; sourceTree = "<group>"; };
+		037D2108381EE93CD39C673E /* Pods_MBTI_CAT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MBTI_CAT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		071A65A52BE35B0C0031E65B /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		0A08B20F0DC0307636D3FB7A /* Pods-MBTI_CAT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MBTI_CAT.release.xcconfig"; path = "Target Support Files/Pods-MBTI_CAT/Pods-MBTI_CAT.release.xcconfig"; sourceTree = "<group>"; };
 		180DBDFF27EC3B2E00B29A48 /* MBTI_CAT.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MBTI_CAT.entitlements; sourceTree = "<group>"; };
 		1829E48927B4F3F500654B60 /* NoticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeViewController.swift; sourceTree = "<group>"; };
 		182F9DE6280411640002D210 /* FiveCatCharViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveCatCharViewController.swift; sourceTree = "<group>"; };
@@ -62,8 +64,7 @@
 		1895D24C279E868200567BBF /* DetailContentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailContentsViewController.swift; sourceTree = "<group>"; };
 		18E980CD27BE384F00BFF5D3 /* NoticeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeDetailViewController.swift; sourceTree = "<group>"; };
 		18F46EDA27E4580C006E8ACB /* TabImageWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabImageWebViewController.swift; sourceTree = "<group>"; };
-		649049F50AE4B343149A5311 /* Pods_MBTI_CAT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MBTI_CAT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3AF9D5BF0952755AC3D0DC9 /* Pods-MBTI_CAT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MBTI_CAT.release.xcconfig"; path = "Target Support Files/Pods-MBTI_CAT/Pods-MBTI_CAT.release.xcconfig"; sourceTree = "<group>"; };
+		2F9A028AD6DE6379C0525942 /* Pods-MBTI_CAT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MBTI_CAT.debug.xcconfig"; path = "Target Support Files/Pods-MBTI_CAT/Pods-MBTI_CAT.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5CD05C10CF99DA94EE5527B /* Pods_MBTI_CAT.framework in Frameworks */,
+				67549EAE0B0BC1CEB6AF4B75 /* Pods_MBTI_CAT.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,10 +82,18 @@
 		03634BBC749F563FD69A9B2D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0E5DD73E2EE9DE69359BDAAE /* Pods-MBTI_CAT.debug.xcconfig */,
-				B3AF9D5BF0952755AC3D0DC9 /* Pods-MBTI_CAT.release.xcconfig */,
+				2F9A028AD6DE6379C0525942 /* Pods-MBTI_CAT.debug.xcconfig */,
+				0A08B20F0DC0307636D3FB7A /* Pods-MBTI_CAT.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		05B297DDD823F57BBE4C5D4D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				037D2108381EE93CD39C673E /* Pods_MBTI_CAT.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		18415744279003AE0095F8A9 = {
@@ -93,7 +102,7 @@
 				1841574F279003AE0095F8A9 /* MBTI_CAT */,
 				1841574E279003AE0095F8A9 /* Products */,
 				03634BBC749F563FD69A9B2D /* Pods */,
-				2E50A7885C8228D6DFC989A8 /* Frameworks */,
+				05B297DDD823F57BBE4C5D4D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -133,16 +142,9 @@
 				1841575E279003AE0095F8A9 /* Info.plist */,
 				188A7E8E27B23C34000718E7 /* GoogleService-Info.plist */,
 				1830AD4E279951C6004DEDD9 /* CatData.xlsx */,
+				071A65A52BE35B0C0031E65B /* PrivacyInfo.xcprivacy */,
 			);
 			path = MBTI_CAT;
-			sourceTree = "<group>";
-		};
-		2E50A7885C8228D6DFC989A8 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				649049F50AE4B343149A5311 /* Pods_MBTI_CAT.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,11 +154,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18415761279003AE0095F8A9 /* Build configuration list for PBXNativeTarget "MBTI_CAT" */;
 			buildPhases = (
-				F3EE42D3608E4CFB2BDA2730 /* [CP] Check Pods Manifest.lock */,
+				A7D4CC7CC4FF2B198DABA5BC /* [CP] Check Pods Manifest.lock */,
 				18415749279003AE0095F8A9 /* Sources */,
 				1841574A279003AE0095F8A9 /* Frameworks */,
 				1841574B279003AE0095F8A9 /* Resources */,
-				9E254A83513CEE791A5BEA3C /* [CP] Embed Pods Frameworks */,
+				A403165C7AEE9B4175A207CB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -182,7 +184,7 @@
 				};
 			};
 			buildConfigurationList = 18415748279003AE0095F8A9 /* Build configuration list for PBXProject "MBTI_CAT" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -216,7 +218,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		9E254A83513CEE791A5BEA3C /* [CP] Embed Pods Frameworks */ = {
+		A403165C7AEE9B4175A207CB /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -233,7 +235,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MBTI_CAT/Pods-MBTI_CAT-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F3EE42D3608E4CFB2BDA2730 /* [CP] Check Pods Manifest.lock */ = {
+		A7D4CC7CC4FF2B198DABA5BC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -426,13 +428,13 @@
 		};
 		18415762279003AE0095F8A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0E5DD73E2EE9DE69359BDAAE /* Pods-MBTI_CAT.debug.xcconfig */;
+			baseConfigurationReference = 2F9A028AD6DE6379C0525942 /* Pods-MBTI_CAT.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = MBTI_CAT/MBTI_CAT.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 1.0.8.1;
 				DEVELOPMENT_TEAM = M7KCA787CC;
 				INFOPLIST_FILE = MBTI_CAT/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -443,20 +445,20 @@
 				MARKETING_VERSION = 1.0.8;
 				PRODUCT_BUNDLE_IDENTIFIER = com.SongYG77.MeowLaboratory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		18415763279003AE0095F8A9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B3AF9D5BF0952755AC3D0DC9 /* Pods-MBTI_CAT.release.xcconfig */;
+			baseConfigurationReference = 0A08B20F0DC0307636D3FB7A /* Pods-MBTI_CAT.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = MBTI_CAT/MBTI_CAT.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 1.0.8.1;
 				DEVELOPMENT_TEAM = M7KCA787CC;
 				INFOPLIST_FILE = MBTI_CAT/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -467,7 +469,7 @@
 				MARKETING_VERSION = 1.0.8;
 				PRODUCT_BUNDLE_IDENTIFIER = com.SongYG77.MeowLaboratory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
